@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --orange:rgba(232, 116, 11, 1);
+    --blue:#005a87;
+    --backgroundColor: white;
+    --black:#111;
+    --beforeWebkit:-webkit-linear-gradient(top, rgba(232, 116, 11, 0.65) 0%, rgba(252, 252, 252, 0) 99%, rgba(255, 255, 255, 0) 100%);
+    --beforeLinear:linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(252, 252, 252, 0) 99%, rgba(255, 255, 255, 0) 100%);
+}

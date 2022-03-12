@@ -9,6 +9,9 @@ import { SharedComponentsModule } from './shared-components/shared-components.mo
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LoginComponent } from './components/login/login.component';
+import { PagesBaseComponent } from './components/pages-base/pages-base.component';
+import { InscriptionComponent } from './components/inscription/inscription.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { ContactComponent } from './components/contact/contact.component';
     ServerErrorComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    PagesBaseComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,13 @@
 li a{
     cursor: pointer;
 }
+
+.dropdown-menu{
+    background-color: var(--backgroundColor);
+    li a{
+
+        &:hover{
+            color: var(--orange);
+        }
+    }
+}
