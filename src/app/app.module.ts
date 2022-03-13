@@ -12,6 +12,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { PagesBaseComponent } from './components/pages-base/pages-base.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,11 @@ import { InscriptionComponent } from './components/inscription/inscription.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedComponentsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+
+    SharedComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

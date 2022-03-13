@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
+import { MaterialModule } from './material.module';
 
 
 
@@ -11,11 +12,13 @@ import { SiteFooterComponent } from './components/site-footer/site-footer.compon
     SiteFooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   exports:[
     ToolbarComponent,
-    SiteFooterComponent
+    SiteFooterComponent,
+    MaterialModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

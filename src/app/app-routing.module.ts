@@ -39,6 +39,9 @@ const routes: Routes = [
       {
         path:'signin',
         component:InscriptionComponent
+      },{
+        path:'dashboard',
+        loadChildren: ()=>import('./dashboard/dashboard.module').then(m=>m.DashboardModule)
       }
     ]
   },

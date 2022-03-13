@@ -4,6 +4,75 @@
     --blue:#005a87;
     --backgroundColor: white;
     --black:#111;
-    --beforeWebkit:-webkit-linear-gradient(top, rgba(232, 116, 11, 0.65) 0%, rgba(252, 252, 252, 0) 99%, rgba(255, 255, 255, 0) 100%);
-    --beforeLinear:linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(252, 252, 252, 0) 99%, rgba(255, 255, 255, 0) 100%);
+    --beforeWebkit:-webkit-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(245, 240, 240, 0) 99%, rgba(255, 255, 255, 0) 100%);
+    --beforeLinear:linear-gradient(to bottom, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 99%, rgba(255, 255, 255, 0) 100%);
 }
+
+.main{
+    color: var(--black);
+    height: 100%;
+    padding: 0px;
+    padding-top:17vh;
+    
+}
+
+.center-column{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.center-row{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mt{
+    margin-top: 1em;
+}
+.mb{
+    margin-bottom: 1em;
+}
+.ml{
+    margin-left: 1em;
+}
+.mr{
+    margin-right: 1em;
+}
+
+.pt{
+    margin-top: 1em;
+}
+.pb{
+    margin-bottom: 1em;
+}
+.pl{
+    margin-left: 1em;
+}
+.pr{
+    margin-right: 1em;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text-primary{
+    color: var(--blue);
+}
+.text-secondary{
+    color: var(--orange);
+}
+.br{
+    border-radius: 1em;
+}
+

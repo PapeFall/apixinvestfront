@@ -1,0 +1,220 @@
+<div class="container-fluid mt"> 
+    <mat-stepper  [disableRipple]="true"  style="display: flex; flex-wrap: wrap;" [orientation]="(stepperOrientation | async)!" >
+        <mat-step style="display: flex; flex-wrap: wrap;">
+            <ng-template matStepLabel>Présentation du projet d'entreprise</ng-template>
+            <div class="mt" >
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Raison Sociale</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Enseigne commercial</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Type projet</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Activité</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Forme juridique</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Capital social (si société)</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Nature de l'investissement</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Montant de l'investissement</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Apport financier personnel</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class=" container-fluid">
+                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                            <mat-label>Le besoin de financement</mat-label>
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-sm-12 center-column container-fluid " >
+                <div class="center-row">
+                    
+                    <button mat-raised-button color="primary">Enregistrer</button>
+                    <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
+                    
+                </div>
+                
+            </div>
+
+        </mat-step>
+        <mat-step >
+            <ng-template matStepLabel>Les produits / Les services / Le marché</ng-template>
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 mt">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>Descriptif des produits/services commercialisés (descriptif technique et commercial, modes de commercialisation)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>Descriptif du marché</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>Analyse de la concurrence (noms et adresses des concurrents, chiffre d'affaires réalisés, …)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row col-sm-12 center-column container-fluid " >
+                <div class="center-row">
+                    <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
+                    <button mat-raised-button color="primary">Enregistrer</button>
+                    <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
+                    
+                </div>
+                
+            </div>
+        </mat-step>
+        <mat-step >
+            <ng-template matStepLabel>La clientèle</ng-template>
+
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 mt">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>Descriptif des principaux clients (Nom des clients, volume des commandes, importance dans le chiffre d'affaires, …)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>La stratégie clients (nombre potentiel de clients, type de clientèle, habitudes de consommation, répartition du chiffre d'affaires, existe-il
+                            quelques gros clients ? )</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>Analyse de la concurrence (noms et adresses des concurrents, chiffre d'affaires réalisés, …)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row col-sm-12 center-column container-fluid " >
+                <div class="center-row">
+                    <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
+                    <button mat-raised-button color="primary">Enregistrer</button>
+                    <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
+                    
+                </div>
+                
+            </div>
+        </mat-step>
+        <mat-step >
+            <ng-template matStepLabel>La stratégie de l'entreprise</ng-template>
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 mt">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>La stratégie des prix (politique d'achats, positionnement des prix/concurrence, prix de vente, promotions,…)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label> La stratégie de distribution (mode de vente : de proximité, à distance, par correspondance,…)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class=" container-fluid">
+                    <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                        <mat-label>La stratégie de communication (politique de communication, de publicité, de promotions …)</mat-label>
+                        <textarea matInput rows="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row col-sm-12 center-column container-fluid " >
+                <div class="center-row">
+                    <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
+                    <button mat-raised-button color="primary">Enregistrer</button>
+                    <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
+                    
+                </div>
+                
+            </div>
+            
+        </mat-step>
+        <mat-step >
+            <ng-template matStepLabel>Le personnel</ng-template>
+
+            
+        </mat-step>
+       
+      </mat-stepper>
+</div>
