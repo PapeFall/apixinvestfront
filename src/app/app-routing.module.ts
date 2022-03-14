@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BmcOnlineMainComponent } from './bmc-online/components/bmc-online-main/bmc-online-main.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
@@ -44,6 +45,10 @@ const routes: Routes = [
         loadChildren: ()=>import('./dashboard/dashboard.module').then(m=>m.DashboardModule)
       }
     ]
+  },
+  {
+    path:'bmconline',
+    loadChildren: ()=> import('./bmc-online/bmc-online.module').then(m=>m.BmcOnlineModule)
   },
   {
     path:'**',

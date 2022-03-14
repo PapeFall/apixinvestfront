@@ -1,0 +1,66 @@
+.bmc-card{
+    border: solid 1px lightgray;
+    border-radius: 0.5em;
+}
+
+.bmc-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bmc-f-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.1em;
+    // background-color: green;
+}
+.bmc-f-row{
+    flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+    The percent can be px. It just represents your minimum starting width.
+     */
+    //  background: yellow;
+     min-height: 14.3em;
+     height: 100%;
+    //  color: white;
+}
+.bmc-col{
+    flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 5px;
+//   background: tomato;
+  min-height: 30em;
+  height: 100%;
+//   color: white;
+ 
+}
+
+.bmc-col2{
+    flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 5px;
+//   background: tomato;
+  min-height: 10em;
+  height: 100%;
+//   color: white;
+ 
+}
+
+@media (max-width: 800px) {
+    .bmc-row {
+      flex-direction: column;
+    }
+  }
+
+  .bmc-card-title{
+      margin: 0.7em;
+      margin-bottom: 1em;
+  }
+  .mlr{
+      margin: 0.3em;
+    //   margin-left: 0.1em;
+    //   margin-right: 0.2em;
+  }
+
+  
