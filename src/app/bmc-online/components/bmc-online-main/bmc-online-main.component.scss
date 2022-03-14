@@ -46,10 +46,20 @@
 //   color: white;
  
 }
+a{
+    float: right;
+    cursor: pointer;
+    color:var(--orange);
+    font-weight: bold;
+    
+}
 
 @media (max-width: 800px) {
     .bmc-row {
       flex-direction: column;
+    }
+    a{
+        float: none;
     }
   }
 
