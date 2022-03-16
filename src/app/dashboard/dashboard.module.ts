@@ -7,6 +7,8 @@ import { SendProjectHeaderComponent } from './components/send-project-header/sen
 import { SendProjectMainComponent } from './components/send-project-main/send-project-main.component';
 import { SharedComponentsModule } from '../shared-components/shared-components.module';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
+import { BmcOnlineMainComponent } from './components/bmc-online-main/bmc-online-main.component';
+import { EditPostitComponent } from './components/edit-postit/edit-postit.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { BusinessModelInfosComponent } from './components/business-model-infos/b
     SendProjectHeaderComponent,
     ProjectComponent,
     SendProjectMainComponent,
-    BusinessModelInfosComponent
+    BusinessModelInfosComponent,
+    BmcOnlineMainComponent,
+    EditPostitComponent
   ],
   imports: [
     CommonModule,

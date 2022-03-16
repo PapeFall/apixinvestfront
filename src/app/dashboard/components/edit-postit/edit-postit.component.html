@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <strong>Ajouter un postIt</strong>
+
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+
+        <div class=" container-fluid">
+            <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                <mat-label>Nom postIt</mat-label>
+                <input type="text" formControlName="nom" matInput>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+
+        <div class=" container-fluid">
+            <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                <mat-label>Description</mat-label>
+                <textarea rows="4" type="text" formControlName="description" matInput></textarea>
+            </mat-form-field>
+        </div>
+        
+    </div>
+    <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+
+        <div class=" container-fluid">
+            <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                <mat-label>Couleur</mat-label>
+                <input type="color" formControlName="couleur" matInput>
+            </mat-form-field>
+        </div>
+
+        
+    </div>
+    <button type="button" mat-stroked-button mat-dialog-close color="warn">Fermer</button>
+    <button mat-stroked-button color="primary" type="submit">Valider</button>
+</form>
+</div>
