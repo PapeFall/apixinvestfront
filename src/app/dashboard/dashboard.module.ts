@@ -13,6 +13,7 @@ import { DossierFinancierComponent } from './components/dossier-financier/dossie
 import { ProjetPersonnelsComponent } from './components/projet-personnels/projet-personnels.component';
 import { ProjetEditPersonnelComponent } from './components/projet-edit-personnel/projet-edit-personnel.component';
 import { BmcInfosbulleComponent } from './components/bmc-infosbulle/bmc-infosbulle.component';
+import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-promoteur.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BmcInfosbulleComponent } from './components/bmc-infosbulle/bmc-infosbul
     DossierFinancierComponent,
     ProjetPersonnelsComponent,
     ProjetEditPersonnelComponent,
-    BmcInfosbulleComponent
+    BmcInfosbulleComponent,
+    ProjetPromoteurComponent
   ],
   imports: [
     CommonModule,

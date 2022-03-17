@@ -5,6 +5,7 @@ import { DossierFinancierComponent } from './components/dossier-financier/dossie
 import { MainComponent } from './components/main/main.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjetPersonnelsComponent } from './components/projet-personnels/projet-personnels.component';
+import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-promoteur.component';
 import { SendProjectMainComponent } from './components/send-project-main/send-project-main.component';
 
 const routes: Routes = [
@@ -35,6 +36,9 @@ const routes: Routes = [
         {
             path:'bminfos',
             component:BusinessModelInfosComponent
+        },{
+          path:'promotteur',
+          component:ProjetPromoteurComponent
         }
     ]
   }
