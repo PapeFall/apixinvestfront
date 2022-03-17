@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { BmcInfosbulleComponent } from '../bmc-infosbulle/bmc-infosbulle.component';
 import { EditPostitComponent } from '../edit-postit/edit-postit.component';
 
 @Component({
@@ -69,6 +70,12 @@ export class BmcOnlineMainComponent implements OnInit {
           case 9: this.bmar9.push(result.postIt);break;
         }
       }
+    })
+  }
+
+  openInfos(){
+    const dialogRef = this.dialog.open(BmcInfosbulleComponent,{
+      
     })
   }
 }

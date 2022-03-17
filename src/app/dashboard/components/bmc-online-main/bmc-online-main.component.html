@@ -6,7 +6,7 @@
         <div class="bmc-col bmc-card mat-elevation-z2">
             <div class="bmc-card-title">Partenaires stratégiques 
               <span class="float-right"> 
-                <span class="fa fa-info-circle cursor"></span> &nbsp;
+                <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
                 <span class="fa fa-plus-circle cursor" (click)="addPostIt(1)"></span>
               </span>
           </div>
@@ -30,40 +30,208 @@
         <div class="bmc-col">
             <div class="bmc-f-col">
                 <div class="bmc-f-row bmc-card mat-elevation-z2">
-                    <div class="bmc-card-title">Activités clés</div>
+                    <div class="bmc-card-title">Activités clés
+                      <span class="float-right"> 
+                        <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                        <span class="fa fa-plus-circle cursor" (click)="addPostIt(2)"></span>
+                      </span>
+                    </div>
+                    <div class=" mt mb">
+                      <mat-accordion class="example-headers-align" multi>
+                      <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar2" class="mlr" >
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            {{postIt.nom}}
+                          </mat-panel-title>
+                          <mat-panel-description >
+                            <span class="fa fa-pencil cursor" (click)="editPostIt(2,postIt)"></span>
+                          </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{postIt.description}}</p>
+                      </mat-expansion-panel>
+                     
+                    </mat-accordion>
+                  </div>
                 </div>
                 <div class="bmc-f-row bmc-card mat-elevation-z2">
-                    <div class="bmc-card-title">Ressources clés</div>
+                    <div class="bmc-card-title">Ressources clés
+                      <span class="float-right"> 
+                        <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                        <span class="fa fa-plus-circle cursor" (click)="addPostIt(3)"></span>
+                      </span>
+                    </div>
+                    <div class=" mt mb">
+                      <mat-accordion class="example-headers-align" multi>
+                      <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar3" class="mlr" >
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            {{postIt.nom}}
+                          </mat-panel-title>
+                          <mat-panel-description >
+                            <span class="fa fa-pencil cursor" (click)="editPostIt(3,postIt)"></span>
+                          </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{postIt.description}}</p>
+                      </mat-expansion-panel>
+                     
+                    </mat-accordion>
+                  </div>
                 </div>
 
             </div>
         </div>
 
         <div class="bmc-col bmc-card mat-elevation-z2">
-                <div class="bmc-card-title">Proposition de valeur</div>
+                <div class="bmc-card-title">Proposition de valeur
+                  <span class="float-right"> 
+                    <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                    <span class="fa fa-plus-circle cursor" (click)="addPostIt(4)"></span>
+                  </span>
+                </div>
+                <div class=" mt mb">
+                  <mat-accordion class="example-headers-align" multi>
+                  <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar4" class="mlr" >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        {{postIt.nom}}
+                      </mat-panel-title>
+                      <mat-panel-description >
+                        <span class="fa fa-pencil cursor" (click)="editPostIt(4,postIt)"></span>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>{{postIt.description}}</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </div>
         </div>
 
         <div class="bmc-col mat">
             <div class="bmc-f-col ">
                 <div class="bmc-f-row bmc-card mat-elevation-z2">
-                        <div class="bmc-card-title">Relation avec les clients</div>
+                        <div class="bmc-card-title">Relation avec les clients
+                          <span class="float-right"> 
+                            <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                            <span class="fa fa-plus-circle cursor" (click)="addPostIt(5)"></span>
+                          </span>
+                        </div>
+                        <div class=" mt mb">
+                          <mat-accordion class="example-headers-align" multi>
+                          <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar5" class="mlr" >
+                            <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                {{postIt.nom}}
+                              </mat-panel-title>
+                              <mat-panel-description >
+                                <span class="fa fa-pencil cursor" (click)="editPostIt(5,postIt)"></span>
+                              </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <p>{{postIt.description}}</p>
+                          </mat-expansion-panel>
+                         
+                        </mat-accordion>
+                      </div>
                 </div>
                 <div class="bmc-f-row bmc-card mat-elevation-z2">
                         <div class="bmc-card-title">Canaux de communication
-                            et de distribution</div>
+                            et de distribution
+                            <span class="float-right"> 
+                              <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                              <span class="fa fa-plus-circle cursor" (click)="addPostIt(6)"></span>
+                            </span>
+                          </div>
+                          <div class=" mt mb">
+                            <mat-accordion class="example-headers-align" multi>
+                            <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar6" class="mlr" >
+                              <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                  {{postIt.nom}}
+                                </mat-panel-title>
+                                <mat-panel-description >
+                                  <span class="fa fa-pencil cursor" (click)="editPostIt(6,postIt)"></span>
+                                </mat-panel-description>
+                              </mat-expansion-panel-header>
+                              <p>{{postIt.description}}</p>
+                            </mat-expansion-panel>
+                           
+                          </mat-accordion>
+                        </div>
                 </div>
 
             </div>
         </div>
 
         <div class="bmc-col bmc-card mat-elevation-z2">
-                <div class="bmc-card-title">Segments de clients</div>
+                <div class="bmc-card-title">Segments de clients
+                  <span class="float-right"> 
+                    <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                    <span class="fa fa-plus-circle cursor" (click)="addPostIt(7)"></span>
+                  </span>
+                </div>
+                <div class=" mt mb">
+                  <mat-accordion class="example-headers-align" multi>
+                  <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar7" class="mlr" >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        {{postIt.nom}}
+                      </mat-panel-title>
+                      <mat-panel-description >
+                        <span class="fa fa-pencil cursor" (click)="editPostIt(7,postIt)"></span>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>{{postIt.description}}</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </div>
         </div>
         <div class="bmc-col2 bmc-card mat-elevation-z2">
-                <div class="bmc-card-title">Structures des coûts</div>
+                <div class="bmc-card-title">Structures des coûts
+                  <span class="float-right"> 
+                    <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                    <span class="fa fa-plus-circle cursor" (click)="addPostIt(8)"></span>
+                  </span>
+                </div>
+                <div class=" mt mb">
+                  <mat-accordion class="example-headers-align" multi>
+                  <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar8" class="mlr" >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        {{postIt.nom}}
+                      </mat-panel-title>
+                      <mat-panel-description >
+                        <span class="fa fa-pencil cursor" (click)="editPostIt(8,postIt)"></span>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>{{postIt.description}}</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </div>
         </div>
         <div class="bmc-col2 bmc-card mat-elevation-z2">
-                <div class="bmc-card-title">Sources de revenus</div>
+                <div class="bmc-card-title">Sources de revenus
+                  <span class="float-right"> 
+                    <span class="fa fa-info-circle cursor" (click)="openInfos()"></span> &nbsp;
+                    <span class="fa fa-plus-circle cursor" (click)="addPostIt(9)"></span>
+                  </span>
+                </div>
+                <div class=" mt mb">
+                  <mat-accordion class="example-headers-align" multi>
+                  <mat-expansion-panel [style.background-color]="postIt.couleur"  *ngFor="let postIt of bmar9" class="mlr" >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        {{postIt.nom}}
+                      </mat-panel-title>
+                      <mat-panel-description >
+                        <span class="fa fa-pencil cursor" (click)="editPostIt(9,postIt)"></span>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>{{postIt.description}}</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </div>
         </div>
 
 
