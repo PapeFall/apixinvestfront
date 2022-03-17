@@ -23,7 +23,7 @@
                     <div class=" container-fluid">
                         <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                             <mat-label>Type projet</mat-label>
-                            <input type="text" matInput>
+                            <mat-select></mat-select>
                         </mat-form-field>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class=" container-fluid">
                         <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                             <mat-label>Activité</mat-label>
-                            <input type="text" matInput>
+                           <mat-select></mat-select>
                         </mat-form-field>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <div class=" container-fluid">
                         <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                             <mat-label>Forme juridique</mat-label>
-                            <input type="text" matInput>
+                            <mat-select></mat-select>
                         </mat-form-field>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <div class=" container-fluid">
                         <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                             <mat-label>Nature de l'investissement</mat-label>
-                            <input type="text" matInput>
+                            <mat-select></mat-select>
                         </mat-form-field>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
         <mat-step >
             <ng-template matStepLabel>Le personnel</ng-template>
 
-            
+                <app-projet-personnels></app-projet-personnels>
         </mat-step>
        
       </mat-stepper>
