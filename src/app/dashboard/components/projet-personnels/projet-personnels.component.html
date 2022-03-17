@@ -1,16 +1,23 @@
 <div class="container-fluid">
-
+    <div class="align-right">
+        <button mat-stroked-button (click)="newPersonnel()" color="primary">Nouveau personnel</button>
+    </div>
     <div class="row">
-        <div class="container-fluid">
+        <div class="container-fluid  col-sm-3" *ngFor="let p of personnels">
+           <div class="personnel center-column pt pb br">
             <div class="nom">
-                
+                {{p.nom}}
             </div>
             <div class="fonction">
-
+                {{p.fonction}}
             </div>
             <div class="salaire">
-
+                {{p.salaire}}
             </div>
+            <div class="contrat">
+                {{p.contrat}}
+            </div>
+           </div>
         </div>
     </div>
       

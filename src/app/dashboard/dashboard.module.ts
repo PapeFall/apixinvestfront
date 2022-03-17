@@ -11,6 +11,7 @@ import { BmcOnlineMainComponent } from './components/bmc-online-main/bmc-online-
 import { EditPostitComponent } from './components/edit-postit/edit-postit.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
 import { ProjetPersonnelsComponent } from './components/projet-personnels/projet-personnels.component';
+import { ProjetEditPersonnelComponent } from './components/projet-edit-personnel/projet-edit-personnel.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ProjetPersonnelsComponent } from './components/projet-personnels/projet
     BmcOnlineMainComponent,
     EditPostitComponent,
     DossierFinancierComponent,
-    ProjetPersonnelsComponent
+    ProjetPersonnelsComponent,
+    ProjetEditPersonnelComponent
   ],
   imports: [
     CommonModule,
