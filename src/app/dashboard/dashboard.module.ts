@@ -9,6 +9,7 @@ import { SharedComponentsModule } from '../shared-components/shared-components.m
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
 import { BmcOnlineMainComponent } from './components/bmc-online-main/bmc-online-main.component';
 import { EditPostitComponent } from './components/edit-postit/edit-postit.component';
+import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { EditPostitComponent } from './components/edit-postit/edit-postit.compon
     SendProjectMainComponent,
     BusinessModelInfosComponent,
     BmcOnlineMainComponent,
-    EditPostitComponent
+    EditPostitComponent,
+    DossierFinancierComponent
   ],
   imports: [
     CommonModule,
