@@ -1,7 +1,7 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
-import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
@@ -9,37 +9,47 @@ import {map} from 'rxjs/operators';
 })
 export class ProjectComponent implements OnInit {
 
-  stepperOrientation:any;
-  steps=[
+  stepperOrientation: any;
+  steps = [
     {
-      id:1,
-      name:"Présentation du projet d'entreprise"
-    },{
-      id:2,
-      name:"Les produits / Les services /  Le marché"
+      id: 1,
+      name: "Présentation du projet d'entreprise"
+    }, {
+      id: 2,
+      name: "Les produits / Les services /  Le marché"
     },
     {
-      id:3,
-      name:"La clientèle"
+      id: 3,
+      name: "La clientèle"
     },
     {
-      id:4,
-      name:"La stratégie de l'entreprise"
+      id: 4,
+      name: "La stratégie de l'entreprise"
     },
     {
-      id:5,
-      name:"Le personnel"
+      id: 5,
+      name: "Le personnel"
     }
   ];
-  step:number = 0;
+  step: number = 0;
 
+  activites = [
+    "Numérique (Atlas)",
+    "Chimie (industrie)",
+    "Banque.",
+    "Travaux publics.",
+    "Hôtellerie - Restauration.",
+    "Alimentaire (la filière)",
+    "Automobile - Services.",
+    "Agriculture."
+  ]
   constructor(private breakpointObserver: BreakpointObserver) {
     this.stepperOrientation = breakpointObserver
       .observe('(min-width: 800px)')
-      .pipe(map(({matches}) => (matches ? 'horizontal' : 'vertical')));
-   }
+      .pipe(map(({ matches }) => (matches ? 'horizontal' : 'vertical')));
+  }
 
-  
+
   ngOnInit(): void {
   }
 
