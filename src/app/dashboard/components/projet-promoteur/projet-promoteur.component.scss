@@ -3,3 +3,19 @@ img,.img-circle{
     height: 7em;
     cursor: pointer;
 }
+
+.personnel{
+    border: solid 1px var(--orange);
+    padding: 1em;
+    .nombre{
+        font-weight: bold;
+        color: var(--blue);
+    }
+    .fonction{
+    }
+    .salaire{
+        color:var(--blue);
+        font-weight: bold;
+
+    }
+}

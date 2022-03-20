@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ProjetEditPromoteurComponent } from '../projet-edit-promoteur/projet-edit-promoteur.component';
 
 @Component({
   selector: 'app-projet-promoteur',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjetPromoteurComponent implements OnInit {
 
-  constructor() { }
+  associes = [
+    {
+      nomComplet: "Moussa Diop",
+      fonction: "Ingénieur"
+    },
+    {
+      nomComplet: "Moussa Diop",
+      fonction: "Ingénieur"
+    },
+    {
+      nomComplet: "Moussa Diop",
+      fonction: "Ingénieur"
+    }
+  ];
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  newAssocie(){
+    const dialogRef = this.dialog.open(ProjetEditPromoteurComponent,{
+
+    });
+  }
 }

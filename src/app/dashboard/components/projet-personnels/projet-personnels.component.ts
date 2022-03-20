@@ -11,25 +11,25 @@ export class ProjetPersonnelsComponent implements OnInit {
   
   personnels=[
     {
-      nom:"Omar Diop",
+      nombre:3,
       fonction:"Ingénieur Civil",
       salaire:"200 000",
       contrat: "CDI"
     },
     {
-      nom:"Omar Diop",
+      nombre:3,
       fonction:"Ingénieur Civil",
       salaire:"200 000",
       contrat: "CDI"
     },
     {
-      nom:"Omar Diop",
+      nombre:3,
       fonction:"Ingénieur Civil",
       salaire:"200 000",
       contrat: "CDI"
     },
     {
-      nom:"Omar Diop",
+      nombre:3,
       fonction:"Ingénieur Civil",
       salaire:"200 000",
       contrat: "CDI"
