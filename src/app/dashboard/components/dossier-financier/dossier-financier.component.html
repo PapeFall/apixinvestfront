@@ -1,13 +1,14 @@
 <div class="container-fluid mt">
-    <mat-stepper  [disableRipple]="true"  style="display: flex; flex-wrap: wrap;" [orientation]="(stepperOrientation | async)!" >
+    <mat-stepper [disableRipple]="true" style="display: flex; flex-wrap: wrap;"
+        [orientation]="(stepperOrientation | async)!">
         <mat-step style="display: flex; flex-wrap: wrap;">
             <ng-template matStepLabel>Plan de financement</ng-template>
-            <div class="" >
+            <div class="">
                 <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12  br">
                     <div class="container-fluid center-column "> Besoins</div>
                     <div class="border-bottom mb"></div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Capital</mat-label>
                                 <input type="text" matInput>
@@ -15,7 +16,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Frais de constitution</mat-label>
                                 <input type="text" matInput>
@@ -23,7 +24,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Bail Commercial</mat-label>
                                 <input type="text" matInput>
@@ -31,7 +32,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Travaux d'aménagements</mat-label>
                                 <input type="text" matInput>
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Investissement matériels</mat-label>
                                 <input type="text" matInput>
@@ -47,7 +48,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Stock</mat-label>
                                 <input type="text" matInput>
@@ -55,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Besoin en Fonds de roulement</mat-label>
                                 <input type="text" matInput>
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Besoin en Fonds de roulement</mat-label>
                                 <input type="text" matInput>
@@ -71,7 +72,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Total</mat-label>
                                 <input type="text" matInput>
@@ -79,30 +80,30 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xs-12 col-lg-6 col-md-6  col-sm-12   br">
                     <div class="container-fluid center-column">Ressources</div>
                     <div class="border-bottom mb"></div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Apports personnel des associés</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
                     </div>
-                    
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Subventions</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
                     </div>
-                    
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Aides</mat-label>
                                 <input type="text" matInput>
@@ -110,7 +111,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Prêts d'honneur</mat-label>
                                 <input type="text" matInput>
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Emprunts bancaires sollicités</mat-label>
                                 <input type="text" matInput>
@@ -126,7 +127,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class=" container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Total</mat-label>
                                 <input type="text" matInput>
@@ -135,233 +136,233 @@
                     </div>
                 </div>
             </div>
-            <div class="row col-sm-12 center-column container-fluid " >
+            <div class="row col-sm-12 center-column container-fluid ">
 
-            <div class="center-row">
-            <button mat-raised-button color="primary">Enregistrer</button>
-            <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
-        </div>
-    </div>
+                <div class="center-row">
+                    <button mat-raised-button color="primary">Enregistrer</button>
+                    <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
+                </div>
+            </div>
         </mat-step>
-        <mat-step >
+        <mat-step>
             <ng-template matStepLabel>Détail des besoins</ng-template>
-                
-                    <div class="row col-sm-12">
-                        
-                        <div class="row col-sm-12">
-                            <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
-                                <div class=" center-column "> Détail de la composition du capital</div>
-                                <div class="border-bottom mb"></div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Associé 1</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Associé 2</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Associé 3</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Total</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
+
+            <div class="row col-sm-12">
+
+                <div class="row col-sm-12">
+                    <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
+                        <div class=" center-column "> Détail de la composition du capital</div>
+                        <div class="border-bottom mb"></div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Associé 1</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
                             </div>
-                            <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
-                                <div class="center-column "> Détail des frais de constitution</div>
-                                <div class="border-bottom mb"></div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Honoraire d'avocat</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Honoraire expert comptable</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Total</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Associé 2</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
                             </div>
-                            <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
-                                <div class=" center-column "> Détail acquisition du fond de commerce, bail commercial</div>
-                                <div class="border-bottom mb"></div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Dépot de garantie</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Agence loyers</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Total</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
-                                <div class=" center-column "> Détail des travaux et aménagements</div>
-                                <div class="border-bottom mb"></div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Réfection,rénovation boutique</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Mobilier,aménagements divers</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Total</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Associé 3</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
                             </div>
                         </div>
 
-                        <div class="row col-sm-12">
-                            <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
-                                <div class=" center-column "> Détail des investissements matériels</div>
-                                <div class="border-bottom mb"></div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Machine 1</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Machine 2</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Informatique</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Total</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Total</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
                             </div>
-
-                            <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
-                                <div class=" center-column "> Détail du stock</div>
-                                <div class="border-bottom mb"></div>
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Reprise stock au jour d'inventaire</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                                    <div class="row container-fluid">
-                                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                            <mat-label>Total</mat-label>
-                                            <input type="text" matInput>
-                                        </mat-form-field>
-                                    </div>
-                                </div>
-                            </div>
-
-                           
                         </div>
-                        
-                        
                     </div>
-                   
-                
-            
-            <div class="row col-sm-12 center-column container-fluid " >
+                    <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
+                        <div class="center-column "> Détail des frais de constitution</div>
+                        <div class="border-bottom mb"></div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Honoraire d'avocat</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Honoraire expert comptable</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Total</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
+                        <div class=" center-column "> Détail acquisition du fond de commerce, bail commercial</div>
+                        <div class="border-bottom mb"></div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Dépot de garantie</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Agence loyers</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Total</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
+                        <div class=" center-column "> Détail des travaux et aménagements</div>
+                        <div class="border-bottom mb"></div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Réfection,rénovation boutique</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Mobilier,aménagements divers</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Total</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-sm-12">
+                    <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
+                        <div class=" center-column "> Détail des investissements matériels</div>
+                        <div class="border-bottom mb"></div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Machine 1</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Machine 2</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Informatique</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Total</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
+                        <div class=" center-column "> Détail du stock</div>
+                        <div class="border-bottom mb"></div>
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Reprise stock au jour d'inventaire</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row ">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Total</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="row col-sm-12 center-column container-fluid ">
                 <div class="center-row">
                     <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
                     <button mat-raised-button color="primary">Enregistrer</button>
                     <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
-                    
+
                 </div>
-                
+
             </div>
         </mat-step>
-        <mat-step >
+        <mat-step>
             <ng-template matStepLabel>Détail des ressources</ng-template>
             <div class="row col-sm-12">
                 <div class="col-xs-12 col-lg-3 col-md-3 col-sm-12  br">
                     <div class=" center-column "> Détail des apports personnels des associés</div>
                     <div class="border-bottom mb"></div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Associé 1</mat-label>
                                 <input type="text" matInput>
@@ -369,7 +370,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Associé 2</mat-label>
                                 <input type="text" matInput>
@@ -377,16 +378,16 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Associé 3</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
                     </div>
-                    
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Total</mat-label>
                                 <input type="text" matInput>
@@ -399,17 +400,17 @@
                     <div class=" center-column ">Détail des subventions et aides</div>
                     <div class="border-bottom mb"></div>
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Aide à la création d'entreprise</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
                     </div>
-                   
-                    
+
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row container-fluid">
+                        <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                                 <mat-label>Total</mat-label>
                                 <input type="text" matInput>
@@ -429,8 +430,8 @@
                             </mat-form-field>
                         </div>
                     </div>
-                   
-                    
+
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
@@ -447,7 +448,7 @@
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                <mat-label>Prêt Travaux classique 90 000€/7ans</mat-label>
+                                <mat-label>Prêt Travaux classique</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
@@ -455,7 +456,7 @@
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                <mat-label>Prêt Mobilier classique 30 000€/5 ans</mat-label>
+                                <mat-label>Prêt Mobilier classique</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
@@ -463,7 +464,7 @@
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                <mat-label>Crédit Bail Informatique 10 000€/3ans</mat-label>
+                                <mat-label>Crédit Bail Informatique</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
@@ -471,7 +472,7 @@
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                <mat-label>Crédit Bail mobilier 30 000 €/4 ans</mat-label>
+                                <mat-label>Crédit Bail mobilier</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
@@ -480,12 +481,12 @@
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                <mat-label>Découvert autorisé 5 000 €</mat-label>
+                                <mat-label>Découvert autorisé </mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
                     </div>
-                    
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="row ">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
@@ -496,20 +497,20 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row col-sm-12 center-column container-fluid " >
+
+            <div class="row col-sm-12 center-column container-fluid ">
                 <div class="center-row">
                     <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
                     <button mat-raised-button color="primary">Enregistrer</button>
                     <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
-                    
+
                 </div>
-                
+
             </div>
         </mat-step>
-        <mat-step >
+        <mat-step>
             <ng-template matStepLabel>Fond de roulement et besoins en fond de roulement</ng-template>
-            <div class="row col-sm-12" >
+            <div class="row col-sm-12">
                 <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12  br">
                     <div class="container-fluid center-column "> Actif immobilisé</div>
                     <div class="border-bottom mb"></div>
@@ -562,7 +563,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xs-12 col-lg-6 col-md-6  col-sm-12   br">
                     <div class="container-fluid center-column">Passif immobilisé</div>
                     <div class="border-bottom mb"></div>
@@ -590,7 +591,7 @@
                             </mat-form-field>
                         </div>
                     </div>
-                    
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class=" container-fluid">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
@@ -602,7 +603,7 @@
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class=" container-fluid">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                                <mat-label>Apports comptes  associés</mat-label>
+                                <mat-label>Apports comptes associés</mat-label>
                                 <input type="text" matInput>
                             </mat-form-field>
                         </div>
@@ -665,7 +666,7 @@
                             </mat-form-field>
                         </div>
                     </div>
-                    
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class=" container-fluid">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
@@ -687,8 +688,8 @@
                             </mat-form-field>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                         <div class=" container-fluid">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
@@ -700,7 +701,7 @@
                 </div>
 
 
-                
+
 
                 <div class="row col-sm-12">
                     <div class="container-fluid center-column">Besoin en fonds de roulement</div>
@@ -716,8 +717,8 @@
                             </mat-form-field>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
                         <div class=" container-fluid">
                             <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
@@ -729,35 +730,211 @@
                 </div>
 
             </div>
-            <div class="row col-sm-12 center-column container-fluid " >
+            <div class="row col-sm-12 center-column container-fluid ">
                 <div class="center-row">
                     <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
                     <button mat-raised-button color="primary">Enregistrer</button>
                     <button mat-stroked-button color="primary" matStepperNext>Suivant</button>
-                    
+
                 </div>
-                
+
             </div>
-            
+
         </mat-step>
-        
+
         <mat-step>
-            <ng-template matStepLabel>Comptes</ng-template>
+            <ng-template matStepLabel>Comptes d'exploitation</ng-template>
 
             <div class="row">
-                <mat-stepper>
-                    <mat-step>
-                        <ng-template matStepLabel>Compte d'exploitation</ng-template>
-                    </mat-step>
-                    <mat-step>
-                        <ng-template matStepLabel>Compte d'exploitation previsionnelle année +1</ng-template>
-                    </mat-step>
-                    <mat-step>
-                        <ng-template matStepLabel>COMPTE DE RESULTAT PREVISIONNEL sur 3 ans </ng-template>
-                    </mat-step>
-                </mat-stepper>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>CHIFFRE D'AFFAIRE TTC</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>CHIFFRE D'AFFAIRE HT</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>ACHATS</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>MARGE BRUTE</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Loyer</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Charges locatives</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>SENELEC</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Entretien</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Papeterie</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Publicité, frais de recept</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Assurances</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Honoraires</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>SONATEL</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Loyers de Crédits Bail</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Frais de banque</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>GHARGES EXTERNES</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Salaires</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Charges sur salaires</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Frais de personnel</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Impôts et taxes</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Travaux sur 10 ans</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Travaux sur 5 ans</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Amortissements</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Résultats d'exploitation courant</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Prêts / 7 ans</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Prêts / 5 ans</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Charges financières</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Résultats d'exploitation avant impôts</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Impôts sur les sociétés</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <mat-form-field class="container-fluid" appearance="fill">
+                        <mat-label>Résultat net après impôt</mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
             </div>
 
+            <div class="row col-sm-12 center-column container-fluid ">
+                <div class="center-row">
+                    <button mat-stroked-button color="primary" matStepperNext>Précédent</button>
+                    <button mat-raised-button color="primary">Enregistrer</button>
+                </div>
+
+            </div>
         </mat-step>
-      </mat-stepper>
+    </mat-stepper>
 </div>
