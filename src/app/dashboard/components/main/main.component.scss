@@ -1,8 +1,12 @@
 .d-card{
     border:solid 1px var(--orange);
     min-height: 9em;
-    background: linear-gradient(to right,var(--orange),white,white);
+    background: linear-gradient(to bottom,var(--orange),white,white);
     margin-top: 0.3em;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(to right,var(--orange),white,white);;
+    }
 }
 
 .stats{

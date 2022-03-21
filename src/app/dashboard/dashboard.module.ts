@@ -15,6 +15,7 @@ import { ProjetEditPersonnelComponent } from './components/projet-edit-personnel
 import { BmcInfosbulleComponent } from './components/bmc-infosbulle/bmc-infosbulle.component';
 import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-promoteur.component';
 import { ProjetEditPromoteurComponent } from './components/projet-edit-promoteur/projet-edit-promoteur.component';
+import { ProjetListComponent } from './components/projet-list/projet-list.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ProjetEditPromoteurComponent } from './components/projet-edit-promoteur
     ProjetEditPersonnelComponent,
     BmcInfosbulleComponent,
     ProjetPromoteurComponent,
-    ProjetEditPromoteurComponent
+    ProjetEditPromoteurComponent,
+    ProjetListComponent
   ],
   imports: [
     CommonModule,

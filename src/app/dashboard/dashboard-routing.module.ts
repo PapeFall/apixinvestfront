@@ -4,6 +4,7 @@ import { BusinessModelInfosComponent } from './components/business-model-infos/b
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
 import { MainComponent } from './components/main/main.component';
 import { ProjectComponent } from './components/project/project.component';
+import { ProjetListComponent } from './components/projet-list/projet-list.component';
 import { ProjetPersonnelsComponent } from './components/projet-personnels/projet-personnels.component';
 import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-promoteur.component';
 import { SendProjectMainComponent } from './components/send-project-main/send-project-main.component';
@@ -12,6 +13,9 @@ const routes: Routes = [
   {
       path:'',
       component:MainComponent
+  },{
+      path: 'list-project',
+      component: ProjetListComponent
   },
   {
     path:'project',
