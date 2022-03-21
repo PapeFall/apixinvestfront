@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
 import { MainComponent } from './components/main/main.component';
+import { ProfilComponent } from './components/profil/profil.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjetListComponent } from './components/projet-list/projet-list.component';
 import { ProjetPersonnelsComponent } from './components/projet-personnels/projet-personnels.component';
@@ -16,6 +17,9 @@ const routes: Routes = [
   },{
       path: 'list-project',
       component: ProjetListComponent
+  },{
+    path:'profil',
+    component: ProfilComponent
   },
   {
     path:'project',

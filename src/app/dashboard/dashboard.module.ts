@@ -16,6 +16,7 @@ import { BmcInfosbulleComponent } from './components/bmc-infosbulle/bmc-infosbul
 import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-promoteur.component';
 import { ProjetEditPromoteurComponent } from './components/projet-edit-promoteur/projet-edit-promoteur.component';
 import { ProjetListComponent } from './components/projet-list/projet-list.component';
+import { ProfilComponent } from './components/profil/profil.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ProjetListComponent } from './components/projet-list/projet-list.compon
     BmcInfosbulleComponent,
     ProjetPromoteurComponent,
     ProjetEditPromoteurComponent,
-    ProjetListComponent
+    ProjetListComponent,
+    ProfilComponent
   ],
   imports: [
     CommonModule,

@@ -29,7 +29,7 @@
                 <ul class="nav navbar-nav" id="main-navigation">
                     <li class="active"><a   (click)="routeTo('/home')" ><i class="fa fa-home"></i> Home</a></li>
                     <li><a  (click)="routeTo('/about')"><i class="fa fa-user"></i> About Us</a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-image"></i> portfolio <i class="fa fa-angle-down icon-angle"></i></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="portfolio-2-columns.html">Portfolio 2 Columns</a></li>
@@ -42,8 +42,8 @@
                             <li><a href="youtube-project.html">youtube Project</a></li>
                             <li><a href="vimeo-project.html">Vimeo Project</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
+                    </li> -->
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit"></i> Blog <i class="fa fa-angle-down icon-angle"></i></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
@@ -51,7 +51,7 @@
                             <li><a href="blog-grid-no-sidebar.html">Grid No Sidebar</a></li>
                             <li><a href="blog-post.html">Single Post</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> pages <i class="fa fa-angle-down icon-angle"></i></a>
                         <ul class="dropdown-menu" role="menu">
@@ -70,7 +70,13 @@
                     <li><a  (click)="routeTo('/contact')"><i class="fa fa-envelope"></i> Contact</a></li>
                     <li><a  (click)="routeTo('/process/login')"> Connexion</a></li>
                     <li><a  (click)="routeTo('/process/signin')">Inscription</a></li>
-
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> Omar Diop <i class="fa fa-angle-down icon-angle"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a (click)="routeTo('/process/dashboard/profil')">Profil</a></li>
+                            <li><a href="portfolio-3-columns.html">Déconnexion</a></li>
+                        </ul>
+                    </li>
                     <!-- Cart Icon Starts -->
                     <!-- <li class="cart hidden-xs hidden-sm"><a href="shopping-cart.html"><i class="fa fa-shopping-cart"></i></a></li> -->
                     <!-- Cart Icon Starts -->
