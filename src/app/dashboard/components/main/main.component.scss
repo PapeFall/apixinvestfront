@@ -1,0 +1,18 @@
+.d-card{
+    border:solid 1px var(--orange);
+    min-height: 9em;
+    background: linear-gradient(to right,var(--orange),white,white);
+    margin-top: 0.3em;
+}
+
+.stats{
+    color: var(--blue);
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0.3em;
+}
+.time{
+    color: var(--orange);
+    font-size: 2em;
+    margin-top: 0.2em;
+}
