@@ -1,63 +1,12 @@
-    <section class="main pl">
-   
-        <div class="row  col-sm-12 col-xs-12 col-md-12 col-lg-12">
-            <div class="col-sm-3 container-fluid">
-                <div class="container-fluid mat-elevation-z4 d-card br center-column">
-                    <div class="center-column">
-                        <div class="center-column">
-                           <div class="stats">
-                                Messages
-                           </div>
-                           <div class="time">
-                               (0)
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 container-fluid">
-                <div class="container-fluid mat-elevation-z4 d-card br center-column" [routerLink]="'list-project'">
-                    <div class="center-column">
-                        <div class="center-column">
-                           <div class="stats">
-                                Projets
-                           </div>
-                           <div class="time">
-                               (0)
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-sm-3 container-fluid">
-                <div class="container-fluid mat-elevation-z4 d-card br center-column">
-                    <div class="center-column">
-                        <div class="center-column">
-                           <div class="stats">
-                                Chats
-                           </div>
-                           <div class="time">
-                               (0)
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 container-fluid">
-                <div class="container-fluid mat-elevation-z4 d-card br center-column">
-                    <div class="center-column">
-                        <div class="center-column">
-                           <div class="stats">
-                                Favoris
-                           </div>
-                           <div class="time">
-                               (0)
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-    </section>
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen" [ngClass]="{'sidenav':!mobile}">
+      <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
+      <section id="main">
+        <router-outlet></router-outlet>
+      </section>
+    </mat-drawer-content>
+  </mat-drawer-container>
+ 

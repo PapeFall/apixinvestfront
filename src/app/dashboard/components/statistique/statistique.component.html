@@ -1,0 +1,50 @@
+<div class="row">
+
+    <div  class="col-sm-8 col-md-8 col-lg-8 col-8"> 
+
+        <div id="widgets">
+            <div class="widget">
+                <p class="titre">PROJETS SOUMIS</p>
+                <p class="chiffre"><mat-icon>arrow_upward</mat-icon> +<span>523</span></p>  
+            </div>
+            <div class="widget">
+                <p class="titre">FAVORIS</p>
+                <p class="chiffre"><mat-icon>star_outline</mat-icon> +<span>104</span></p>  
+            </div>
+            <div class="widget">
+                <p class="titre">MESSAGES</p>
+                <p class="chiffre"><mat-icon>drafts</mat-icon> +<span>244</span></p>  
+            </div>
+        </div>
+       <div class="courbe">
+        <mat-card>
+            <p-chart type="bar" [data]="data"></p-chart>
+        </mat-card>
+       </div>
+      
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-4 col-4">
+        <div id="left-widget-card" class="widget">
+            Hello
+        </div>
+        <div >
+            <mat-card  >
+                <p-chart type="pie" [data]="data1" height="30vh" ></p-chart> 
+            </mat-card>
+        </div>
+    </div>
+
+</div>
+
+<div class="row " style="margin-top: 10px;">
+    <div class="col-sm-6 col-lg-6 col-md-6 col-6">
+        <p-chart type="line" [data]="basicData" ></p-chart>  
+    </div>
+    <div class="col-sm-6 col-lg-6 col-md-6 col-6">
+        <mat-card>
+            <p-chart type="bar" [data]="data"></p-chart>
+        </mat-card>
+    </div>
+</div>
+

@@ -1,5 +1,42 @@
+
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  mat-drawer {
+    width: 240px;
+  }
+  mat-drawer-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #main {
+    padding: 90px 15px;
+    background-color: #faf7ed;
+    height: 100%;
+  }
+  
+  app-header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  @media (max-width: 768px) {
+    .sidenav {
+      display: none;
+    }
+  
+    app-header {
+      width: 100vw;
+    }
+  }
+
+  
 .d-card{
-    border:solid 1px var(--orange);
+   
     min-height: 9em;
     background: linear-gradient(to bottom,var(--orange),white,white);
     margin-top: 0.3em;

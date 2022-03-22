@@ -43,6 +43,8 @@ import { MatTreeModule } from '@angular/material/tree';
 
 import { LayoutModule } from '@angular/cdk/layout';
 
+/* Modules de primeng */
+import {CardModule} from 'primeng/card';
 @NgModule({
   declarations: [],
   imports: [
@@ -104,7 +106,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
-    MatRadioModule
+    MatRadioModule,
+    CardModule
   ],
   providers: [],
   bootstrap: []

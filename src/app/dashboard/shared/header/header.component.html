@@ -1,0 +1,31 @@
+<mat-toolbar [ngClass]="[width_header]">
+    <mat-toolbar-row id="menu">
+      <div id="close">
+        <button mat-icon-button (click)="toggleSideBar()">
+          <mat-icon class="icon-menu">menu</mat-icon>
+        </button>
+        <button class="btn btn-warning " style="margin-left: 30px;"><a routerLink="project" style="color: white;">Nouveau projet</a></button>
+      </div>
+      
+      <div class="right-icon">
+        <span class="icon" [matMenuTriggerFor]="menu">
+          <img src="assets/img/admin.png" alt="" class="admin-img">
+        </span>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            Déconnexion
+          </button>
+          <button mat-menu-item>
+            <mat-icon>person</mat-icon>
+            Infos Personnelles
+          </button>
+          <button mat-menu-item>
+            <mat-icon>lock</mat-icon>
+            Modifier Mot De Passe
+          </button>
+        </mat-menu>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

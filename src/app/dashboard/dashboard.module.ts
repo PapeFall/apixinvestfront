@@ -17,6 +17,9 @@ import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-p
 import { ProjetEditPromoteurComponent } from './components/projet-edit-promoteur/projet-edit-promoteur.component';
 import { ProjetListComponent } from './components/projet-list/projet-list.component';
 import { ProfilComponent } from './components/profil/profil.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { StatistiqueComponent } from './components/statistique/statistique.component';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { ProfilComponent } from './components/profil/profil.component';
     ProjetPromoteurComponent,
     ProjetEditPromoteurComponent,
     ProjetListComponent,
-    ProfilComponent
+    ProfilComponent,
+    HeaderComponent,
+    SidebarComponent,
+    StatistiqueComponent
   ],
   imports: [
     CommonModule,

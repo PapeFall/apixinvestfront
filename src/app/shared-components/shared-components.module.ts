@@ -4,6 +4,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {ChartModule} from 'primeng/chart';
 
 
 
@@ -16,14 +17,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ChartModule
   ],
   exports:[
     ToolbarComponent,
     SiteFooterComponent,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ChartModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

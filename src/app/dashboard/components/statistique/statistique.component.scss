@@ -1,0 +1,32 @@
+#widgets{
+    display: flex;
+
+    .widget{
+        margin-right: 10px;
+        width: 100%;
+        padding: 15px;
+        .titre{
+            color: rgb(3, 3, 63);
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .chiffre{
+            font-size: 24px;
+            font-weight: bold;
+
+            mat-icon{
+                color: orangered;
+            }
+        }
+    }
+}
+
+#left-widget-card{
+    height: 40vh;
+    background-color: var(--blue);
+    color: white;
+}
+
+.circle-stat{
+    margin-top: 10px;
+}
