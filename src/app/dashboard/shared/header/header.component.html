@@ -4,7 +4,7 @@
         <button mat-icon-button (click)="toggleSideBar()">
           <mat-icon class="icon-menu">menu</mat-icon>
         </button>
-        <button class="btn btn-warning " style="margin-left: 30px;"><a routerLink="project" style="color: white;">Nouveau projet</a></button>
+        <button class="btn btn-warning " style="margin-left: 30px;"><a (click)="createProject()" routerLink="project" style="color: white;">Nouveau projet</a></button>
       </div>
       
       <div class="right-icon">

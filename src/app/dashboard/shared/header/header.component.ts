@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,13 +12,16 @@ export class HeaderComponent implements OnInit {
 
   width_header = 'default';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.width_header = 'default';
   }
 
-
+  createProject(){
+    this.toggleSideBar();
+    // this.router.navigate(['../project/general']);
+  }
 
   /**
    * toogleSideBar
