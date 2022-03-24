@@ -231,7 +231,7 @@ body.dark ul.nav li.dropdown ul.dropdown-menu {
 
 body.dark ul.nav.nav-tabs li a,
 ul.nav.nav-tabs li.active a {
-  color: #ddd;
+  color: var(--blue);
 }
 
 body.dark .header.header-fixed {
@@ -2791,6 +2791,8 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   transition: 0.2s;
   float: none;
   text-transform: uppercase;
+  margin-top: 0.3em;
+
 }
 
 .portfolio .nav-pills li:hover,
@@ -6586,6 +6588,8 @@ body.double-diagonal.portfolio-page .portfolio .container {
   }
   .portfolio .nav-pills li {
     margin: 0 10px 15px 0;
+    margin-top: 0.3em;
+
   }
   .mobile-logo {
     margin: 0 auto;

@@ -3,6 +3,9 @@
         color: white;
     }
 }
+.services-box-item{
+    margin-top: 1.5em;
+}
 .services-box-item-content{
     height: 20em;
     border: solid 1px lightgray;
@@ -89,4 +92,11 @@
         font-size: 2em;
     }
     
+}
+
+ul.nav.nav-tabs li.active a{
+    color: var(--orange);
+}
+.tab.pane.fane{
+    color: black;
 }
