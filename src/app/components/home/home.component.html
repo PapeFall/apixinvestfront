@@ -274,7 +274,7 @@
                     <div class="full-image-container hovered">
                         <img class="img-responsive hidden-xs" src="assets/img/about1.jpeg" alt="">
                         <div class="full-image-overlay">
-                            <h3>Why <strong>Choose Us</strong></h3>
+                            <h3 style="color: white;">Pourquoi <strong>Nous</strong></h3>
                             <ul class="list-why-choose-us">
                                 <li>Clean Code & Design</li>
                                 <li>Responsive Layout</li>
@@ -685,8 +685,8 @@
         <div class="container">
             <!-- Main Heading Starts -->
             <div class="text-center top-text">
-                <h1><span>Blog</span> Posts</h1>
-                <h4>Latest Articles</h4>
+                <h1><span>Dernières</span> nouvelles</h1>
+                <h4>Posts de la communauté</h4>
             </div>
             <!-- Main Heading Starts -->
             <!-- Divider Starts -->
@@ -696,86 +696,117 @@
                 <span class="outer-line"></span>
             </div>
             <!-- Divider Ends -->
-            <div class="row latest-posts-content">
-                <!-- Article Starts -->
-                <div class="col-sm-4 col-md-4 col-xs-12">
-                    <div class="latest-post">
-                        <!-- Featured Image Starts -->
-                        <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="http://via.placeholder.com/720x477" alt="img"></a>
-                        <!-- Featured Image Ends -->
-                        <!-- Article Content Starts -->
-                        <div class="post-body">
-                            <h4 class="post-title">
-                                <a href="blog-post.html">how to be a good freelancer ?</a>
-                            </h4>
-                            <div class="post-text">
-                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
-                            </div>
-                        </div>
-                        <!-- Post Date Starts -->
-                        <div class="post-date">
-                            <span>18</span>
-                            <span>AUG</span>
-                        </div>
-                        <!-- Post Date Ends -->
-                        <a class="custom-button" href="blog-post.html">Read more</a>
-                        <!-- Article Content Ends -->
-                    </div>
-                </div>
-                <!-- Article Ends -->
-                <!-- Article Starts -->
-                <div class="col-sm-4 col-md-4 col-xs-12">
-                    <div class="latest-post">
-                        <!-- Featured Image Starts -->
-                        <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="http://via.placeholder.com/720x477" alt="img"></a>
-                        <!-- Featured Image Ends -->
-                        <!-- Article Content Starts -->
-                        <div class="post-body">
-                            <h4 class="post-title">
-                                <a href="blog-post.html">Collaboration with Envato</a>
-                            </h4>
-                            <div class="post-text">
-                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
-                            </div>
-                        </div>
-                        <!-- Post Date Starts -->
-                        <div class="post-date">
-                            <span>23</span>
-                            <span>JUN</span>
-                        </div>
-                        <!-- Post Date Ends -->
-                        <a class="custom-button" href="blog-post.html">Read more</a>
-                        <!-- Article Content Ends -->
-                    </div>
-                </div>
-                <!-- Article Ends -->
-                <!-- Article Starts -->
-                <div class="col-sm-4 col-md-4 col-xs-12">
-                    <div class="latest-post">
-                        <!-- Featured Image Starts -->
-                        <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="http://via.placeholder.com/720x477" alt="img"></a>
-                        <!-- Featured Image Ends -->
-                        <!-- Article Content Starts -->
-                        <div class="post-body">
-                            <h4 class="post-title">
-                                <a href="blog-post.html">why themeforest is best ?</a>
-                            </h4>
-                            <div class="post-text">
-                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
-                            </div>
-                        </div>
-                        <!-- Post Date Starts -->
-                        <div class="post-date">
-                            <span>01</span>
-                            <span>JAN</span>
-                        </div>
-                        <!-- Post Date Ends -->
-                        <a class="custom-button" href="blog-post.html">Read more</a>
-                        <!-- Article Content Ends -->
-                    </div>
-                </div>
-                <!-- Article Ends -->
+
+            <div class="center-column">
+                <!-- Tabs Heading Starts -->
+            <ul class="nav nav-tabs">
+               <li class="active"><a data-toggle="tab" href="#n1">Porteurs de projets</a></li>
+               <li><a data-toggle="tab" href="#n2">Investisseurs et Partenaires</a></li>
+               <li><a data-toggle="tab" href="#n3">Partenariat</a></li>
+
+           </ul>
+           <!-- Tabs Heading Ends -->
             </div>
+
+            <div class="tab-content">
+                <div id="n1"  class="tab-pane fade in active">
+                    <div class="row latest-posts-content">
+                        <!-- Article Starts -->
+                        <div class="col-sm-4 col-md-4 col-xs-12" *ngFor="let i of [1,2,3]">
+                            <div class="latest-post">
+                                <!-- Featured Image Starts -->
+                                <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="assets/img/cover1.jpg" style="max-height: 100; width: 100;" alt="img"></a>
+                                <!-- Featured Image Ends -->
+                                <!-- Article Content Starts -->
+                                <div class="post-body">
+                                    <h4 class="post-title">
+                                        <a href="blog-post.html">how to be a good freelancer ?</a>
+                                    </h4>
+                                    <div class="post-text">
+                                        <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                    </div>
+                                </div>
+                                <!-- Post Date Starts -->
+                                <div class="post-date">
+                                    <span>18</span>
+                                    <span>AUG</span>
+                                </div>
+                                <!-- Post Date Ends -->
+                                <a class="custom-button" href="blog-post.html">Read more</a>
+                                <!-- Article Content Ends -->
+                            </div>
+                        </div>
+                        <!-- Article Ends -->
+                        
+                    </div>
+                </div>
+
+                <div id="n2"  class="tab-pane fade ">
+                    <div class="row latest-posts-content">
+                        <!-- Article Starts -->
+                        <div class="col-sm-4 col-md-4 col-xs-12" *ngFor="let i of [1,2,3,4,1]">
+                            <div class="latest-post">
+                                <!-- Featured Image Starts -->
+                                <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="assets/img/cover1.jpg" style="max-height: 100; width: 100;" alt="img"></a>
+                                <!-- Featured Image Ends -->
+                                <!-- Article Content Starts -->
+                                <div class="post-body">
+                                    <h4 class="post-title">
+                                        <a href="blog-post.html">how to be a good freelancer ?</a>
+                                    </h4>
+                                    <div class="post-text">
+                                        <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                    </div>
+                                </div>
+                                <!-- Post Date Starts -->
+                                <div class="post-date">
+                                    <span>18</span>
+                                    <span>AUG</span>
+                                </div>
+                                <!-- Post Date Ends -->
+                                <a class="custom-button" href="blog-post.html">Read more</a>
+                                <!-- Article Content Ends -->
+                            </div>
+                        </div>
+                        <!-- Article Ends -->
+                        
+                    </div>
+                </div>
+
+                <div id="n3"  class="tab-pane fade ">
+                    <div class="row latest-posts-content">
+                        <!-- Article Starts -->
+                        <div class="col-sm-4 col-md-4 col-xs-12" *ngFor="let i of [1,2]">
+                            <div class="latest-post">
+                                <!-- Featured Image Starts -->
+                                <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="assets/img/cover1.jpg" style="max-height: 100; width: 100;" alt="img"></a>
+                                <!-- Featured Image Ends -->
+                                <!-- Article Content Starts -->
+                                <div class="post-body">
+                                    <h4 class="post-title">
+                                        <a href="blog-post.html">how to be a good freelancer ?</a>
+                                    </h4>
+                                    <div class="post-text">
+                                        <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                    </div>
+                                </div>
+                                <!-- Post Date Starts -->
+                                <div class="post-date">
+                                    <span>18</span>
+                                    <span>AUG</span>
+                                </div>
+                                <!-- Post Date Ends -->
+                                <a class="custom-button" href="blog-post.html">Read more</a>
+                                <!-- Article Content Ends -->
+                            </div>
+                        </div>
+                        <!-- Article Ends -->
+                        
+                    </div>
+                </div>
+            </div>
+
+            
             <!-- Latest Blog Posts Ends -->
         </div>
     </section>
