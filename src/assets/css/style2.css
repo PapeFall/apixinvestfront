@@ -348,7 +348,7 @@ body.dark .project .bx-wrapper {
   border: 5px solid #242424;
 }
 body.dark .services{
-    background-color: rgb(247, 241, 234);
+    background-color: var(--backgroundColor);
 }
 
 body.dark .services-box-item-cover,
