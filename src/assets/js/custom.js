@@ -1514,27 +1514,27 @@
 		
     });
 
-    $(window).on("scroll", function() {
+    // $(window).on("scroll", function() {
 
-        /* ----------------------------------------------------------- */
-        /*  FIX HEADER ON SCROLL
-        /* ----------------------------------------------------------- */
+    //     /* ----------------------------------------------------------- */
+    //     /*  FIX HEADER ON SCROLL
+    //     /* ----------------------------------------------------------- */
 
-        var e = $(window).scrollTop();
-        $(window).height();
-        e > 1 ? $(".header").addClass("header-fixed") : $(".header").removeClass("header-fixed");
+    //     var e = $(window).scrollTop();
+    //     $(window).height();
+    //     e > 1 ? $(".header").addClass("header-fixed") : $(".header").removeClass("header-fixed");
 
-        /* ----------------------------------------------------------- */
-        /*  BACK TO TOP
-        /* ----------------------------------------------------------- */
+    //     /* ----------------------------------------------------------- */
+    //     /*  BACK TO TOP
+    //     /* ----------------------------------------------------------- */
 
-        if ($(this).scrollTop() > 100) {
-            $("#back-top").fadeIn();
-        } else {
-            $("#back-top").fadeOut();
-        }
+    //     if ($(this).scrollTop() > 100) {
+    //         $("#back-top").fadeIn();
+    //     } else {
+    //         $("#back-top").fadeOut();
+    //     }
 
-    });
+    // });
 
 
 })(jQuery);

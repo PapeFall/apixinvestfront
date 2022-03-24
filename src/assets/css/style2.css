@@ -348,7 +348,7 @@ body.dark .project .bx-wrapper {
   border: 5px solid #242424;
 }
 body.dark .services{
-    background-color: gray;
+    background-color: rgb(247, 241, 234);
 }
 
 body.dark .services-box-item-cover,
@@ -2606,7 +2606,9 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   margin: 20px 0 0;
   font-size: 18px;
   text-align: center;
-  font-weight: 500;
+  font-weight: bold;
+  background-color: var(--blue);
+  padding: 0.5em;
 }
 
 .services .services-box-item-content {
