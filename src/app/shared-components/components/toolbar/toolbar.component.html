@@ -68,13 +68,13 @@
                         </ul>
                     </li> -->
                     <li><a  href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                    <li><a  (click)="routeTo('/process/login')"> Connexion</a></li>
-                    <li><a  (click)="routeTo('/process/signin')">Inscription</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> Omar Diop <i class="fa fa-angle-down icon-angle"></i></a>
+                    <li *ngIf="!user"><a  (click)="routeTo('/process/login')"> Connexion</a></li>
+                    <li *ngIf="!user"><a  (click)="routeTo('/process/signin')">Inscription</a></li>
+                    <li *ngIf="user" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> {{user?.username}} <i class="fa fa-angle-down icon-angle"></i></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a (click)="routeTo('/process/dashboard/profil')">Profil</a></li>
-                            <li><a href="portfolio-3-columns.html">Déconnexion</a></li>
+                            <li><a (click)="deconnexion()">Déconnexion</a></li>
                         </ul>
                     </li>
                     <!-- Cart Icon Starts -->

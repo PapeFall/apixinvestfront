@@ -14,8 +14,9 @@
                 <div class=" container-fluid mt">
                     <mat-form-field  class="container-fluid w-100" color="primary" appearance="fill">
                         <mat-label>Profil</mat-label>
+                           
                         <mat-select>
-
+                            <mat-option *ngFor="let p of profils" value="p">{{p}}</mat-option>
                         </mat-select>
                     </mat-form-field>
                 </div>

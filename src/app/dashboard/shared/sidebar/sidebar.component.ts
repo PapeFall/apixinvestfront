@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
+   }
+  user:any = null;
   ngOnInit(): void {
+    let u :any= localStorage.getItem('user');
+    this.user = JSON.parse(u);
   }
 
 }

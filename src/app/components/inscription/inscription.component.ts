@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InscriptionComponent implements OnInit {
 
+  profils = ["Porteur de projets","Partenaire","Participant"];
   constructor() { }
 
   ngOnInit(): void {

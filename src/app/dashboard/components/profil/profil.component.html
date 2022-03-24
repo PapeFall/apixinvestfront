@@ -1,376 +1,325 @@
-<section class="main">
-    <div class="container-fluid mt pt">
-        <div class="row">
-            <div class="center-column col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                <img src="assets/profil.png" alt="" class="img-circle">
-            </div>
-    
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Nom complet</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
+<section class="bg-white" style="background-color: white;">
+    <div class="row">
+        <mat-stepper >
+            <mat-step>
+                <ng-template  matStepLabel>Information Personnelle</ng-template>
+                <div class="row">
+                    <div class="center-column col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                        <img src="assets/profil.png" alt="" class="img-circle">
                     </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Sexe</mat-label>
-                            <mat-select>
-                                <mat-option value="homme">Homme</mat-option>
-                                <mat-option value="femme">Femme</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Date naissance</mat-label>
-                            <input type="date" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Lieu naissance</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Adresse</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Profession</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Situation matrimoniale</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Diplôme</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Téléphone</mat-label>
-                            <input type="phone" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Email</mat-label>
-                            <input type="Email" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Nationalité</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Région</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Présentation</mat-label>
-                            <textarea type="text" matInput></textarea>
-                        </mat-form-field>
-                    </div>
-                </div>
-            </div>
-    
             
-    
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-               
-                <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Expériences</mat-label>
-                            <textarea type="text" matInput></textarea>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Etudes</mat-label>
-                            <textarea type="text" matInput></textarea>
-                        </mat-form-field>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid col-sm-12">
-                <h4 class="container-fluid center-column">Information entreprise</h4>
-            </div>
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-               
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Raison sociale</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Forme juridique</mat-label>
-                            <mat-select>
-                                <mat-option>SA</mat-option>
-                                <mat-option>GIE</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </div>
-                </div>
-                
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Lieu d'immatriculation</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Forme juridique</mat-label>
-                            <mat-select></mat-select>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Registre de commerce</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>NINEA</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Démarrage activités</mat-label>
-                            <input type="date" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Adresse</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Téléphone</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Email</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Site web</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Secteur</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Activités</mat-label>
-                            <mat-select></mat-select>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Chiffre d'affaires</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Nombre d'employés</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <div class="container-fluid">
-                            <div>
-                                Intention d'investir au Sénégal (si oui, préciser le montant)
+                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Nom complet</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
                             </div>
-                        <mat-radio-group aria-label="Select an option">
-                            <mat-radio-button value="1">Oui</mat-radio-button>
-                            <mat-radio-button value="2">Non</mat-radio-button>
-                          </mat-radio-group>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Sexe</mat-label>
+                                    <mat-select>
+                                        <mat-option value="homme">Homme</mat-option>
+                                        <mat-option value="femme">Femme</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Date naissance</mat-label>
+                                    <input type="date" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Lieu naissance</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Adresse</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Profession</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Situation matrimoniale</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Diplôme</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Téléphone</mat-label>
+                                    <input type="phone" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Email</mat-label>
+                                    <input type="Email" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Nationalité</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Région</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                        <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Présentation</mat-label>
+                                    <textarea type="text" matInput></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+            
+                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                       
+                        <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Expériences</mat-label>
+                                    <textarea type="text" matInput></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Etudes</mat-label>
+                                    <textarea type="text" matInput></textarea>
+                                </mat-form-field>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Montant investissement</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Information Entreprise</ng-template>
+                <div class="row">
+                    <div class="container-fluid col-sm-12">
+                        <h4 class="container-fluid center-column">Information entreprise</h4>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                       
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Raison sociale</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Forme juridique</mat-label>
+                                    <mat-select>
+                                        <mat-option>SA</mat-option>
+                                        <mat-option>GIE</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Lieu d'immatriculation</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Forme juridique</mat-label>
+                                    <mat-select></mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Registre de commerce</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>NINEA</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Démarrage activités</mat-label>
+                                    <input type="date" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Adresse</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Téléphone</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Email</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Site web</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Secteur</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Activités</mat-label>
+                                    <mat-select></mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Chiffre d'affaires</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Nombre d'employés</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <div class="container-fluid">
+                                    <div>
+                                        Intention d'investir au Sénégal (si oui, préciser le montant)
+                                    </div>
+                                <mat-radio-group aria-label="Select an option">
+                                    <mat-radio-button value="1">Oui</mat-radio-button>
+                                    <mat-radio-button value="2">Non</mat-radio-button>
+                                  </mat-radio-group>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
+                            <div class="row container-fluid">
+                                <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
+                                    <mat-label>Montant investissement</mat-label>
+                                    <input type="text" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        
+        
                     </div>
                 </div>
-
-                
-
-            </div>
-            <div class="container-fluid center-column"><h4>Information Responsable</h4></div>
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Prénom</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                    
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Nom</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                    
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Fonction</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Adresse</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Téléphone</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                    <div class="row container-fluid">
-                        <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
-                            <mat-label>Email</mat-label>
-                            <input type="text" matInput>
-                        </mat-form-field>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="row col-sm-12 center-column container-fluid " >
-                <div class="center-row">
-                    <button mat-stroked-button color="warn" mat-dialog-close>Fermer</button>                
-    
-                    <button mat-raised-button color="primary">Enregistrer</button>                
-                </div>
-                
-            </div>
-        </div>
+            </mat-step>
+        </mat-stepper>
     </div>
+
 </section>

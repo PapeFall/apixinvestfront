@@ -34,7 +34,7 @@ export class StatistiqueComponent implements OnInit {
           ]
       }, {
           type: 'bar',
-          label: 'Dataset 2',
+          label: 'Projets',
           backgroundColor: '#66BB6A',
           data: [
               21,
@@ -49,7 +49,7 @@ export class StatistiqueComponent implements OnInit {
           borderWidth: 2
       }, {
           type: 'bar',
-          label: 'Dataset 3',
+          label: 'Partenaires',
           backgroundColor: '#FFA726',
           data: [
               41,

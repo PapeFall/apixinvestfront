@@ -3,7 +3,7 @@
     
     <div class="center-column ">
         <div class="col-xs-12 col-lg-5 col-md-5 col-sm-12">
-            <form class=" container-fluid mat-elevation-z2 pb pt br" >
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class=" container-fluid mat-elevation-z2 pb pt br" >
                 <div class="container-fluid mt center-column">
                     <strong class="text-primary">Authentication</strong>
                 </div>
@@ -13,22 +13,27 @@
                 <div class=" container-fluid mt">
                     <mat-form-field  class="container-fluid w-100" color="primary" appearance="fill">
                         <mat-label>Email</mat-label>
-                        <input type="email" matInput>
+                        <input formControlName="email" type="email" matInput>
+                        <mat-error *ngIf="formGroup.get('email')?.hasError('required')">champs obligatoire</mat-error>
+                        <mat-error *ngIf="formGroup.get('email')?.hasError('email')">Veuillez-saisir un email valide</mat-error>
+
                     </mat-form-field>
                 </div>
 
                 <div class=" container-fluid">
                     <mat-form-field class="container-fluid w-100" color="primary" appearance="fill">
                         <mat-label>Mot de passe</mat-label>
-                        <input type="password" matInput>
+                        <input formControlName="password" type="password" matInput>
+                        <mat-error *ngIf="formGroup.get('password')?.hasError('required')">champs obligatoire</mat-error>
+
                     </mat-form-field>
                 </div>
                 
                 <div class="container-fluid center-column pb mb">
-                    <button color="primary" mat-stroked-button routerLink="../dashboard">Se connecter</button>
+                    <button type="submit" color="primary" mat-stroked-button >Se connecter</button>
                 </div>
-                <div class="container-fluid center-column pb mb">
-                    
+                <div class="container-fluid center-column pb mb" *ngIf="loginError">
+                    <span style="color: red; ">Email ou mot de passe incorrect</span>
                 </div>
                 
             </form>

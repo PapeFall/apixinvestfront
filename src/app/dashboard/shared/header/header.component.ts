@@ -12,15 +12,20 @@ export class HeaderComponent implements OnInit {
 
   width_header = 'default';
 
+  
   constructor(private router: Router) { }
+  user :any= undefined;
+  
 
   ngOnInit(): void {
     this.width_header = 'default';
+    let u :any= localStorage.getItem('user');
+    this.user = JSON.parse(u);
   }
 
   createProject(){
     this.toggleSideBar();
-    // this.router.navigate(['../project/general']);
+    this.router.navigate(['/process/dashboard/project']);
   }
 
   /**
@@ -45,5 +50,12 @@ export class HeaderComponent implements OnInit {
   }
 
 
+  deconnexion(){
+    localStorage.clear();
+    this.router.navigateByUrl("/");
+  }
 
+  profil(){
+    this.router.navigateByUrl("/process/dashboard/profil")
+  }
 }
