@@ -12,16 +12,10 @@
 }
 .services-box-item-cover{
     height: 20em;
-    background: black;
+    // background: black;
     overflow: hidden;
     font-weight: bold;
-    :data-headline{
-        font-weight: bold;
-    }
-    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi");
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
-
+    
     img{
         border-radius: 5px;
         height: 20em;
@@ -109,3 +103,45 @@ hr{
     border-color: lightgray !important;
     background-color: lightgray !important;
 }
+
+
+.apix-img-hover {
+    position: absolute;
+    bottom: 0;
+    background: rgb(241, 100, 6); /* Fallback color */
+    background: rgba(241, 112, 6, 0.637); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    
+    // padding: 4px;
+    .title{
+        font-size: 1.2em;
+        margin:0.3em;
+        border-bottom: solid 1px var(--blue);
+        padding: 0.7em;
+        
+    }
+
+    .infos{
+        font-size: 0.89em;
+        margin:0.3em;
+        padding-bottom: 0.7em;
+        padding-top: 0.7em;
+
+    }
+  }
+
+  .apix-img-hover-content {
+    
+    .infos{
+        font-size: 0.89em;
+        // margin:0.3em;
+        padding-bottom: 0.7em;
+        padding: 0.7em;
+        
+        .col-sm-12{
+            padding: 0.2em;
+        }
+    }
+  }
+  

@@ -2607,7 +2607,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   padding: 0.5em;
 }
 
