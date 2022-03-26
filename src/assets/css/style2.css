@@ -2613,7 +2613,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 
 .services .services-box-item-content {
   overflow: hidden;
-  margin: -16px -6px;
+  /* margin: -16px -6px; */
   padding: 30px 40px;
   font-size: 14px;
   -webkit-transform: rotateY(180deg);
