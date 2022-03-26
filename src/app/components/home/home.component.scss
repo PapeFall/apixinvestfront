@@ -163,6 +163,11 @@ hr{
     flex-direction: row !important;
     margin: 0.3em;
     color: black;
+    cursor: pointer;
+    
+    &:hover{
+       background-image: linear-gradient(to right,white,white,white,white,white,white,rgba(248, 181, 125, 0.384));
+    }
     .palmares-title{
         color: var(--blue);
         font-size: 1.3em;

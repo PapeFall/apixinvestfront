@@ -14,6 +14,8 @@ import { PagesBaseComponent } from './components/pages-base/pages-base.component
 import { InscriptionComponent } from './components/inscription/inscription.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailArticleComponent } from './components/detail-article/detail-article.component';
+import { DetailProjetComponent } from './components/detail-projet/detail-projet.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     LoginComponent,
     PagesBaseComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    DetailArticleComponent,
+    DetailProjetComponent
   ],
   imports: [
     BrowserModule,
