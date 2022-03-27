@@ -1,0 +1,24 @@
+.main{
+    // padding: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+@media (min-width: 292px) {
+    
+    .main{
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+}
+@media (min-width: 1024px) {
+    
+    .main{
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+}
+h3{
+    padding: 0.3em !important;
+    margin-top: 0.31em !important;
+    color: var(--orange);
+}
