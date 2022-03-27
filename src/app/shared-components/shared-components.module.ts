@@ -5,13 +5,15 @@ import { SiteFooterComponent } from './components/site-footer/site-footer.compon
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ChartModule} from 'primeng/chart';
+import { CommentsComponent } from './components/comments/comments.component';
 
 
 
 @NgModule({
   declarations: [
     ToolbarComponent,
-    SiteFooterComponent
+    SiteFooterComponent,
+    CommentsComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,7 @@ import {ChartModule} from 'primeng/chart';
   exports:[
     ToolbarComponent,
     SiteFooterComponent,
+    CommentsComponent,
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
