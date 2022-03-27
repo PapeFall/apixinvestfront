@@ -1,6 +1,4 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -12,8 +10,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { PagesBaseComponent } from './components/pages-base/pages-base.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -29,11 +28,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-  
-
+    AppRoutingModule,
     SharedComponentsModule,
+    ReactiveFormsModule,
+    FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent],

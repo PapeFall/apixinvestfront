@@ -1,12 +1,16 @@
 <mat-drawer-container>
-    <mat-drawer mode="side" [opened]="sideBarOpen" [ngClass]="{'sidenav':!mobile}">
-      <app-sidebar></app-sidebar>
-    </mat-drawer>
-    <mat-drawer-content>
-      <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
-      <section id="main">
-        <router-outlet></router-outlet>
-      </section>
-    </mat-drawer-content>
-  </mat-drawer-container>
- 
+  <mat-drawer
+    mode="side"
+    [opened]="sideBarOpen"
+    [ngClass]="{ sidenav: !mobile }"
+    style="position: fixed"
+  >
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
+    <section id="main">
+      <router-outlet></router-outlet>
+    </section>
+  </mat-drawer-content>
+</mat-drawer-container>

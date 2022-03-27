@@ -1,50 +1,162 @@
 <div class="row">
-
-    <div  class="col-sm-8 col-md-8 col-lg-8 col-8"> 
-
-        <div id="widgets">
-            <div class="widget">
-                <p class="titre">TOTAL DE PROJETS</p>
-                <p class="chiffre"><mat-icon>arrow_upward</mat-icon> <span>05</span></p>  
-            </div>
-            <div class="widget">
-                <p class="titre">TOTAL D'EMPLOYES</p>
-                <p class="chiffre"><mat-icon>person</mat-icon> <span>10</span></p>  
-            </div>
-            <div class="widget">
-                <p class="titre">MESSAGES</p>
-                <p class="chiffre"><mat-icon>drafts</mat-icon> <span>07</span></p>  
-            </div>
-        </div>
-       <div class="courbe">
+  <div class="col-sm-8 col-md-8 col-lg-8 col-8">
+    <div id="widgets">
+      <div class="widget">
+        <p class="titre">TOTAL DE PROJETS</p>
+        <p class="chiffre"><mat-icon>arrow_upward</mat-icon> <span>05</span></p>
+      </div>
+      <div class="widget">
+        <p class="titre">TOTAL PORTEURS DE PROJET</p>
+        <p class="chiffre"><mat-icon>work</mat-icon> <span>931</span></p>
+      </div>
+      <div class="widget">
+        <p class="titre">TOTAL PARTENAIRES</p>
+        <p class="chiffre"><mat-icon>person</mat-icon> <span>07</span></p>
+      </div>
+    </div>
+    <div class="courbe" style="margin-bottom: 15px">
+      <mat-card>
+        <h5 style="color: rgb(3, 3, 63)">
+          INSCRIPTION DES PORTEURS DE PROJET ET DES INVESTISSEURS PAR MOIS
+        </h5>
+        <p-chart type="bar" [data]="data"></p-chart>
+      </mat-card>
+    </div>
+    <div
+      style="display: flex; justify-content: space-between; margin-bottom: 15px"
+    >
+      <div style="width: 49%">
         <mat-card>
-            <p-chart type="bar" [data]="data"></p-chart>
+          <h5 style="color: rgb(3, 3, 63)">PROJET PAR SECTEUR D'ACTIVITES</h5>
+          <p-chart type="pie" [data]="data1" [responsive]="true"></p-chart>
         </mat-card>
-       </div>
-      
+      </div>
+      <div style="width: 49%">
+        <mat-card>
+          <h5 style="color: rgb(3, 3, 63)">PROFIL DES PORTEURS DE PROJET</h5>
+          <p-chart type="pie" [data]="data2" [responsive]="true"></p-chart>
+        </mat-card>
+      </div>
     </div>
+  </div>
 
-    <div class="col-sm-4 col-md-4 col-lg-4 col-4">
-        <div id="left-widget-card" class="widget">
-            
+  <div class="col-sm-4 col-md-4 col-lg-4 col-4">
+    <div id="left-widget-card" class="widget">
+      <div style="display: flex; justify-content: space-between">
+        <div>
+          <mat-icon style="background-color: orangered"
+            >signal_cellular_alt</mat-icon
+          >
+          <span> AGRICULTURE </span><br />
+          <span
+            style="
+              padding-left: 20px;
+              font-size: 14px;
+              color: orangered;
+              font-weight: bold;
+            "
+            >145 PROJETS</span
+          >
         </div>
-        <div >
-            <mat-card  >
-                <p-chart type="pie" [data]="data1" height="30vh" ></p-chart> 
-            </mat-card>
+        <div>
+          <mat-icon style="background-color: orange"
+            >signal_cellular_alt</mat-icon
+          >
+          TRANSPORT <br />
+          <span
+            style="
+              padding-left: 20px;
+              font-size: 14px;
+              color: orange;
+              font-weight: bold;
+            "
+            >543 PROJETS</span
+          >
         </div>
+      </div>
+      <div
+        style="display: flex; justify-content: space-between; padding-top: 40px"
+      >
+        <div>
+          <mat-icon style="background-color: orangered"
+            >signal_cellular_alt</mat-icon
+          >
+          <span> NUMERIQUE </span><br />
+          <span
+            style="
+              padding-left: 20px;
+              font-size: 14px;
+              color: orangered;
+              font-weight: bold;
+            "
+            >34 PROJETS</span
+          >
+        </div>
+        <div>
+          <mat-icon style="background-color: orange"
+            >signal_cellular_alt</mat-icon
+          >
+          ARTISANAT <br />
+          <span
+            style="
+              padding-left: 20px;
+              font-size: 14px;
+              color: orange;
+              font-weight: bold;
+            "
+            >209 PROJETS</span
+          >
+        </div>
+      </div>
     </div>
-
+    <div class="card">
+      <p-table [value]="projets" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th pSortableColumn="date">
+              Date <p-sortIcon field="date"></p-sortIcon>
+            </th>
+            <th pSortableColumn="projet">
+              Projet <p-sortIcon field="name"></p-sortIcon>
+            </th>
+            <th pSortableColumn="montant">
+              Montant <p-sortIcon field="montant"></p-sortIcon>
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-projet>
+          <tr>
+            <td>{{ projet.date }}</td>
+            <td>{{ projet.projet }}</td>
+            <td>{{ projet.montant }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
 </div>
 
-<div class="row " style="margin-top: 10px;">
-    <div class="col-sm-6 col-lg-6 col-md-6 col-6">
-        <p-chart type="line" [data]="basicData" ></p-chart>  
+<div class="row" style="margin-top: 10px">
+  <div
+    class="col-sm-6 col-md-6 col-lg-6 col-6"
+    style="display: flex; justify-content: space-between"
+  >
+    <div class="courbe" style="width: 100%">
+      <mat-card>
+        <h5 style="color: rgb(3, 3, 63)">EVOLUTION DES PROJETS PAR SECTEUR</h5>
+        <p-chart type="line" [data]="basicData"></p-chart>
+      </mat-card>
     </div>
-    <div class="col-sm-6 col-lg-6 col-md-6 col-6">
-        <mat-card>
-            <p-chart type="bar" [data]="data"></p-chart>
-        </mat-card>
+  </div>
+  <div
+    class="col-sm-6 col-md-6 col-lg-6 col-6"
+    style="display: flex; justify-content: space-between"
+  >
+    <div class="courbe" style="width: 100%">
+      <mat-card>
+        <h5 style="color: rgb(3, 3, 63)">EVOLUTION DES PROJETS PAR SECTEUR</h5>
+        <!--  <p-chart type="line" [data]="basicData"></p-chart> -->
+      </mat-card>
     </div>
+  </div>
 </div>
-
