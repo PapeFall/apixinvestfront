@@ -10,29 +10,20 @@ export class StatistiqueComponent implements OnInit {
   data:any
   data1:any
   basicData:any
+  data2:any
+  projets:any
 
-  constructor() { }
+  
+
+  constructor() {
+      
+   }
 
   ngOnInit(): void {
 
     this.data = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-      datasets: [{
-          type: 'line',
-          label: 'Dataset 1',
-          borderColor: '#42A5F5',
-          borderWidth: 2,
-          fill: false,
-          data: [
-              50,
-              25,
-              12,
-              48,
-              56,
-              76,
-              42
-          ]
-      }, {
+      labels: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet'],
+      datasets: [ {
           type: 'bar',
           label: 'Projets',
           backgroundColor: '#66BB6A',
@@ -49,7 +40,7 @@ export class StatistiqueComponent implements OnInit {
           borderWidth: 2
       }, {
           type: 'bar',
-          label: 'Partenaires',
+          label: 'Investisseurs',
           backgroundColor: '#FFA726',
           data: [
               41,
@@ -64,10 +55,29 @@ export class StatistiqueComponent implements OnInit {
   };
 
   this.data1 = {
-    labels: ['A','B','C'],
+    labels: ['Agriculture','Energie','Transport'],
     datasets: [
         {
             data: [300, 50, 100],
+            backgroundColor: [
+                "#42A5F5",
+                "#66BB6A",
+                "#FFA726"
+            ],
+            hoverBackgroundColor: [
+                "#64B5F6",
+                "#81C784",
+                "#FFB74D"
+            ]
+        }
+    ]
+};
+
+this.data2 = {
+    labels: ['Etudiants','Retraités','Salariés'],
+    datasets: [
+        {
+            data: [40, 150, 100],
             backgroundColor: [
                 "#42A5F5",
                 "#66BB6A",
@@ -102,6 +112,73 @@ this.basicData = {
   ]
 };
 
+this.projets=[
+    {
+        "date":"24-02-2022",
+        "projet":4,
+        "montant":5000000
+    },
+    {
+        "date":"20-02-2022",
+        "projet":6,
+        "montant":8000000
+    },
+    {
+        "date":"18-02-2022",
+        "projet":9,
+        "montant":35000000
+    },
+    {
+        "date":"14-02-2022",
+        "projet":6,
+        "montant":95000000
+    },
+    {
+        "date":"13-02-2022",
+        "projet":6,
+        "montant":7000000
+    },
+    {
+        "date":"12-02-2022",
+        "projet":6,
+        "montant":5000000
+    },
+    {
+        "date":"10-02-2022",
+        "projet":6,
+        "montant":5000000
+    },
+    {
+        "date":"09-02-2022",
+        "projet":6,
+        "montant":5000000
+    },
+    {
+        "date":"24-02-2022",
+        "projet":4,
+        "montant":5000000
+    },
+    {
+        "date":"20-02-2022",
+        "projet":6,
+        "montant":5000000
+    },
+    {
+        "date":"18-02-2022",
+        "projet":9,
+        "montant":9000000
+    },
+    {
+        "date":"14-02-2022",
+        "projet":6,
+        "montant":3000000
+    },
+    {
+        "date":"13-02-2022",
+        "projet":6,
+        "montant":100000
+    }
+]
 
   }
 

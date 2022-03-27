@@ -1,40 +1,65 @@
 <mat-nav-list>
-    <div id="sidebar">
-      <p class="FLEMJOBS-LOGO">
-        APIX LOGO
+  <div id="sidebar">
+    <p class="APIX-LOGO">APIX LOGO <br /></p>
+    <div class="div-connected-user">
+      <p class="icon">
+        <img src="assets/img/admin.png" alt="" class="admin-img" />
       </p>
-      <p>
-        <a mat-list-item class="sidebar-menu" [routerLinkActiveOptions]="{exact: true}" routerLink="/process/dashboard"
-          routerLinkActive="active">
-          <mat-icon>dashboard</mat-icon>
-          Tableau de bord
-        </a>
-      </p>
-      <p>
-        <a mat-list-item class="sidebar-menu" >
-          <mat-icon>email</mat-icon>
-          Messagerie
-        </a>
-      </p>
-      <p>
-        <a mat-list-item class="sidebar-menu" routerLink="list-project" routerLinkActive="active">
-          <mat-icon>work</mat-icon>
-          Mes Projets
-        </a>
-      </p>
-      <p>
-        <a mat-list-item class="sidebar-menu" routerLink="#" routerLinkActive="active">
-          <mat-icon>groups</mat-icon>
-          Mes Partenaires
-        </a>
-      </p>
-      <p *ngIf="user.profil=='admin'">
-        <a mat-list-item class="sidebar-menu" routerLink="#" routerLinkActive="active">
-          <mat-icon>person</mat-icon>
-          Utilisateurs
-        </a>
+      <p class="connected-user">
+        <span style="font-weight: bold">Aliou Ndiaye</span> <br />
+        <span style="font-size: 11px; font-weight: 300px"> Administrateur</span>
       </p>
     </div>
-  
-  </mat-nav-list>
-  
+    <p>
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/process/dashboard"
+        routerLinkActive="active"
+      >
+        <mat-icon>dashboard</mat-icon>
+        Tableau de bord
+      </a>
+    </p>
+    <p>
+      <a mat-list-item class="sidebar-menu">
+        <mat-icon>email</mat-icon>
+        Messagerie
+      </a>
+    </p>
+    <p>
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="list-project"
+        routerLinkActive="active"
+      >
+        <mat-icon>work</mat-icon>
+        Mes Projets
+      </a>
+    </p>
+    <p>
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="#"
+        routerLinkActive="active"
+      >
+        <mat-icon>groups</mat-icon>
+        Mes Partenaires
+      </a>
+    </p>
+    <p *ngIf="user.profil == 'admin'">
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="#"
+        routerLinkActive="active"
+      >
+        <mat-icon>person</mat-icon>
+        Utilisateurs
+      </a>
+    </p>
+  </div>
+</mat-nav-list>

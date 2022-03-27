@@ -8,8 +8,8 @@ mat-nav-list {
     margin: 0;
   }
   
-  .FLEMJOBS-LOGO {
-    margin: 0 0 72px;
+  .APIX-LOGO {
+    margin: 0 0 20px;
     font-family: Roboto;
     font-size: 20px;
     font-weight: bold;
@@ -20,7 +20,20 @@ mat-nav-list {
     text-align: center;
     color: #fff;
   }
+
+  .connected-user{
+    padding-left: 10px;
+     color: white; 
+     font-size: 14px
+  }
+
+  .div-connected-user{
+    margin-bottom: 25px;
+     margin-left: 5px;
+      display: flex
+  }
   
+
   .sidebar-menu {
     font-family: Roboto;
     font-size: 14px;
