@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    height: 100%;
   }
   mat-drawer {
     width: 240px;
@@ -10,12 +11,14 @@
   mat-drawer-container {
     height: 100%;
     width: 100%;
+   
   }
   
   #main {
     padding: 90px 15px;
     background-color: #faf7ed;
-    height: 100%;
+    min-height: 100vh;
+    
   }
   
   app-header {
