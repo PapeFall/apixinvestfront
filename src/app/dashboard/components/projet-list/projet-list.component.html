@@ -2,31 +2,33 @@
   
     <div class="row container-fluid  mb">
         <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 mt" *ngFor="let i of [1,1,1,1,1]">
-          <mat-card class="example-card">
-            <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-            <mat-card-title class="title">TER</mat-card-title>
-            <mat-card-content>
-              <p>This card has divider and indeterminate progress as footer</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-
-            </mat-card-content>
-            <mat-divider class="divider" inset></mat-divider>
-            <mat-card-actions align="end">
-              <button color="primary" mat-icon-button>
-                <mat-icon>edit</mat-icon>
-              </button>
-              <button color="primary" mat-icon-button>
-                 <mat-icon matBadge="3" matBadgeColor="accent">comment</mat-icon>
-              </button>
-              <button color="primary" mat-icon-button>
-                <mat-icon>share</mat-icon>
-             </button>
-            </mat-card-actions>
-            <mat-card-footer>
-            </mat-card-footer>
-          </mat-card>
+          <div class="mat-elevation-z2 apix-palmares-box" >
+            <div class=""  routerLink="../detail-projet" >
+                    <img class="mat-elevation-z4"  src="assets/img/cover2.jpeg" style="width: 100%;"  alt="">
+            </div>
+            <div class="">
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" >
+                    <span class="palmares-title">
+                        Sen Biogaz
+                    </span>
+                    <br>
+                    <span class="palmares-description">Unités de production de biogaz miniaturisées et autonomes pour les secteurs agricole et agro-alimentaire.</span>
+                </div>
+                    <div class="col-sm-6">
+                        <span class="fa fa-money"></span>
+                        234 903 000
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="fa fa-star"></span>
+                            2500 pts
+                       </div>
+                    <div class="col-sm-12">
+                        <span class="fa fa-map-marker"></span>
+                        Dakar
+                    </div>
+                   
+            </div>
+        </div>
         </div>
         
     </div>
