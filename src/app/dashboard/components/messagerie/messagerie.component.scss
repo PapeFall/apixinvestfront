@@ -146,7 +146,7 @@
 
 .chat .chat-history .my-message:after {
     bottom: 100%;
-    left: 30px;
+    // left: 30px;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -155,7 +155,7 @@
     pointer-events: none;
     border-bottom-color: #efefef;
     border-width: 10px;
-    margin-left: -10px
+    // margin-left: -10px
 }
 
 .chat .chat-history .other-message {
