@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
+import { CampagnesComponent } from './components/campagnes/campagnes.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
 import { MainComponent } from './components/main/main.component';
 import { MessagerieComponent } from './components/messagerie/messagerie.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
       },{
         path: "utilisateur",
         component: UtilisateurListComponent
+      },
+      {
+        path: "campagnes",
+        component: CampagnesComponent
       },
       {
         path:'profil',

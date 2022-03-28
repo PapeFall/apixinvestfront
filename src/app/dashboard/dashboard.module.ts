@@ -22,6 +22,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { StatistiqueComponent } from './components/statistique/statistique.component';
 import { MessagerieComponent } from './components/messagerie/messagerie.component';
 import { UtilisateurListComponent } from './components/utilisateur-list/utilisateur-list.component';
+import { CampagnesComponent } from './components/campagnes/campagnes.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { UtilisateurListComponent } from './components/utilisateur-list/utilisat
     SidebarComponent,
     StatistiqueComponent,
     MessagerieComponent,
-    UtilisateurListComponent
+    UtilisateurListComponent,
+    CampagnesComponent
   ],
   imports: [
     CommonModule,
