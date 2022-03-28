@@ -1,13 +1,14 @@
 <mat-nav-list>
   <div id="sidebar">
-    <p class="APIX-LOGO">APIX LOGO <br /></p>
+    <p class="APIX-LOGO">
+      APIX LOGO <br /></p>
     <div class="div-connected-user">
       <p class="icon">
         <img src="assets/img/admin.png" alt="" class="admin-img" />
       </p>
       <p class="connected-user">
-        <span style="font-weight: bold">Aliou Ndiaye</span> <br />
-        <span style="font-size: 11px; font-weight: 300px"> Administrateur</span>
+        <span style="font-weight: bold">{{user?.username}}</span> <br />
+        <span style="font-size: 11px; font-weight: 300px"> {{user?.profil}}</span>
       </p>
     </div>
     <p>
@@ -61,6 +62,28 @@
       >
         <mat-icon>person</mat-icon>
         Utilisateurs
+      </a>
+    </p>
+    <p *ngIf="user.profil == 'porteur'">
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="#"
+        routerLinkActive="active"
+      >
+        <mat-icon>campaign</mat-icon>
+        Campagnes
+      </a>
+    </p>
+    <p *ngIf="user.profil == 'intervenant'">
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="#"
+        routerLinkActive="active"
+      >
+        <mat-icon>article</mat-icon>
+        Articles
       </a>
     </p>
   </div>

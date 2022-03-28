@@ -27,16 +27,16 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("user", JSON.stringify({ username: 'Hamid', profil: 'porteur' }))
         this.router.navigateByUrl("/process/dashboard");
       } else if (this.formGroup.value.email == "participant@gmail.com" && this.formGroup.value.password == "123456") {
-        localStorage.setItem("user", JSON.stringify({ username: 'Omar', profil: 'participant' }))
+        localStorage.setItem("user", JSON.stringify({ username: 'Moussa Diop', profil: 'participant' }))
         this.router.navigateByUrl("/process/dashboard");
       } else if (this.formGroup.value.email == "intervenant@gmail.com" && this.formGroup.value.password == "123456") {
-        localStorage.setItem("user", JSON.stringify({ username: 'Fatim', profil: 'intervenant' }))
+        localStorage.setItem("user", JSON.stringify({ username: 'Fatim Wade', profil: 'intervenant' }))
         this.router.navigateByUrl("/process/dashboard");
       } else if (this.formGroup.value.email == "partenaire@gmail.com" && this.formGroup.value.password == "123456") {
-        localStorage.setItem("user", JSON.stringify({ username: 'hamid', profil: 'partenaire' }))
+        localStorage.setItem("user", JSON.stringify({ username: 'Joseph Sarr', profil: 'partenaire' }))
         this.router.navigateByUrl("/process/dashboard");
       } else if (this.formGroup.value.email == "admin@gmail.com" && this.formGroup.value.password == "123456") {
-        localStorage.setItem("user", JSON.stringify({ username: 'hamid', profil: 'admin' }))
+        localStorage.setItem("user", JSON.stringify({ username: 'Aliou Ndiaye', profil: 'admin' }))
         this.router.navigateByUrl("/process/dashboard");
       } else {
         this.loginError = true;
