@@ -11,6 +11,7 @@ import { ProjetPersonnelsComponent } from './components/projet-personnels/projet
 import { ProjetPromoteurComponent } from './components/projet-promoteur/projet-promoteur.component';
 import { SendProjectMainComponent } from './components/send-project-main/send-project-main.component';
 import { StatistiqueComponent } from './components/statistique/statistique.component';
+import { UtilisateurListComponent } from './components/utilisateur-list/utilisateur-list.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,9 @@ const routes: Routes = [
       {
         path: "messagerie",
         component: MessagerieComponent
+      },{
+        path: "utilisateur",
+        component: UtilisateurListComponent
       },
       {
         path:'profil',
