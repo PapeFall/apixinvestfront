@@ -64,3 +64,40 @@ h3{
       border-radius: 0.7em;
       margin:0.7em
   }
+
+  .apix-palmares-box{
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 0.3em;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 0.9em;
+    
+    &:hover{
+       background-image: linear-gradient(to right,white,white,white,white,white,white,rgba(248, 181, 125, 0.384));
+    }
+    .palmares-title{
+        color: var(--blue);
+        font-size: 1.3em;
+    }
+    .fa{
+        color: var(--orange);
+    }
+}
+
+ /* md */
+   @media (min-width: 192px) {
+    
+    .apix-palmares-box{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+/* lg */
+@media (min-width: 1200px) {
+    
+    .apix-palmares-box{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
