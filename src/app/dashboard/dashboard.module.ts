@@ -20,6 +20,7 @@ import { ProfilComponent } from './components/profil/profil.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { StatistiqueComponent } from './components/statistique/statistique.component';
+import { MessagerieComponent } from './components/messagerie/messagerie.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { StatistiqueComponent } from './components/statistique/statistique.compo
     ProfilComponent,
     HeaderComponent,
     SidebarComponent,
-    StatistiqueComponent
+    StatistiqueComponent,
+    MessagerieComponent
   ],
   imports: [
     CommonModule,
