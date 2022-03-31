@@ -64,6 +64,28 @@
         <span *ngIf="user?.profil!='porteur'">Les Partenaires</span>
       </a>
     </p>
+    <p >
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="campagnes"
+        routerLinkActive="active"
+      >
+        <mat-icon>campaign</mat-icon>
+        Campagnes
+      </a>
+    </p>
+    <p >
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        routerLink="#"
+        routerLinkActive="active"
+      >
+        <mat-icon>article</mat-icon>
+        Articles
+      </a>
+    </p>
     <p>
       <a mat-list-item class="sidebar-menu"
         routerLink="parameters"
@@ -83,27 +105,6 @@
         Utilisateurs
       </a>
     </p>
-    <p *ngIf="user.profil == 'porteur'">
-      <a
-        mat-list-item
-        class="sidebar-menu"
-        routerLink="campagnes"
-        routerLinkActive="active"
-      >
-        <mat-icon>campaign</mat-icon>
-        Campagnes
-      </a>
-    </p>
-    <p *ngIf="user.profil == 'intervenant'">
-      <a
-        mat-list-item
-        class="sidebar-menu"
-        routerLink="#"
-        routerLinkActive="active"
-      >
-        <mat-icon>article</mat-icon>
-        Articles
-      </a>
-    </p>
+    
   </div>
 </mat-nav-list>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
+import { NewCampagneComponent } from './new-campagne/new-campagne.component';
 
 @Component({
   selector: 'app-campagnes',
@@ -7,7 +9,7 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./campagnes.component.scss']
 })
 export class CampagnesComponent implements OnInit {
-  displayedColumns: string[] = ['projet', 'idcampagne','date' ,'action'];
+  displayedColumns: string[] = ['projet', 'date' ,'action'];
   dataSource:MatTableDataSource<any> = new MatTableDataSource<any>([
     {
       projet: "SenBiogaz",
@@ -25,9 +27,15 @@ export class CampagnesComponent implements OnInit {
       date:'20/03/2022'
     }
   ])
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+  newCampagne(){
+    const dialogRef = this.dialog.open(NewCampagneComponent,{
 
+    }).afterClosed().subscribe((res:any)=>{
+      
+    })
+  }
 }
