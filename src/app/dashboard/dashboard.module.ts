@@ -24,6 +24,10 @@ import { MessagerieComponent } from './components/messagerie/messagerie.componen
 import { UtilisateurListComponent } from './components/utilisateur-list/utilisateur-list.component';
 import { CampagnesComponent } from './components/campagnes/campagnes.component';
 import { PartenairesComponent } from './components/partenaires/partenaires.component';
+import { FavorisComponent } from './components/favoris/favoris.component';
+import { ParametersComponent } from './components/parameters/parameters.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { MailboxComponent } from './components/mailbox/mailbox.component';
 
 
 @NgModule({
@@ -49,7 +53,11 @@ import { PartenairesComponent } from './components/partenaires/partenaires.compo
     MessagerieComponent,
     UtilisateurListComponent,
     CampagnesComponent,
-    PartenairesComponent
+    PartenairesComponent,
+    FavorisComponent,
+    ParametersComponent,
+    ChatComponent,
+    MailboxComponent
   ],
   imports: [
     CommonModule,

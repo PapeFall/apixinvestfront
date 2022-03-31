@@ -1,0 +1,14 @@
+
+.mailbox{
+    background-color: white;
+}
+.mailbox-item{
+    border-bottom: solid 1px lightgray;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    &:hover{
+        background-color: rgb(248, 209, 172);
+    }
+}

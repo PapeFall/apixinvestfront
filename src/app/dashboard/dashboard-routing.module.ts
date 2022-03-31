@@ -3,8 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
 import { CampagnesComponent } from './components/campagnes/campagnes.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
+import { FavorisComponent } from './components/favoris/favoris.component';
 import { MainComponent } from './components/main/main.component';
 import { MessagerieComponent } from './components/messagerie/messagerie.component';
+import { ParametersComponent } from './components/parameters/parameters.component';
 import { PartenairesComponent } from './components/partenaires/partenaires.component';
 import { ProfilComponent } from './components/profil/profil.component';
 import { ProjectComponent } from './components/project/project.component';
@@ -29,6 +31,10 @@ const routes: Routes = [
           component: ProjetListComponent
       },
       {
+        path: 'favoris',
+        component: FavorisComponent
+    },
+      {
         path: "messagerie",
         component: MessagerieComponent
       },{
@@ -37,6 +43,10 @@ const routes: Routes = [
       },{
         path:'partenaire',
         component: PartenairesComponent
+      },
+      {
+        path: 'parameters',
+        component: ParametersComponent
       },
       {
         path: "campagnes",
