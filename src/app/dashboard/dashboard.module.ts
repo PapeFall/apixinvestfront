@@ -28,6 +28,7 @@ import { FavorisComponent } from './components/favoris/favoris.component';
 import { ParametersComponent } from './components/parameters/parameters.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { MailboxComponent } from './components/mailbox/mailbox.component';
+import { MailboxSendComponent } from './components/mailbox-send/mailbox-send.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { MailboxComponent } from './components/mailbox/mailbox.component';
     FavorisComponent,
     ParametersComponent,
     ChatComponent,
-    MailboxComponent
+    MailboxComponent,
+    MailboxSendComponent
   ],
   imports: [
     CommonModule,
