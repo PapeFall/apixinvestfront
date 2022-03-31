@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArticlesManagementComponent } from './components/articles-management/articles-management.component';
+import { EditArticleComponent } from './components/articles-management/edit-article/edit-article.component';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
 import { CampagnesComponent } from './components/campagnes/campagnes.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
@@ -56,6 +57,10 @@ const routes: Routes = [
       {
         path: "articles",
         component: ArticlesManagementComponent
+      },
+      {
+        path: "edit-article",
+        component: EditArticleComponent
       },
       {
         path:'profil',

@@ -1,0 +1,29 @@
+<div class="row center-column">
+    <div class="col-sm-12 col-xs-12 col-lg-8 col-md-8 center-column mat-elevation-z2 br bg pt pb">
+        <div class="col-sm-12 mt center-column">
+            <mat-form-field appearance="fill" class="w-100">
+                <mat-label>Titre</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+        </div>
+        <div class="col-sm-12  center-column">
+            <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6  center-column">
+                <input type="file" (change)="onUpload($event)" accept="image/gif, image/jpeg, image/png"  #file style="display: none;">
+                <button class="w-100" (click)="file.click()" mat-stroked-button color="primary">Charger illustration</button>
+            </div>
+           
+            <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 center-column">
+                <span>{{illustration?.name}}</span>
+            </div>
+            <div *ngIf="illustration" class="col-sm-12 center-column mt">
+                <img #img  class="mat-elevation-z2" src="assets/img/cover2.jpeg" style="max-height:7em;" alt="">
+            </div>
+        </div>
+        <div class="col-sm-12 center-column">
+            <mat-form-field class="w-100" appearance="fill">
+                <mat-label>Contenu</mat-label>
+                <textarea matInput id="" cols="30" rows="10"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+</div>
