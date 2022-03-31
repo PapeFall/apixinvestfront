@@ -26,7 +26,7 @@
            </div>
     </div>
     <div class="row container-fluid  mb">
-        <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 mt" routerLink="/process/dashboard/project/general" *ngFor="let i of [1,1,1,1,1]">
+        <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 mt"  *ngFor="let i of [1,1,1,1,1]">
           <div class="mat-elevation-z2 apix-palmares-box" >
             <div class=""  routerLink="../detail-projet" >
                     <img class="mat-elevation-z4"  src="assets/img/cover2.jpeg" style="width: 100%;"  alt="">
@@ -46,10 +46,48 @@
                     <div class="col-sm-6">
                         <span class="fa fa-star"></span>
                             2500 pts
+                            
                        </div>
                     <div class="col-sm-12">
                         <span class="fa fa-map-marker"></span>
                         Dakar
+                    </div>
+                    <div class="col-sm-12 align-right pb mb">
+                        <button class="mb" mat-stroked-button color="accent" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                            <button mat-menu-item *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" >
+                                <mat-icon >done</mat-icon>
+                                <span >Autoriser</span>
+                            </button>
+                            <button mat-menu-item routerLink="/process/dashboard/project/general">
+                                <mat-icon >visibility</mat-icon>
+                                <span >voir</span>
+                            </button>
+                            <button mat-menu-item >
+                                <mat-icon >chat</mat-icon>
+                                <span >Contacter le promotteur</span>
+                            </button>
+                            <button mat-menu-item *ngIf="user?.profil!='porteur'" (click)="openComments()">
+                                <mat-icon >comment</mat-icon>
+                                <span >commentaires</span>
+                            </button>
+                            <button mat-menu-item *ngIf="user?.profil=='partenaire'" >
+                                <mat-icon >subscriptions</mat-icon>
+                                <span >participer au projet</span>
+                            </button>
+                            <button mat-menu-item *ngIf="user?.profil=='porteur'">
+                              <mat-icon>edit</mat-icon>
+                              <span>Modifier</span>
+                            </button>
+                            <button mat-menu-item *ngIf="user?.profil=='porteur'">
+                              <mat-icon color="warn">delete</mat-icon>
+                              <span>Supprimer</span>
+                            </button>
+                            
+                           
+                          </mat-menu>
                     </div>
                    
             </div>

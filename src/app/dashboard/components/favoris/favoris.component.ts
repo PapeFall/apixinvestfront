@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favoris.component.scss']
 })
 export class FavorisComponent implements OnInit {
+  user: any = undefined;
 
   constructor() { }
 
   ngOnInit(): void {
+    let u :any= localStorage.getItem('user');
+    this.user = JSON.parse(u);
   }
 
 }

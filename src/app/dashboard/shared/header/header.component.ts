@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
     this.width_header = 'default';
     let u :any= localStorage.getItem('user');
     this.user = JSON.parse(u);
+    if(this.router.url=='/process/dashboard/project/general'){
+      this.toggleSideBar()
+    }
+    
   }
 
   createProject(){
