@@ -5,6 +5,7 @@ import { CampagnesComponent } from './components/campagnes/campagnes.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
 import { MainComponent } from './components/main/main.component';
 import { MessagerieComponent } from './components/messagerie/messagerie.component';
+import { PartenairesComponent } from './components/partenaires/partenaires.component';
 import { ProfilComponent } from './components/profil/profil.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjetListComponent } from './components/projet-list/projet-list.component';
@@ -33,6 +34,9 @@ const routes: Routes = [
       },{
         path: "utilisateur",
         component: UtilisateurListComponent
+      },{
+        path:'partenaire',
+        component: PartenairesComponent
       },
       {
         path: "campagnes",

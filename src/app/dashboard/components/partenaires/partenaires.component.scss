@@ -1,0 +1,21 @@
+.bg{
+    background-color: white;
+}
+.green-point{
+    width: 1em;
+    height: 1em;
+    border-radius: 7em;
+    background-color: green;
+    display: inline-block;
+    content: " ";
+    align-content: baseline;
+}
+
+.red-point{
+    width: 1em;
+    height: 1em;
+    border-radius: 7em;
+    background-color: red;
+    display: inline-block;
+    content: " ";
+}

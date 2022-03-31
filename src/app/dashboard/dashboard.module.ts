@@ -23,6 +23,7 @@ import { StatistiqueComponent } from './components/statistique/statistique.compo
 import { MessagerieComponent } from './components/messagerie/messagerie.component';
 import { UtilisateurListComponent } from './components/utilisateur-list/utilisateur-list.component';
 import { CampagnesComponent } from './components/campagnes/campagnes.component';
+import { PartenairesComponent } from './components/partenaires/partenaires.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { CampagnesComponent } from './components/campagnes/campagnes.component';
     StatistiqueComponent,
     MessagerieComponent,
     UtilisateurListComponent,
-    CampagnesComponent
+    CampagnesComponent,
+    PartenairesComponent
   ],
   imports: [
     CommonModule,
