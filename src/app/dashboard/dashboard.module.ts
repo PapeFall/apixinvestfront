@@ -32,6 +32,7 @@ import { MailboxSendComponent } from './components/mailbox-send/mailbox-send.com
 import { NewCampagneComponent } from './components/campagnes/new-campagne/new-campagne.component';
 import { ArticlesManagementComponent } from './components/articles-management/articles-management.component';
 import { EditArticleComponent } from './components/articles-management/edit-article/edit-article.component';
+import { EditParameterComponent } from './components/parameters/edit-parameter/edit-parameter.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { EditArticleComponent } from './components/articles-management/edit-arti
     MailboxSendComponent,
     NewCampagneComponent,
     ArticlesManagementComponent,
-    EditArticleComponent
+    EditArticleComponent,
+    EditParameterComponent
   ],
   imports: [
     CommonModule,

@@ -1,1 +1,34 @@
-<p>parameters works!</p>
+<div class="container-fluid">
+    <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Alertes
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <div class="container-fluid">
+            <div class="align-right">
+                <button mat-raised-button color="primary" (click)="newAlerte()">Nouvelle alerte</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <th>Libelle</th>
+                    <th>Type</th>
+                    <th>Priorité</th>
+                </thead>
+                <tbody>
+                    
+                    <tr *ngFor="let a of alertes">
+                        <td>{{a.libelle}}</td>
+                        <td>{{a.type}}</td>
+                        <td>{{a.priorite}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+          </div>
+          </mat-expansion-panel>
+          
+    </mat-accordion>
+</div>
