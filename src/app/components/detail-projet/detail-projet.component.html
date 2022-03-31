@@ -95,7 +95,6 @@
                 <button type="button" mat-raised-button color="primary"><mat-icon>share</mat-icon>Partager</button>
                 <span>
                     <span *ngFor="let i of stars;let indice=index;" (click)="noter(indice)" [ngStyle]="{'color':i?'var(--orange)':'gray'}" class="fa fa-star"></span>
-                    
                 </span>
             </div>
         </div>
