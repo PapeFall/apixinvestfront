@@ -46,3 +46,44 @@ mat-toolbar-row {
     }
   }
   
+  .severe{
+    width: 1em;
+    height: 1em;
+    border-radius: 7em;
+    background-color: red;
+    display: inline-block;
+    content: " ";
+    align-content: baseline;
+}
+
+.moyen{
+  width: 1em;
+  height: 1em;
+  border-radius: 7em;
+  background-color: yellow;
+  display: inline-block;
+  content: " ";
+  align-content: baseline;
+}
+
+.faible{
+  width: 1em;
+  height: 1em;
+  border-radius: 7em;
+  background-color: blue;
+  display: inline-block;
+  content: " ";
+  align-content: baseline;
+}
+
+p {
+  
+  span{
+  // margin: 1em;
+  padding: 0.5em;
+  font-size: 0.9em;
+  display: inline-block;
+  align-content: baseline;
+  }
+  border-bottom: solid 1px lightgray;
+}
