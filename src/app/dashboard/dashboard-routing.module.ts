@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArticlesManagementComponent } from './components/articles-management/articles-management.component';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
 import { CampagnesComponent } from './components/campagnes/campagnes.component';
 import { DossierFinancierComponent } from './components/dossier-financier/dossier-financier.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
       {
         path: "campagnes",
         component: CampagnesComponent
+      },
+      {
+        path: "articles",
+        component: ArticlesManagementComponent
       },
       {
         path:'profil',

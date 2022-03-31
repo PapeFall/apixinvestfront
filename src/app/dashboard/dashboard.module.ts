@@ -30,6 +30,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { MailboxComponent } from './components/mailbox/mailbox.component';
 import { MailboxSendComponent } from './components/mailbox-send/mailbox-send.component';
 import { NewCampagneComponent } from './components/campagnes/new-campagne/new-campagne.component';
+import { ArticlesManagementComponent } from './components/articles-management/articles-management.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { NewCampagneComponent } from './components/campagnes/new-campagne/new-ca
     ChatComponent,
     MailboxComponent,
     MailboxSendComponent,
-    NewCampagneComponent
+    NewCampagneComponent,
+    ArticlesManagementComponent
   ],
   imports: [
     CommonModule,
