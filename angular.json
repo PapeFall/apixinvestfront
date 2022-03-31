@@ -35,7 +35,10 @@
               "src/styles.scss",
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeicons/primeicons.css"
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/quill/dist/quill.core.css", 
+              "node_modules/quill/dist/quill.snow.css",
+              
                         ],
             "scripts": [
               "src/assets/js/jquery-2.2.4.min.js",
@@ -60,7 +63,8 @@
               "src/assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js",
               "src/assets/js/custom.js",
 
-              "node_modules/chart.js/dist/Chart.js"
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/quill/dist/quill.js"
             ]
           },
           "configurations": {

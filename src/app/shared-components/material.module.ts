@@ -46,6 +46,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 /* Modules de primeng */
 import {CardModule} from 'primeng/card';
 import {TableModule} from 'primeng/table';
+import {EditorModule} from 'primeng/editor';
 @NgModule({
   declarations: [],
   imports: [
@@ -109,7 +110,8 @@ import {TableModule} from 'primeng/table';
     MatTreeModule,
     MatRadioModule,
     CardModule,
-    TableModule
+    TableModule,
+    EditorModule
   ],
   providers: [],
   bootstrap: []

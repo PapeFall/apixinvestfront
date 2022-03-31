@@ -13,6 +13,7 @@ export class EditArticleComponent implements OnInit {
 
   illustration:any= null;
 
+
   onUpload(event:any){
     this.illustration = event.target.files[0]
     console.log(this.illustration);
@@ -21,6 +22,7 @@ export class EditArticleComponent implements OnInit {
     
   }
   ngOnInit(): void {
+   
   }
 
 }
