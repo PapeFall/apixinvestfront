@@ -32,6 +32,22 @@
       </a>
     </p>
     <p>
+      <a mat-list-item class="sidebar-menu"
+        routerLink="list-project"
+        routerLinkActive="active">
+        <mat-icon>favorite</mat-icon>
+        Favoris
+      </a>
+    </p>
+    <p>
+      <a mat-list-item class="sidebar-menu"
+        routerLink="list-project"
+        routerLinkActive="active">
+        <mat-icon>settings</mat-icon>
+        Configuration Alertes
+      </a>
+    </p>
+    <p>
       <a
         mat-list-item
         class="sidebar-menu"
@@ -39,7 +55,8 @@
         routerLinkActive="active"
       >
         <mat-icon>work</mat-icon>
-        Mes Projets
+        <span *ngIf="user?.profil=='porteur'">Mes Projets</span>
+        <span *ngIf="user?.profil!='porteur'">Les projets</span>
       </a>
     </p>
     <p>
@@ -50,7 +67,8 @@
         routerLinkActive="active"
       >
         <mat-icon>groups</mat-icon>
-        Mes Partenaires
+        <span *ngIf="user?.profil=='porteur'">Mes Partenaires</span>
+        <span *ngIf="user?.profil!='porteur'">Les Partenaires</span>
       </a>
     </p>
     <p *ngIf="user.profil == 'admin'">

@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import './my-theme.scss';
 
 :root{
     --orange:rgba(232, 116, 11, 1);
@@ -78,10 +79,37 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 
+
 .align-right{
     display: flex;
     justify-items: right;
     justify-content: right;
     align-items: right;
     align-content: right;
+}
+
+.align-left{
+    display: flex;
+    justify-items: left;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+}
+
+.flex-row-gap{
+    display: flex; gap: 0.2em;
+    flex-direction: row;
+}
+
+.flex-column-gap{
+    display: flex; gap: 0.2em;
+    flex-direction: row;
+}
+
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
