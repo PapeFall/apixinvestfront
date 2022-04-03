@@ -17,11 +17,20 @@
              <textarea matInput></textarea>
         </mat-form-field>
     </div>
+    <div class="col-sm-12 pb mb">
+        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+            <input type="file" (change)="onUpload($event)" #file style="display: none;">
+            <button (click)="file.click()" mat-stroked-button color="primary">Pièce jointe</button>
+        </div>
+        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+            <span>{{this.illustration?.name}}</span>
+        </div>
+    </div>
 
   
 
 
-    <div mat-dialog-close >
+    <div mat-dialog-close class="mt pt" >
         <button mat-stroked-button color="warn">fermer</button> &nbsp;&nbsp;
         <button mat-raised-button color="primary">envoyer</button>
     </div>
