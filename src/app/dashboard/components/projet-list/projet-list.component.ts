@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CommentsComponent } from 'src/app/shared-components/components/comments/comments.component';
+import { ParticipationPopupComponent } from 'src/app/shared-components/components/participation-popup/participation-popup.component';
 
 @Component({
   selector: 'app-projet-list',
@@ -22,5 +23,13 @@ export class ProjetListComponent implements OnInit {
       height:'99%',
       width:'100%'
     });
+  }
+
+  participer(){
+    const dialog = this.dialog.open(ParticipationPopupComponent,{
+
+    }).afterClosed().subscribe((resp:any)=>{
+      
+    })
   }
 }

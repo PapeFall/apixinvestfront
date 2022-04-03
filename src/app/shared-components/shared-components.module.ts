@@ -6,6 +6,7 @@ import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ChartModule} from 'primeng/chart';
 import { CommentsComponent } from './components/comments/comments.component';
+import { ParticipationPopupComponent } from './components/participation-popup/participation-popup.component';
 
 
 
@@ -13,7 +14,8 @@ import { CommentsComponent } from './components/comments/comments.component';
   declarations: [
     ToolbarComponent,
     SiteFooterComponent,
-    CommentsComponent
+    CommentsComponent,
+    ParticipationPopupComponent
   ],
   imports: [
     CommonModule,

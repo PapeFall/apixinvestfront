@@ -73,7 +73,7 @@
                                 <mat-icon >comment</mat-icon>
                                 <span >commentaires</span>
                             </button>
-                            <button mat-menu-item *ngIf="user?.profil=='partenaire'" >
+                            <button mat-menu-item *ngIf="user?.profil=='partenaire'" (click)="participer()" >
                                 <mat-icon >subscriptions</mat-icon>
                                 <span >participer au projet</span>
                             </button>
