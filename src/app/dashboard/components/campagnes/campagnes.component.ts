@@ -14,17 +14,17 @@ export class CampagnesComponent implements OnInit {
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE001",
-      date:'20/03/2022'
+      date:'20/03/2022 - 22/03/2022'
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE002",
-      date:'20/03/2022'
+      date:'20/03/2022 - 22/03/2022'
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE003",
-      date:'20/03/2022'
+      date:'20/03/2022 - 22/03/2022'
     }
   ])
   constructor(private dialog: MatDialog) { }

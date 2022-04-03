@@ -1,0 +1,19 @@
+.box{
+    padding: 2em;
+    margin: 1em;
+    background-color: white;
+
+    .valeur{
+        font-size: 3em;
+        font-weight: bold;
+        color: var(--blue);
+        padding-bottom: 0.3em;
+        border-bottom: solid 0.2em rgba(87, 43, 7, 0.678);
+    }
+    .titre{
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--orange);
+        padding-top: 0.2em;
+    }
+}
