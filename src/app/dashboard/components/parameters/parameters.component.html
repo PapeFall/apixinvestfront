@@ -11,21 +11,52 @@
             <div class="align-right">
                 <button mat-raised-button color="primary" (click)="newAlerte()">Nouvelle alerte</button>
             </div>
-            <table class="table">
-                <thead>
-                    <th>Libelle</th>
-                    <th>Type</th>
-                    <th>Priorité</th>
-                </thead>
-                <tbody>
-                    
-                    <tr *ngFor="let a of alertes">
-                        <td>{{a.libelle}}</td>
-                        <td>{{a.type}}</td>
-                        <td>{{a.priorite}}</td>
-                    </tr>
-                </tbody>
+            <table class="mt"  mat-table [dataSource]="dataSource" class="w-100">
 
+            
+              <ng-container matColumnDef="libelle">
+                <th mat-header-cell *matHeaderCellDef> Libelle </th>
+                <td mat-cell *matCellDef="let element"> {{element.libelle}} </td>
+              </ng-container>
+  
+              <ng-container matColumnDef="priorite">
+                <th mat-header-cell *matHeaderCellDef> Priorité </th>
+                <td mat-cell *matCellDef="let element">
+                   <span *ngIf="element.priorite=='sévère'"><span class="severe"></span> {{element.priorite}} </span>
+                   <span *ngIf="element.priorite=='moyen'"><span class="moyen"></span> {{element.priorite}} </span>
+                   <span *ngIf="element.priorite=='faible'"><span class="faible"></span> {{element.priorite}} </span>
+
+                </td>
+              </ng-container>
+            
+              <ng-container matColumnDef="type">
+                <th mat-header-cell *matHeaderCellDef> type </th>
+                <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+              </ng-container>
+            
+              <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element">
+                  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>
+                        <mat-icon>edit</mat-icon>
+                        <span>Modifier</span>
+                      </button>
+                      <button mat-menu-item>
+                        <mat-icon color="warn">delete</mat-icon>
+                        <span>Supprimer</span>
+                      </button>
+                     
+                     
+                    </mat-menu>
+                  </td>
+              </ng-container>
+            
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
           </div>
           </mat-expansion-panel>

@@ -1,0 +1,16 @@
+
+<div class="container-fluid col-sm-12">
+    <strong>Priorité</strong>
+<p>
+    <span *ngIf="alerte.priorite=='sévère'"><span class="severe"></span> {{alerte.priorite}} </span>
+         <span *ngIf="alerte.priorite=='moyen'"><span class="moyen"></span> {{alerte.priorite}} </span>
+         <span *ngIf="alerte.priorite=='faible'"><span class="faible"></span> {{alerte.priorite}} </span>
+
+</p>
+<strong>Libelle</strong>
+<p>{{alerte.libelle}}</p>
+<strong>Type</strong>
+<p>{{alerte.type}}</p>
+<strong>Date</strong>
+<p>{{alerte.date}}</p>
+</div>

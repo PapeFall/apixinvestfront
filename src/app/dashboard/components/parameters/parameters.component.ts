@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatTableDataSource } from '@angular/material/table';
 import { EditParameterComponent } from './edit-parameter/edit-parameter.component';
 
 @Component({
@@ -26,6 +27,8 @@ export class ParametersComponent implements OnInit {
       priorite:"sévère"
     }
   ]
+  displayedColumns: string[] = ['libelle', 'type', 'priorite', 'action'];
+  dataSource:MatTableDataSource<any> = new MatTableDataSource<any>(this.alertes);
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {

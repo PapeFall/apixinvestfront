@@ -113,3 +113,33 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     align-content: center;
     justify-content: center;
 }
+
+.severe{
+    width: 1em;
+    height: 1em;
+    border-radius: 7em;
+    background-color: red;
+    display: inline-block;
+    content: " ";
+    align-content: baseline;
+}
+
+.moyen{
+  width: 1em;
+  height: 1em;
+  border-radius: 7em;
+  background-color: orange;
+  display: inline-block;
+  content: " ";
+  align-content: baseline;
+}
+
+.faible{
+  width: 1em;
+  height: 1em;
+  border-radius: 7em;
+  background-color: var(--blue);
+  display: inline-block;
+  content: " ";
+  align-content: baseline;
+}

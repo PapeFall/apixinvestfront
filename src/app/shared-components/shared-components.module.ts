@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ChartModule} from 'primeng/chart';
 import { CommentsComponent } from './components/comments/comments.component';
 import { ParticipationPopupComponent } from './components/participation-popup/participation-popup.component';
+import { ListeAlertesComponent } from './components/liste-alertes/liste-alertes.component';
+import { DetailAlerteComponent } from './components/liste-alertes/detail-alerte/detail-alerte.component';
 
 
 
@@ -15,7 +17,9 @@ import { ParticipationPopupComponent } from './components/participation-popup/pa
     ToolbarComponent,
     SiteFooterComponent,
     CommentsComponent,
-    ParticipationPopupComponent
+    ParticipationPopupComponent,
+    ListeAlertesComponent,
+    DetailAlerteComponent
   ],
   imports: [
     CommonModule,

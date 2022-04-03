@@ -60,7 +60,7 @@ mat-toolbar-row {
   width: 1em;
   height: 1em;
   border-radius: 7em;
-  background-color: yellow;
+  background-color: orange;
   display: inline-block;
   content: " ";
   align-content: baseline;
@@ -70,7 +70,7 @@ mat-toolbar-row {
   width: 1em;
   height: 1em;
   border-radius: 7em;
-  background-color: blue;
+  background-color: var(--blue);
   display: inline-block;
   content: " ";
   align-content: baseline;

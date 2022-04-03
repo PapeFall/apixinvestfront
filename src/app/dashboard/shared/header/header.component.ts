@@ -62,4 +62,8 @@ export class HeaderComponent implements OnInit {
   profil(){
     this.router.navigateByUrl("/process/dashboard/profil")
   }
+
+  openListeAlerte(){
+    this.router.navigateByUrl("/process/dashboard/liste-alertes")
+  }
 }
