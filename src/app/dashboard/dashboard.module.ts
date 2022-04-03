@@ -33,6 +33,7 @@ import { NewCampagneComponent } from './components/campagnes/new-campagne/new-ca
 import { ArticlesManagementComponent } from './components/articles-management/articles-management.component';
 import { EditArticleComponent } from './components/articles-management/edit-article/edit-article.component';
 import { EditParameterComponent } from './components/parameters/edit-parameter/edit-parameter.component';
+import { PorteurProjetComponent } from './components/porteur-projet/porteur-projet.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { EditParameterComponent } from './components/parameters/edit-parameter/e
     NewCampagneComponent,
     ArticlesManagementComponent,
     EditArticleComponent,
-    EditParameterComponent
+    EditParameterComponent,
+    PorteurProjetComponent
   ],
   imports: [
     CommonModule,

@@ -11,6 +11,7 @@ import { MainComponent } from './components/main/main.component';
 import { MessagerieComponent } from './components/messagerie/messagerie.component';
 import { ParametersComponent } from './components/parameters/parameters.component';
 import { PartenairesComponent } from './components/partenaires/partenaires.component';
+import { PorteurProjetComponent } from './components/porteur-projet/porteur-projet.component';
 import { ProfilComponent } from './components/profil/profil.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjetListComponent } from './components/projet-list/projet-list.component';
@@ -22,29 +23,33 @@ import { UtilisateurListComponent } from './components/utilisateur-list/utilisat
 
 const routes: Routes = [
   {
-      path:'',
-      component:MainComponent,
-      children:[
-        {
-          path:'',
-          component:StatistiqueComponent
-        },
-        {
-          path: 'list-project',
-          component: ProjetListComponent
+    path: '',
+    component: MainComponent,
+    children: [
+      {
+        path: '',
+        component: StatistiqueComponent
+      },
+      {
+        path: 'list-project',
+        component: ProjetListComponent
+      },
+      {
+        path: 'list-porteurs',
+        component: PorteurProjetComponent
       },
       {
         path: 'favoris',
         component: FavorisComponent
-    },
+      },
       {
         path: "messagerie",
         component: MessagerieComponent
-      },{
+      }, {
         path: "utilisateur",
         component: UtilisateurListComponent
-      },{
-        path:'partenaire',
+      }, {
+        path: 'partenaire',
         component: PartenairesComponent
       },
       {
@@ -64,50 +69,50 @@ const routes: Routes = [
         component: EditArticleComponent
       },
       {
-        path:'profil',
+        path: 'profil',
         component: ProfilComponent
       },
       {
-        path:'liste-alertes',
+        path: 'liste-alertes',
         component: ListeAlertesComponent
       },
       {
-        path:'project',
+        path: 'project',
         component: SendProjectMainComponent,
-        children:[
-            {
-                path:'',
-                redirectTo:'general'
-            },{
-                path:'general',
-                component:ProjectComponent
-            },
-            {
-              path:'dossier-financier',
-              component:DossierFinancierComponent
-            },
-            
-            {
-              path:'personnels',
-              component:ProjetPersonnelsComponent
-            },
-            {
-                path:'bminfos',
-                component:BusinessModelInfosComponent
-            },{
-              path:'promotteur',
-              component:ProjetPromoteurComponent
-            }
+        children: [
+          {
+            path: '',
+            redirectTo: 'general'
+          }, {
+            path: 'general',
+            component: ProjectComponent
+          },
+          {
+            path: 'dossier-financier',
+            component: DossierFinancierComponent
+          },
+
+          {
+            path: 'personnels',
+            component: ProjetPersonnelsComponent
+          },
+          {
+            path: 'bminfos',
+            component: BusinessModelInfosComponent
+          }, {
+            path: 'promotteur',
+            component: ProjetPromoteurComponent
+          }
         ]
       }
-        
-      ]
+
+    ]
   },
-  
+
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class  DashboardRoutingModule { }
+export class DashboardRoutingModule { }
