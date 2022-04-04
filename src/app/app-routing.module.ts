@@ -31,7 +31,7 @@ const routes: Routes = [
     component:ContactComponent
   },
   {
-    path:'article-detail',
+    path:'article-detail/:categorie/:id',
     component: DetailArticleComponent
   },
   {

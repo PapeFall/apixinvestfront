@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArticlesService } from 'src/app/services/articles.service';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { 
+  articles:any = [];
+  constructor(private articleService: ArticlesService) { 
     new Promise(resolve =>{
       this.loadScript()
     })
+    this.getArticles();
   }
 
   public loadScript(){
@@ -23,6 +25,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  public getArticles(){
+    this.articles = this.articleService.getArticles();
+    console.log(this.articles);
+    
   }
 
 }
