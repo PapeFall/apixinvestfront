@@ -49,6 +49,12 @@ export class DetailProjetComponent implements OnInit {
           })
           break;
         case 'energie':
+          this.projet = this.projets?.energie.filter((v:any,i:any,arr:any)=>{
+            return v.id==index
+          })[0];
+          this.projetRecommandes= this.projets.energie.filter((v:any,i:any,arr:any)=>{
+            return v.id!=index
+          })
           break;
         case 'industrie':
           break;
