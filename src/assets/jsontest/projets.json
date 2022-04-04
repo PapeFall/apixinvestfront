@@ -151,5 +151,43 @@
             "img":"assets/img/projetsimg/ind6.jpg",
             "content":"C’est un projet de vente de matières premières au meilleur prix aux artisans de l’alimentaire, en optimisant la logistique des distributeurs."
         }
+    ],
+    "technologie":[
+        {
+            "id":1,
+            "titre":"Location d'écrans intelligents pour digitaliser les points de vente",
+            "img":"assets/img/projetsimg/tech1.jpg",
+            "content":"Grâce à un ensemble de services adaptés à chaque secteur d'activité, nous proposons des offres sur mesure ainsi qu’un accompagnement tout au long de nos collaborations. Ce projet est la solution plébiscitée par les acteurs traditionnels afin de maitriser leur e-réputation, d'augmenter leurs taux de transformation sur site et d'alimenter leurs CRM. <p>Les solutions de marché adressées par ce projet sont la combinaison des technologies de l’information et de la communication (TIC), avec des écrans intelligents et communicants, permettant à ces derniers d’interagir entre eux, de remonter des données essentielles pour la gestion de la satisfaction client et d'influencer directement le référencement local.</p>"
+        },
+        {
+            "id":2,
+            "titre":"PARTAGE D'EXPÉRIENCES PROFESSIONNELLES ENTRE AGRICULTEURS",
+            "img":"assets/img/projetsimg/tech2.jpg",
+            "content":"C’est une plateforme de partage d'expériences professionnelles et de pratiques agricoles entre agriculteurs"
+        },
+        {
+            "id":3,
+            "titre":"Plateforme de baby-sitting collaboratif",
+            "img":"assets/img/projetsimg/tech3.jpg",
+            "content":"Plateforme collaborative pour parents leur permettant de s’échanger des services et des biens dans le cadre de la parentalité. Premier service commercialisé : l'échange de temps de garde d'enfant."
+        },
+        {
+            "id":4,
+            "titre":"PLATEFORME DESTINÉE AUX PASSIONNÉS DE NOUVELLES TECHNOLOGIES",
+            "img":"assets/img/projetsimg/tech4.jpeg",
+            "content":"<p>Le projet vise à créer une école d'experts des technologies de la sécurité informatique. Il permet d'obtenir selon ces membres :</p><br>- Des clients et des utilisateurs pour les fournisseurs/éditeurs de nouvelles technologies<br>- Des parcours certifiants pour les consultants actuels et futures,<br>- Des personnes qualifiées et des liens accrus avec des fournisseurs de services pour les entreprises.<p>Le business modèle se base sur le paiement de cours et d'abonnements pour les apprenants ainsi que sur l'affiliation pour les entreprises de la cybersécurité.</p><p>Le projet ne donne pas l'opportunité de construire des diplômes sur plusieurs années. Elle vise à produire rapidement des techniciens opérationnels aux compétences actuelles éprouvées en l'espace d'une semaine comme toute formation certifiante.</p>"
+        },
+        {
+            "id":5,
+            "titre":"PROJET POUR L’ACCESSIBILITE A TOUS D’INTERNET DANS LES LIEUX PUBLICS",
+            "img":"assets/img/projetsimg/tech5.png",
+            "content":"<p>Le but de ce projet est de transformer numériquement les municipalités en des villes intelligentes par le biais d’un réseau sans fil. Il permettra aux usagers, dans les lieux publics fréquentés du Sénégal, d’avoir accès à une connexion internet, disponible, sécurisée et facile à utiliser. Et, surtout, d’avoir accès à des services à valeur ajoutée notamment le streaming, le vod, et des contenus multimédias:</p><br>Offrir une connexion haut débit aux usagers ;<br>Mutualiser les réseaux wifi des autres projets du programme;<br>Fournir un support technique et un accompagnement dans le développement de solutions multimédia interactives et innovantes pour les communes ;<br>Ce projet projettera le pays dans l’ère du numérique, lui permettant d’avoir un impact réel dans son développement."
+        },
+        {
+            "id":6,
+            "titre":"SERVICE DE NETTOYAGE VAPEUR À DOMICILE",
+            "img":"assets/img/projetsimg/tech6.jpg",
+            "content":"Ce projet est une appli mobile de mise en relation entre professionnels du nettoyage écologique à domicile (voiture, canapé, matelas, moquette...) et des clients en BtoB et BtoC"
+        }
     ]
 }

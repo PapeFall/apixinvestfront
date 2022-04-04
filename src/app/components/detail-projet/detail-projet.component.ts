@@ -65,6 +65,12 @@ export class DetailProjetComponent implements OnInit {
           })
           break;
         case 'technologie':
+          this.projet = this.projets?.technologie.filter((v:any,i:any,arr:any)=>{
+            return v.id==index
+          })[0];
+          this.projetRecommandes= this.projets.technologie.filter((v:any,i:any,arr:any)=>{
+            return v.id!=index
+          })
           break;
         case 'transport':
           break;
