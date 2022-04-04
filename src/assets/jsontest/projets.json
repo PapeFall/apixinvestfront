@@ -113,5 +113,43 @@
             "img":"assets/img/projetsimg/ener6.png",
             "content":"L’objectif de ce projet est la vente de licences d’exploitation du principe de l’invention afin que ceux-ci puissent à leur tour céder des sous-licences aux acteurs régionaux de l’énergie sur leur territoire.<br><p>Il regroupera l’ensemble des chercheurs mandatés par les différents pays signataires de nos licences, ainsi l’évolution des performances de l’invention sera mise en commun au profit de l’ensemble de la collectivité humaine.</p><strong>Les points forts du projet :</strong><br><p>La technologie portée par le projet peut être considérée comme une low-tech, peu gourmande en minerais. C'est une invention réalisable dans tous les pays, y compris les plus pauvres. L’homme a compris que la croissance était consommatrice d’énergie et parallèle à la courbe de production d'énergie. Plus de croissance = plus d'énergie !</p><p>La plupart des moyens de production d’énergie actuels impactent les ressources naturelles pour construire des machines capables de transformer le pétrole, le charbon, le gaz ou l’uranium en énergie électrique. Ce concept nécessite de taper dans les ressources de la planète pour construire les machines mais aussi pour alimenter ces machines en y faisant bruler du pétrole, du charbon, etc. Ces ressources ont mis des millions d'années à se former et nous les aurons consommées en deux siècles.</p><br><p>L’avantage des générateurs qui exploiteront le principe de l’invention du projet est qu’ils ne nécessitent pas ou peu de métaux nobles et de terres rares mais surtout que leur fonctionnement se fera sans consommer d’autres ressources de la planète, puisque la gravité est présente partout et en quantité illimitée.</p>"
         }
+    ],
+    "industrie":[
+        {
+            "id":1,
+            "titre":"PROJET DE CONCEPTION /VENTE D'ÉQUIPEMENTS DE NETTOYAGE ET DÉSINFECTION",
+            "img":"assets/img/projetsimg/ind1.jpg",
+            "content":"<p>Nous concevons, fabriquons et développons des systèmes de dosage, des systèmes pour le transfert entièrement sécurisé pour produits chimiques, des équipements de nettoyage et désinfection à moyenne pression, spécialement conçus pour l’industrie agroalimentaire, pharmaceutique, agriculture.</p><p>Une gamme d'équipements, innovante, robuste, simple d’utilisation, Nos équipements sont garantis 3 ans. Une gamme d'équipements disponible à la vente ou à la location.</p><p>Ces équipements sont destinés au nettoyage et à la désinfection des industries agroalimentaires, pharmaceutiques et à l’agriculture, principalement les élevages et la production laitière.</p><p>Une gamme d’équipements de nettoyage et désinfection à moyenne pression.</p><br>1) Les centrales et satellites Argofoam .<br>2) Les équipements mobiles, Mistral et Mistral Duo.<br>3) Les chariots et équipements fixes Argo'Cleaner."
+        },
+        {
+            "id":2,
+            "titre":"Projet de création d’emballage alimentaire pour fast food",
+            "img":"assets/img/projetsimg/ind2.jpg",
+            "content":"C’est un projet qui permet de créer des emballages alimentaires brevetés pour la restauration rapide et l'industrie du fast food réunissant de nombreux avantages."
+        },
+        {
+            "id":3,
+            "titre":"Projet de production de coton et de fabrication locale de vêtements prêts à porter",
+            "img":"assets/img/projetsimg/ind3.png",
+            "content":"<p>L’objectif de ce projet est de tripler d'ici 2022 la production de coton biologique et de coton BCI, pour atteindre respectivement 150 et 240 tonnes. Il est également prévu d'élaborer une stratégie de production pour les dix prochaines années.</p><p>Une application de traçabilité numérique pour le secteur du coton permettra de suivre, de documenter et de visualiser toutes les étapes de la production – du champ de coton à l'expédition en passant par le traitement des fibres.</p><p>En parallèle, environ 300 jeunes seront formés dans ce pôle créatif et 200 nouveaux emplois seront créés. Grâce à l'ensemble de ces approches, tous les éléments essentiels de la création de valeur locale seront en place à moyen terme.</p>"
+        },
+        {
+            "id":4,
+            "titre":"Projet de production et de transformation de l’Anacarde sénégalaise",
+            "img":"assets/img/projetsimg/ind4.png",
+            "content":""
+        },
+        {
+            "id":5,
+            "titre":"Projet de Transformation Agro-industrielle en Casamance",
+            "img":"assets/img/projetsimg/ind5.png",
+            "content":"<p>Ce Projet prévoit l’élargissement des moteurs de croissance de deux (télécommunication et services) à six avec quatre nouveaux (agriculture et agro-alimentaire, habitat, mines et tourisme). Le PZTA-Sud vise à créer les conditions requises pour accroitre l’investissement privé dans les filières ciblées, notamment en matière de transformation des produits agricoles, de fourniture d’intrants et de prestations de services. Les résultats attendus concernent l'amélioration de la sécurité alimentaire et nutritionnelle des bénéficiaires ainsi que de leurs revenus grâce à un meilleur accès aux marchés, aux intrants agricoles et aux services. A cet effet, le projet prévoit:</p><br>• l'augmentation de l'investissement privé grâce aux facilités fournies (écosystème d'affaires plus favorable, construction d'un module agro-industriel central (Adéane), trois (3) modules régionaux (Bignona, Sédhiou et Kolda) et cinq (5) plateformes d'agrégation et de services ; <br>• et le renforcement des capacités des acteurs de la chaîne de valeur dans les secteurs agro-industriels (structuration/organisation des chaînes de valeur, formation, facilité d'accès au financement, production par la recherche in-vitro de mangues, noix de cajou, plants de maïs, etc. ).<br>Le projet comprend trois (03) composantes, à savoir : <br>(a) l’appui à la mise en place d’un écosystème des affaires favorable à l’investissement privé dans l’agro-industrie ; <br>(b) l’amélioration durable des capacités des producteurs des filières agro-industrielles ; <br>(c) la coordination, la gestion et le suivi-évaluation."
+        },
+        {
+            "id":6,
+            "titre":"VENTE MATIÈRES PREMIÈRES AUX ARTISANS DE L’ALIMENTAIRE",
+            "img":"assets/img/projetsimg/ind6.jpg",
+            "content":"C’est un projet de vente de matières premières au meilleur prix aux artisans de l’alimentaire, en optimisant la logistique des distributeurs."
+        }
     ]
 }
