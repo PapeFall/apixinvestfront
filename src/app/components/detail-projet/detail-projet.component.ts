@@ -73,8 +73,20 @@ export class DetailProjetComponent implements OnInit {
           })
           break;
         case 'transport':
+          this.projet = this.projets?.transport.filter((v:any,i:any,arr:any)=>{
+            return v.id==index
+          })[0];
+          this.projetRecommandes= this.projets.transport.filter((v:any,i:any,arr:any)=>{
+            return v.id!=index
+          })
           break;
         case 'sante':
+          this.projet = this.projets?.sante.filter((v:any,i:any,arr:any)=>{
+            return v.id==index
+          })[0];
+          this.projetRecommandes= this.projets.sante.filter((v:any,i:any,arr:any)=>{
+            return v.id!=index
+          })
           break;
       }
     });

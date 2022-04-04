@@ -189,5 +189,83 @@
             "img":"assets/img/projetsimg/tech6.jpg",
             "content":"Ce projet est une appli mobile de mise en relation entre professionnels du nettoyage écologique à domicile (voiture, canapé, matelas, moquette...) et des clients en BtoB et BtoC"
         }
+    ],
+    "transport":[
+        {
+            "id":1,
+            "titre":"APP MOBILE POUR SE GARER PLUS VITE DANS LA RUE",
+            "img":"assets/img/projetsimg/trans1.jpg",
+            "content":"application mobile innovante (brevet) qui aide les conducteurs à trouver une place dans la rue pour se garer plus vite"
+        },
+        {
+            "id":2,
+            "titre":"AVION LÉGER DESTINÉ À RÉALISER DES MISSIONS PAR VOIE AÉRIENNE",
+            "img":"assets/img/projetsimg/trans2.jpg",
+            "content":"C’est un projet d'étude et de développement d'un avion léger polyvalent conçu pour les travaux aériens"
+        },
+        {
+            "id":3,
+            "titre":"GARAGE ENTRETIEN VOITURE",
+            "img":"assets/img/projetsimg/trans3.jpg",
+            "content":"création d'un garage de réparation-entretien-personnalisation et restauration de véhicules toutes marques"
+        },
+        {
+            "id":4,
+            "titre":"PROJET DE CRÉATION D’UNE ENTREPRISE DE TRANSPORT UNIVERSITAIRE",
+            "img":"assets/img/projetsimg/trans4.jpg",
+            "content":"L’objectif de ce projet est donc d’offrir aux étudiants des moyens de transport dédiés, conviviaux et nécessitant un temps de transport très court."
+        },
+        {
+            "id":5,
+            "titre":"PROJET DE DÉVELOPPEMENT DES TRANSPORTS ET DES INFRASTRUCTURES URBAINES",
+            "img":"assets/img/projetsimg/trans5.jpg",
+            "content":"Projet de développement des transports et des infrastructures urbaines » cible les populations dans certaines zones enclavées. Il a pour objectif d’améliorer la mobilité et l’accès aux infrastructures dans les zones urbaines et rurales ciblées"
+        },
+        {
+            "id":6,
+            "titre":"VÉHICULES ÉLECTRIQUES EN LIBRE-SERVICE VIA APPLI MOBILE",
+            "img":"assets/img/projetsimg/trans6.jpg",
+            "content":"véhicules de tourisme et petits utilitaires électriques en libre-service via appli mobile"
+        }
+    ],
+    "sante":[
+        {
+            "id":1,
+            "titre":"Projet de construction de Résidences pour personnes âgées",
+            "img":"assets/img/projetsimg/sante1.jpg",
+            "content":"Création d'une résidence senior pour personnes âgées, établissement partiellement médicalisé et offrant des prestations de qualité (sport, bien être, voyage, restauration...)."
+        },
+        {
+            "id":2,
+            "titre":"PROJET DE DÉVELOPPEMENT DE LA TÉLÉSANTÉ",
+            "img":"assets/img/projetsimg/sante2.jpg",
+            "content":"Création d'une résidence senior pour personnes âgées, établissement partiellement médicalisé et offrant des prestations de qualité (sport, bien être, voyage, restauration...)."
+        },
+        {
+            "id":3,
+            "titre":"PROJET DE DIGITALISATION DE LA SANTÉ COMMUNAUTAIRE",
+            "img":"assets/img/projetsimg/sante3.png",
+            "content":"Création d'une résidence senior pour personnes âgées, établissement partiellement médicalisé et offrant des prestations de qualité (sport, bien être, voyage, restauration...)."
+        },
+        {
+            "id":4,
+            "titre":"Projet de Gestion des données personnelles et médicales d’un proche dépendant",
+            "img":"assets/img/projetsimg/sante4.jpg",
+            "content":"Pensée et conçue par deux infirmiers libéraux, développée par un informaticien, l’application mobile gratuite propose aux familles un outil d'accompagnement et d’aide au maintien à domicile d’un proche en situation de dépendance. Notre volonté, rendre la santé numérique accessible et simplifier la gestion et centralisation des informations entre les différents intervenants (famille, proches, professionnels de santé…) grâce un support numérique qu'est l'application. Notre mission, répondre aux besoins des familles et des proches d’une personne dépendante avec un outil de gestion numérique en leur permettant d’optimiser et de pérenniser le maintien au domicile de leur proche. Notre philosophie, rendre acteur la famille et l’entourage dans la prise en charge d’un proche dépendant."
+        }
+        ,
+        {
+            "id":5,
+            "titre":"PROJET DE MAISON D'ACCUEIL POUR PERSONNES EN SOUFFRANCE PASSAGÈRE",
+            "img":"assets/img/projetsimg/sante5.jpg",
+            "content":"C’est un projet de maison d'accueil pour personnes en souffrance passagère, avec ateliers, vie communautaire et lien avec la nature"
+        },
+        {
+            "id":6,
+            "titre":"PROJET DE MISE EN PLACE DU DOSSIER PATIENT PARTAGÉ",
+            "img":"assets/img/projetsimg/sante6.jpg",
+            "content":"C’est un projet de maison d'accueil pour personnes en souffrance passagère, avec ateliers, vie communautaire et lien avec la nature"
+        }
+
     ]
 }
