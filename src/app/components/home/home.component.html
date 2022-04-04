@@ -924,7 +924,7 @@
                         <div class="col-sm-4 col-md-4 col-xs-12" *ngFor="let article of articles?.porteur;" >
                             <div class="latest-post">
                                 <!-- Featured Image Starts -->
-                                <a class="img-thumb" [routerLink]="['../article-detail','porteur',article?.id]"><img class="img-responsive" src="{{article?.img}}" style=" width: 100%;" alt="img"></a>
+                                <a class="img-thumb" [routerLink]="['../article-detail','porteur',article?.id]"><img class="img-responsive" src="{{article?.img}}" style="width: max-content; max-height: 35vh; min-height: 35vh" alt="img"></a>
                                 <!-- Featured Image Ends -->
                                 <!-- Article Content Starts -->
                                 <div class="post-body">
@@ -956,7 +956,7 @@
                         <div class="col-sm-4 col-md-4 col-xs-12" *ngFor="let article of articles.investisseur;">
                             <div class="latest-post">
                                 <!-- Featured Image Starts -->
-                                <a class="img-thumb" [routerLink]="['../article-detail','investisseur',article?.id]"><img class="img-responsive" src="{{article?.img}}" style="max-height: 100; width: 100;" alt="img"></a>
+                                <a class="img-thumb" [routerLink]="['../article-detail','investisseur',article?.id]"><img class="img-responsive" style="width: max-content; max-height: 35vh; min-height: 35vh" src="{{article?.img}}"  alt="img"></a>
                                 <!-- Featured Image Ends -->
                                 <!-- Article Content Starts -->
                                 <div class="post-body">
@@ -988,7 +988,7 @@
                         <div class="col-sm-4 col-md-4 col-xs-12" *ngFor="let article of articles?.partenariat;">
                             <div class="latest-post">
                                 <!-- Featured Image Starts -->
-                                <a class="img-thumb" [routerLink]="['../article-detail','partenariat',article?.id]"><img class="img-responsive" src="{{article?.img}}" style="max-height: 100; width: 100;" alt="img"></a>
+                                <a class="img-thumb" [routerLink]="['../article-detail','partenariat',article?.id]"><img class="img-responsive" style="width: max-content; max-height: 35vh; min-height: 35vh" src="{{article?.img}}"  alt="img"></a>
                                 <!-- Featured Image Ends -->
                                 <!-- Article Content Starts -->
                                 <div class="post-body">
