@@ -576,13 +576,13 @@
                  <div class="tab-pane fade" id="p2">
                     <div class="services" >
                         <div class="row service-box">
-                            <div class="col-lg-4 col-md-6 col-sm-12 services-box-item"  *ngFor="let i of [1,1]" routerLink="../detail-projet">
+                            <div class="col-lg-4 col-md-6 col-sm-12 services-box-item"  *ngFor="let projet of projets.education" [routerLink]="['../detail-projet','education',projet.id]">
                                 <!-- Service Item Cover Starts -->
                     <span class="services-box-item-cover">
-                        <img src="assets/img/cover2.jpeg"  alt="">
+                        <img src="{{projet?.img}}"  alt="">
                         <div class="apix-img-hover">
                             <div class="row title">
-                                <span class="">Nom Projet</span>
+                                <span class="">{{projet?.titre}}</span>
                             </div>
                             <div class="row infos ">
                                 <div class="col-sm-12">
@@ -592,7 +592,7 @@
                                     <span class="fa fa-map-marker"></span>&nbsp;&nbsp;&nbsp;Dakar
                                 </div>
                                 <div class="col-sm-12">
-                                    <span class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;2589 pts
+                                    <span class="fa fa-star" style="color: var(--blue);"></span><span class="fa fa-star" style="color: var(--blue);"></span><span class="fa fa-star" style="color: var(--blue);"></span><span class="fa fa-star" style="color: var(--blue);"></span><span class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;2589 pts
                                 </div>
                             </div>
                         </div>
@@ -600,10 +600,8 @@
                     <!-- Service Item Cover Ends -->
                     <!-- Service Item Content Starts -->
                     <div class="services-box-item-content fa fa-heart">
-                        <h2>Energie verte</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu.
+                        <h2>{{projet?.titre}}</h2>
+                        <p style="overflow: hidden; word-break: break-all;" [innerHTML]="projet.content">
                         
                         </p>
                         <div class="apix-img-hover-content">
@@ -616,7 +614,7 @@
                                     <span class="fa fa-map-marker"></span>&nbsp;&nbsp;&nbsp;&nbsp;Dakar
                                 </div>
                                 <div class="col-sm-12 ">
-                                    <span class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;&nbsp;2589 pts
+                                    <span class="fa fa-star" ></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;&nbsp;2589 pts
                                 </div>
                             </div>
                         </div>

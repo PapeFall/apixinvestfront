@@ -100,8 +100,8 @@
         </div>
         
         <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
-            <div class="mat-elevation-z2 apix-palmares-box" *ngFor="let projet of projetRecommandes" >
-                <div class=""  [routerLink]="['/detail-projet',categorie,projet?.id]" >
+            <div class="mat-elevation-z2 apix-palmares-box" *ngFor="let projet of projetRecommandes" [routerLink]="['/detail-projet',categorie,projet?.id]">
+                <div class=""   >
                         <img class="mat-elevation-z4"  src="{{projet?.img}}" style="width: 100%;"  alt="">
                 </div>
                 <div class="">
@@ -110,7 +110,7 @@
                             {{projet?.titre}}
                         </span>
                         <br>
-                        <span class="palmares-description" [innerHTML]="projet?.content">Unités de production de biogaz miniaturisées et autonomes pour les secteurs agricole et agro-alimentaire.</span>
+                        <div class="palmares-description" style="max-height: 40px;overflow: hidden;word-break: break-all;" [innerHTML]="projet?.content">Unités de production de biogaz miniaturisées et autonomes pour les secteurs agricole et agro-alimentaire.</div>
                     </div>
                         <div class="col-sm-6">
                             <span class="fa fa-money"></span>
@@ -118,7 +118,11 @@
                         </div>
                         <div class="col-sm-6">
                             <span class="fa fa-star"></span>
-                                2500 pts
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span style="color: gray;" class="fa fa-star"></span>
+
                            </div>
                         <div class="col-sm-12">
                             <span class="fa fa-map-marker"></span>
