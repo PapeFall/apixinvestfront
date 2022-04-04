@@ -35,7 +35,7 @@ const routes: Routes = [
     component: DetailArticleComponent
   },
   {
-    path:'detail-projet',
+    path:'detail-projet/:categorie/:id',
     component: DetailProjetComponent
   },
   {

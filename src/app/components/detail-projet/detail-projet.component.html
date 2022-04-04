@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-sm-12 col-xs-12 col-md-9 col-lg-9">
             <div class="col-sm-12">
-                <img class="" src="assets/img/cover2.jpeg" style="width: 100%;" alt="">
+                <img class="" src="{{projet?.img}}" style="width: 100%;" alt="">
             </div>
             <div class="col-sm-12">
-                <h3>AGROSEN</h3> 
+                <h3>{{projet?.titre}}</h3> 
             </div>
             <div class="col-sm-12">
                 <div class="center-column">
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <p>
+                                <p [innerHTML]="projet?.content">
                                  En effet, ce projet a pour ambition de générer de l’information sur les besoins en matière de renforcement de capacités et d’élaboration de stratégie, d’instruments et de politiques d’appui à l’innovation agricole; d’appuyer les dynamiques en cours de transformation des systèmes agricoles et alimentaires vers plus de résilience et de durabilité et enfin de créer un environnement plus favorable pour les innovateurs.
      
                                  D’une durée de deux ans (2021-2023), le projet Tap-Ais intervient dans neuf pays: cinq en Afrique (Burkina Faso, Érythrée, Malawi, Rwanda et Sénégal), trois en Asie (Cambodge, Laos et Pakistan) et un en Amérique latine (Colombie). Il est mis en œuvre par l’Organisation des Nations Unies pour l’alimentation et l’agriculture (Fao) et est coordonné par le ministère de l’Agriculture et de l’Équipement rural (Maer) du Sénégal.
@@ -100,17 +100,17 @@
         </div>
         
         <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
-            <div class="mat-elevation-z2 apix-palmares-box" *ngFor="let i of [1,1]" >
-                <div class=""  routerLink="../detail-projet" >
-                        <img class="mat-elevation-z4"  src="assets/img/cover2.jpeg" style="width: 100%;"  alt="">
+            <div class="mat-elevation-z2 apix-palmares-box" *ngFor="let projet of projetRecommandes" >
+                <div class=""  [routerLink]="['/detail-projet',categorie,projet?.id]" >
+                        <img class="mat-elevation-z4"  src="{{projet?.img}}" style="width: 100%;"  alt="">
                 </div>
                 <div class="">
                     <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" >
                         <span class="palmares-title">
-                            Sen Biogaz
+                            {{projet?.titre}}
                         </span>
                         <br>
-                        <span class="palmares-description">Unités de production de biogaz miniaturisées et autonomes pour les secteurs agricole et agro-alimentaire.</span>
+                        <span class="palmares-description" [innerHTML]="projet?.content">Unités de production de biogaz miniaturisées et autonomes pour les secteurs agricole et agro-alimentaire.</span>
                     </div>
                         <div class="col-sm-6">
                             <span class="fa fa-money"></span>

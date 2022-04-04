@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticlesService } from 'src/app/services/articles.service';
+import { ProjetsService } from 'src/app/services/projets.service';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,14 @@ import { ArticlesService } from 'src/app/services/articles.service';
 })
 export class HomeComponent implements OnInit {
   articles:any = [];
-  constructor(private articleService: ArticlesService) { 
+  projets:any = [];
+
+  constructor(private articleService: ArticlesService, private projetService: ProjetsService) { 
     new Promise(resolve =>{
       this.loadScript()
     })
     this.getArticles();
+    this.getProjets();
   }
 
   public loadScript(){
@@ -29,8 +33,12 @@ export class HomeComponent implements OnInit {
 
   public getArticles(){
     this.articles = this.articleService.getArticles();
-    console.log(this.articles);
     
+  }
+
+  public getProjets(){
+    this.projets = this.projetService.getProjets();
+
   }
 
 }
