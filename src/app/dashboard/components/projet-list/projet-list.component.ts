@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ProjetsService } from 'src/app/services/projets.service';
 import { CommentsComponent } from 'src/app/shared-components/components/comments/comments.component';
 import { ParticipationPopupComponent } from 'src/app/shared-components/components/participation-popup/participation-popup.component';
 
@@ -11,11 +12,12 @@ import { ParticipationPopupComponent } from 'src/app/shared-components/component
 export class ProjetListComponent implements OnInit {
   user: any = undefined;
 
-  constructor(private dialog: MatDialog) { }
-
+  constructor(private dialog: MatDialog,private projetService: ProjetsService) { }
+  projets:any;
   ngOnInit(): void {
     let u :any= localStorage.getItem('user');
     this.user = JSON.parse(u);
+    this.getProject();
   }
 
   openComments(){
@@ -31,5 +33,9 @@ export class ProjetListComponent implements OnInit {
     }).afterClosed().subscribe((resp:any)=>{
       
     })
+  }
+
+  getProject(){
+    this.projets = this.projetService.getProjets();
   }
 }

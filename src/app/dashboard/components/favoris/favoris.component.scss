@@ -22,8 +22,11 @@
        background-image: linear-gradient(to right,white,white,white,white,white,white,rgba(248, 181, 125, 0.384));
     }
     .palmares-title{
+        padding-top: 1em;
         color: var(--blue);
         font-size: 1.3em;
+        height: 4em;
+        overflow: hidden;
     }
     .fa{
         color: var(--orange);

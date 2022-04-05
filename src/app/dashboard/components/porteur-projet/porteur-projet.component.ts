@@ -8,10 +8,10 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class PorteurProjetComponent implements OnInit {
 
-  displayedColumns: string[] = ['ninea', 'email', 'nom','representant', 'action'];
+  displayedColumns: string[] = ['ninea', 'email', 'nom', 'action'];
   dataSource:MatTableDataSource<any> = new MatTableDataSource<any>([
-    { ninea: "120304", email: "contact@sonatel.sn",nom:"SONATEL", representant: "Amadou Daff"},
-    { ninea: "340304", email: "contact@apix.sn",nom:"APIX", representant: "Fatim Diop"},
+    { ninea: "120304", email: "ad@gmail.com", nom: "Amadou Daff"},
+    { ninea: "340304", email: "fdiop@gmail.com", nom: "Fatim Diop"},
 
   ])
   profils =['admin','partenaire','intervenant','participant'];
