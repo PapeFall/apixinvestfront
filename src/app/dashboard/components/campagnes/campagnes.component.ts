@@ -9,22 +9,34 @@ import { NewCampagneComponent } from './new-campagne/new-campagne.component';
   styleUrls: ['./campagnes.component.scss']
 })
 export class CampagnesComponent implements OnInit {
-  displayedColumns: string[] = ['projet', 'date' ,'action'];
+  displayedColumns: string[] = ['projet', 'date' ,'statut','action'];
   dataSource:MatTableDataSource<any> = new MatTableDataSource<any>([
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE001",
-      date:'20/03/2022 08:00 - 22/03/2022 18:59'
+      date:'20/03/2022 08:00 - 22/03/2022 18:59',
+      statut:'non débutée'
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE002",
-      date:'20/03/2022 08:00 - 22/03/2022 18:59'
+      date:'20/03/2022 08:00 - 22/03/2022 18:59',
+      statut:'lancée'
+
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE003",
-      date:'20/03/2022 08:00 - 22/03/2022 18:59'
+      date:'20/03/2022 08:00 - 22/03/2022 18:59',
+      statut:'annulée'
+
+    },
+    {
+      projet: "SenBiogaz",
+      idcampagne: "CAMPAGNE003",
+      date:'20/03/2022 08:00 - 22/03/2022 18:59',
+      statut:'terminé'
+
     }
   ])
   constructor(private dialog: MatDialog) { }
