@@ -22,3 +22,18 @@ h3{
     margin-top: 0.31em !important;
     color: var(--orange);
 }
+
+.social-icons ul li a {
+    background: transparent;
+    display: block;
+    width: 33px;
+    height: 33px;
+    line-height: 29px;
+}
+.social-icons ul li a:before {
+    font-size: 12px;
+}
+
+.social-icons ul li a:hover {
+    background-color: var(--blue);
+}
