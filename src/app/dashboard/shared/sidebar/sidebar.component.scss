@@ -5,14 +5,19 @@ mat-nav-list {
     height: 100%;
   }
   
+  .mat-list-base{
+    padding-top: 0;
+  }
   #sidebar {
-    padding: 26px 0 20px;
+    // padding: 26px 0 20px;
     margin: 0;
     background-color: var(--blue);
   }
   
   .APIX-LOGO {
-    margin: 0 0 20px;
+    // margin: 0 0 20px;
+    padding: 0.6em;
+    margin-top: 0;
     font-family: Roboto;
     font-size: 20px;
     font-weight: bold;
@@ -22,6 +27,7 @@ mat-nav-list {
     letter-spacing: normal;
     text-align: center;
     color: #fff;
+    background-color: white;
   }
 
   .connected-user{
@@ -31,7 +37,7 @@ mat-nav-list {
   }
 
   .div-connected-user{
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
      margin-left: 5px;
       display: flex;
   }

@@ -1,7 +1,9 @@
 <mat-nav-list>
   <div id="sidebar">
     <p class="APIX-LOGO">
-      APIX LOGO <br /></p>
+      <img  src="assets/logo.png" style="width:4em; height:2em" alt="logo-light" />
+      <!-- APIX LOGO <br /> -->
+    </p>
     <div class="div-connected-user">
       <p class="icon">
         <img src="assets/img/admin.png" alt="" class="admin-img" />
@@ -11,6 +13,7 @@
         <span style="font-size: 11px; font-weight: 300px"> {{user?.profil}}</span>
       </p>
     </div>
+    <hr>
     <p>
       <a
         mat-list-item
@@ -35,8 +38,11 @@
       <a mat-list-item class="sidebar-menu"
         routerLink="favoris"
         routerLinkActive="active">
-        <mat-icon>favorite</mat-icon>
-        Favoris
+        <mat-icon *ngIf="user?.profil!='admin' && user?.profil!='intervenant'">favorite</mat-icon>
+        <span *ngIf="user?.profil!='admin' && user?.profil!='intervenant'"> Favoris </span>
+        <mat-icon *ngIf="user?.profil=='admin' || user?.profil=='intervenant'">bookmark</mat-icon>
+        <span *ngIf="user?.profil=='admin' || user?.profil=='intervenant'">Projets enregistrés </span>
+
       </a>
     </p>
     

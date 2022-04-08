@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListeAlertesComponent } from '../shared-components/components/liste-alertes/liste-alertes.component';
+import { ProfilAdminComponent } from '../shared-components/components/profil-admin/profil-admin.component';
 import { ArticlesManagementComponent } from './components/articles-management/articles-management.component';
 import { EditArticleComponent } from './components/articles-management/edit-article/edit-article.component';
 import { BusinessModelInfosComponent } from './components/business-model-infos/business-model-infos.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
       {
         path: 'profil',
         component: ProfilComponent
+      },
+      {
+        path: 'profil-admin',
+        component: ProfilAdminComponent
       },
       {
         path: 'liste-alertes',

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EditParameterComponent implements OnInit {
 
   priorites = ['sévère','moyen','faible']
+  types=[]
   constructor() { }
 
   ngOnInit(): void {

@@ -9,6 +9,7 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { ParticipationPopupComponent } from './components/participation-popup/participation-popup.component';
 import { ListeAlertesComponent } from './components/liste-alertes/liste-alertes.component';
 import { DetailAlerteComponent } from './components/liste-alertes/detail-alerte/detail-alerte.component';
+import { ProfilAdminComponent } from './components/profil-admin/profil-admin.component';
 
 
 
@@ -19,7 +20,8 @@ import { DetailAlerteComponent } from './components/liste-alertes/detail-alerte/
     CommentsComponent,
     ParticipationPopupComponent,
     ListeAlertesComponent,
-    DetailAlerteComponent
+    DetailAlerteComponent,
+    ProfilAdminComponent
   ],
   imports: [
     CommonModule,

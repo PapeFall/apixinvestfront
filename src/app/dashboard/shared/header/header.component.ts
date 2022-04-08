@@ -60,7 +60,10 @@ export class HeaderComponent implements OnInit {
   }
 
   profil(){
-    this.router.navigateByUrl("/process/dashboard/profil")
+    if(this.user?.profil=='admin' || this.user?.profil=='intervenant')
+      this.router.navigateByUrl("/process/dashboard/profil-admin")
+    else
+      this.router.navigateByUrl("/process/dashboard/profil")
   }
 
   openListeAlerte(){

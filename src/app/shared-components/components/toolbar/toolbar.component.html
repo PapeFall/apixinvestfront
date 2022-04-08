@@ -37,7 +37,9 @@
                     <li *ngIf="user" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> {{user?.username}} <i class="fa fa-angle-down icon-angle"></i></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a (click)="routeTo('/process/dashboard/profil')">Profil</a></li>
+                            <li><a *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" (click)="routeTo('/process/dashboard/profil-admin')">Profil</a></li>
+                            <li><a *ngIf="user?.profil!='admin' && user?.profil!='intervenant'" (click)="routeTo('/process/dashboard/profil')">Profil</a></li>
+
                             <li><a (click)="deconnexion()">Déconnexion</a></li>
                         </ul>
                     </li>

@@ -64,6 +64,14 @@
                                 <mat-icon >done</mat-icon>
                                 <span >Autoriser</span>
                             </button>
+                            <button mat-menu-item *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" >
+                                <mat-icon >favorite</mat-icon>
+                                <span >Coup de coeur</span>
+                            </button>
+                            <button mat-menu-item *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" >
+                                <mat-icon >bookmark</mat-icon>
+                                <span >marquer</span>
+                            </button>
                             <button mat-menu-item routerLink="/process/dashboard/project/general">
                                 <mat-icon >visibility</mat-icon>
                                 <span >voir</span>
