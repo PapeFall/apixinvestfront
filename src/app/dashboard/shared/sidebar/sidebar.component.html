@@ -27,6 +27,18 @@
       </a>
     </p>
     <p>
+      <a
+        mat-list-item
+        class="sidebar-menu"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/process/dashboard/project/general"
+        routerLinkActive="active"
+      >
+        <mat-icon color="accent">add</mat-icon>
+        Nouveau projet
+    </a>
+    </p>
+    <p>
       <a mat-list-item class="sidebar-menu"
         routerLink="messagerie"
         routerLinkActive="active">
