@@ -88,14 +88,44 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 container-fluid center-row">
-            
-                <button type="button" mat-raised-button color="primary"><mat-icon>favorite</mat-icon>Favoris</button>
+            <div class="col-sm-12 container-fluid ">
+                <div class="col-sm-3">
+                    <button type="button" mat-raised-button color="primary"><mat-icon>favorite</mat-icon>Favoris</button>
+                </div>
+                <div class="col-sm-3">
+                    <span class="center-column">
+                        <span><strong> Noter</strong></span>
+                        <span>
+                            <span *ngFor="let i of stars;let indice=index;" (click)="noter(indice)" [ngStyle]="{'color':i?'var(--orange)':'gray'}" class="fa fa-star"></span>
+                        </span>
+                        
+                    </span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-icons">
+                        <ul class="social">
+                            <li>
+                                <a class="twitter" href="#" title="twitter"></a>
+                            </li>
+                            <li>
+                                <a class="facebook" href="#" title="facebook"></a>
+                            </li>
+                            <li>
+                                <a class="google" href="#" title="google"></a>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#" title="linkedin"></a>
+                            </li>
+                            <li>
+                                <a class="youtube" href="#" title="youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <button type="button" mat-raised-button color="primary"><mat-icon>share</mat-icon>Partager</button>
-                <span>
-                    <span *ngFor="let i of stars;let indice=index;" (click)="noter(indice)" [ngStyle]="{'color':i?'var(--orange)':'gray'}" class="fa fa-star"></span>
-                </span>
+                <!-- <button type="button" mat-raised-button color="primary"><mat-icon>share</mat-icon>Partager</button> -->
+                
+                
             </div>
         </div>
         

@@ -14,6 +14,19 @@ export class DetailArticleComponent implements OnInit {
   articles:any;
   articlesRecommandes:any;
   categorie:any;
+  stars = [false, false, false, false, false];
+
+  initNote() {
+    this.stars = [false, false, false, false, false];
+  }
+  noter(index: number) {
+    this.initNote();
+    for (let i = 0; i <= index; i++) {
+      this.stars[i] = true;
+      console.log(this.stars);
+
+    }
+  }
   ngOnInit(): void {
     this.articles = this.articleService.getArticles();
     this.activateRoute.params.subscribe((params)=>{
@@ -47,5 +60,5 @@ export class DetailArticleComponent implements OnInit {
       }
     })
   }
-
+ 
 }
