@@ -9,10 +9,14 @@
                <mat-label>Nom</mat-label>
                 <input type="text" matInput>
              </mat-form-field>
-             <mat-form-field appearance="fill">
-               <mat-label>Email</mat-label>
-                <input type="email" matInput>
-             </mat-form-field>
+             <mat-form-field *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" appearance="fill">
+                <mat-label>Etat</mat-label>
+                 <mat-select multiple>
+                    <mat-option value="coup">Activé</mat-option>
+                     <mat-option value="coup">Coup de coeur</mat-option>
+                     <mat-option value="marque">Marqué</mat-option>
+                 </mat-select>
+              </mat-form-field>
              <mat-form-field appearance="fill">
                <mat-label>Secteur</mat-label>
                 <mat-select>
