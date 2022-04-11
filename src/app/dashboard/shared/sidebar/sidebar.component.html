@@ -90,7 +90,7 @@
         <span *ngIf="user?.profil!='porteur'">Les Partenaires</span>
       </a>
     </p>
-    <p >
+    <p *ngIf="user?.profil=='intervenant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -101,7 +101,7 @@
         Campagnes
       </a>
     </p>
-    <p >
+    <p *ngIf="user?.profil=='admin' || user?.profil=='intervenant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -112,7 +112,7 @@
         Articles
       </a>
     </p>
-    <p>
+    <p *ngIf="user?.profil=='admin'">
       <a mat-list-item class="sidebar-menu"
         routerLink="parameters"
         routerLinkActive="active">
