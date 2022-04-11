@@ -1,14 +1,14 @@
 <div class="container-fluid">
-    <mat-accordion class="example-headers-align" multi>
+    <!-- <mat-accordion class="example-headers-align" multi>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
               Alertes
             </mat-panel-title>
-          </mat-expansion-panel-header>
+          </mat-expansion-panel-header> -->
 
           <div class="container-fluid">
-            <div class="align-right">
+            <div class="align-right mb">
                 <button mat-raised-button color="primary" (click)="newAlerte()">Nouvelle alerte</button>
             </div>
             <table class="mt"  mat-table [dataSource]="dataSource" class="w-100">
@@ -59,7 +59,7 @@
               <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
           </div>
-          </mat-expansion-panel>
+          <!-- </mat-expansion-panel>
           
-    </mat-accordion>
+    </mat-accordion> -->
 </div>

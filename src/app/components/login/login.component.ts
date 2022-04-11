@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl("/process/dashboard");
       } else if (this.formGroup.value.email == "participant@gmail.com" && this.formGroup.value.password == "123456") {
         localStorage.setItem("user", JSON.stringify({ username: 'Moussa Diop', profil: 'participant' }))
-        this.router.navigateByUrl("/process/dashboard");
+        this.router.navigateByUrl("/process/dashboard/favoris");
       } else if (this.formGroup.value.email == "intervenant@gmail.com" && this.formGroup.value.password == "123456") {
         localStorage.setItem("user", JSON.stringify({ username: 'Fatim Wade', profil: 'intervenant' }))
         this.router.navigateByUrl("/process/dashboard");

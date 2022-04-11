@@ -14,6 +14,14 @@ export class ProjetListComponent implements OnInit {
 
   constructor(private dialog: MatDialog,private projetService: ProjetsService) { }
   projets:any;
+  secteurs = [
+    "Agriculture",
+    "Education",
+    "Energie et mines",
+    "Industrie et commerce",
+    "Technologie",
+    "Transport",
+    "Santé"  ]
   ngOnInit(): void {
     let u :any= localStorage.getItem('user');
     this.user = JSON.parse(u);

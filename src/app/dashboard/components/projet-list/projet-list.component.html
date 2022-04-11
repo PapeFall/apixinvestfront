@@ -12,7 +12,7 @@
              <mat-form-field *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" appearance="fill">
                 <mat-label>Etat</mat-label>
                  <mat-select multiple>
-                    <mat-option value="coup">Activé</mat-option>
+                    <mat-option value="coup">Autorisé</mat-option>
                      <mat-option value="coup">Coup de coeur</mat-option>
                      <mat-option value="marque">Marqué</mat-option>
                  </mat-select>
@@ -20,7 +20,7 @@
              <mat-form-field appearance="fill">
                <mat-label>Secteur</mat-label>
                 <mat-select>
-                    <mat-option></mat-option>
+                    <mat-option *ngFor="let s of secteurs">{{s}}</mat-option>
                 </mat-select>
              </mat-form-field>
              <div class="align-center">
@@ -80,7 +80,7 @@
                                 <mat-icon >visibility</mat-icon>
                                 <span >voir</span>
                             </button>
-                            <button mat-menu-item >
+                            <button mat-menu-item routerLink="/process/dashboard/messagerie" >
                                 <mat-icon >chat</mat-icon>
                                 <span >Contacter le promotteur</span>
                             </button>

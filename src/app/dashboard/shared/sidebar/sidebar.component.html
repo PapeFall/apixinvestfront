@@ -14,7 +14,7 @@
       </p>
     </div>
     <hr>
-    <p>
+    <p *ngIf="user?.profil!='participant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -26,7 +26,7 @@
         Tableau de bord
       </a>
     </p>
-    <p *ngIf="user?.profil=='intervenant'">
+    <p *ngIf="user?.profil=='porteur'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -55,7 +55,7 @@
       </a>
     </p>
     
-    <p>
+    <p *ngIf="user?.profil!='participant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -67,7 +67,7 @@
         <span *ngIf="user?.profil!='porteur'">Les projets</span>
       </a>
     </p>
-    <p>
+    <p *ngIf="user?.profil!='porteur' && user?.profil!='participant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -75,10 +75,12 @@
         routerLinkActive="active"
       >
         <mat-icon>people</mat-icon>
-        <span >Porteurs de projet</span>
+        <span *ngIf="user?.profil!='partenaire'" >Porteurs de projet</span>
+        <span *ngIf="user?.profil=='partenaire'" >Mes porteurs de projet</span>
+
       </a>
     </p>
-    <p>
+    <p *ngIf="user?.profil!='partenaire' && user?.profil!='participant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -90,7 +92,7 @@
         <span *ngIf="user?.profil!='porteur'">Les Partenaires</span>
       </a>
     </p>
-    <p *ngIf="user?.profil=='intervenant'">
+    <p *ngIf="user?.profil!='partenaire' && user?.profil!='participant'">
       <a
         mat-list-item
         class="sidebar-menu"
@@ -117,7 +119,7 @@
         routerLink="parameters"
         routerLinkActive="active">
         <mat-icon>settings</mat-icon>
-        Paramètres
+        Alertes
       </a>
     </p>
     <p *ngIf="user.profil == 'admin'">
