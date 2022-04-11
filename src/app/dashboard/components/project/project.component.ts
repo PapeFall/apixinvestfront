@@ -34,15 +34,13 @@ export class ProjectComponent implements OnInit {
   step: number = 0;
 
   activites = [
-    "Numérique (Atlas)",
-    "Chimie (industrie)",
-    "Banque.",
-    "Travaux publics.",
-    "Hôtellerie - Restauration.",
-    "Alimentaire (la filière)",
-    "Automobile - Services.",
-    "Agriculture."
-  ]
+    "Agriculture",
+    "Education",
+    "Energie et mines",
+    "Industrie et commerce",
+    "Technologie",
+    "Transport",
+    "Santé"  ]
   constructor(private breakpointObserver: BreakpointObserver) {
     this.stepperOrientation = breakpointObserver
       .observe('(min-width: 800px)')

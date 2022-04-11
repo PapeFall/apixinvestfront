@@ -1,14 +1,17 @@
 <app-toolbar></app-toolbar>
-<section class="main container-fluid">
+<section class="main container-fluid ">
     
-    <div class="center-column ">
+    <div class="center-column bg-img">
         <div class="col-xs-12 col-lg-5 col-md-5 col-sm-12">
-            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class=" container-fluid mat-elevation-z2 pb pt br" >
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class=" container-fluid mat-elevation-z2 pb pt br bg-white" >
                 <div class="container-fluid mt center-column">
-                    <strong class="text-primary">Authentication</strong>
+                   <div class="container-fluid">
+                    <h3 class="text-primary">Authentification</h3>
+                   </div>
+                    <!-- <strong class="text-primary">Authentification</strong> -->
                 </div>
-                <div class="container-fluid mt center-column">
-                    <img src="assets/img/auth.svg" width="200px" height="100px" alt="">
+                <div class="container-fluid  center-column">
+                    <!-- <img src="assets/img/auth.svg" width="200px" height="100px" alt=""> -->
                 </div>
                 <div class=" container-fluid mt">
                     <mat-form-field  class="container-fluid w-100" color="primary" appearance="fill">

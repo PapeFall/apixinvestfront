@@ -1,0 +1,37 @@
+#contact{
+    background-color: var(--blue);
+    color: white;
+    ul {
+        li{
+            a{
+                color: white;
+            }
+            span{
+                
+                    color: white;
+                
+            }
+        }
+    }
+
+    span{
+        color: white;
+    }
+    .social-icons ul li a:before {
+        font-size: 19px;
+        color: rgb(245, 181, 70);
+    }
+
+    h5,h4{
+        color: rgb(245, 181, 70);
+
+    }
+    p{
+        color: white;
+
+        a{
+            color: rgb(245, 181, 70);
+
+        }
+    }
+}

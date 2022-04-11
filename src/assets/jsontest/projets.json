@@ -237,13 +237,13 @@
         },
         {
             "id":2,
-            "titre":"PROJET DE DÉVELOPPEMENT DE LA TÉLÉSANTÉ",
+            "titre":"Projet De Développement De La Télésanté",
             "img":"assets/img/projetsimg/sante2.jpg",
             "content":"Création d'une résidence senior pour personnes âgées, établissement partiellement médicalisé et offrant des prestations de qualité (sport, bien être, voyage, restauration...)."
         },
         {
             "id":3,
-            "titre":"PROJET DE DIGITALISATION DE LA SANTÉ COMMUNAUTAIRE",
+            "titre":"Projet De Digitalisation De La Santé Communautaire",
             "img":"assets/img/projetsimg/sante3.png",
             "content":"Création d'une résidence senior pour personnes âgées, établissement partiellement médicalisé et offrant des prestations de qualité (sport, bien être, voyage, restauration...)."
         },
@@ -256,13 +256,13 @@
         ,
         {
             "id":5,
-            "titre":"PROJET DE MAISON D'ACCUEIL POUR PERSONNES EN SOUFFRANCE PASSAGÈRE",
+            "titre":"Projet De Maison D'accueil Pour Personnes En Souffrance Passagère",
             "img":"assets/img/projetsimg/sante5.jpg",
             "content":"C’est un projet de maison d'accueil pour personnes en souffrance passagère, avec ateliers, vie communautaire et lien avec la nature"
         },
         {
             "id":6,
-            "titre":"PROJET DE MISE EN PLACE DU DOSSIER PATIENT PARTAGÉ",
+            "titre":"Projet De Mise En Place Du Dossier Patient Partagé",
             "img":"assets/img/projetsimg/sante6.jpg",
             "content":"C’est un projet de maison d'accueil pour personnes en souffrance passagère, avec ateliers, vie communautaire et lien avec la nature"
         }
