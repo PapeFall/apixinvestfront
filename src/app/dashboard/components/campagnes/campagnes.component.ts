@@ -9,39 +9,56 @@ import { NewCampagneComponent } from './new-campagne/new-campagne.component';
   styleUrls: ['./campagnes.component.scss']
 })
 export class CampagnesComponent implements OnInit {
-  displayedColumns: string[] = ['projet', 'date' ,'statut','action'];
+  displayedColumns: string[] = ['projet', 'date' ,'statut','porteur','action'];
   dataSource:MatTableDataSource<any> = new MatTableDataSource<any>([
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE001",
       date:'20/03/2022 08:00 - 22/03/2022 18:59',
-      statut:'non débutée'
+      porteur: 'Omar Diop',
+      statut:'non débutée',
+      ptutilises:500,
+      ptrestants:2538,
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE002",
       date:'20/03/2022 08:00 - 22/03/2022 18:59',
-      statut:'lancée'
+      porteur: 'Omar Diop',
+      statut:'lancée',
+      ptutilises:500,
+      ptrestants:2538,
 
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE003",
+      porteur: 'Omar Diop',
       date:'20/03/2022 08:00 - 22/03/2022 18:59',
+      ptutilises:500,
+      ptrestants:2538,
       statut:'annulée'
 
     },
     {
       projet: "SenBiogaz",
       idcampagne: "CAMPAGNE003",
+      porteur: 'Omar Diop',
       date:'20/03/2022 08:00 - 22/03/2022 18:59',
+      ptutilises:500,
+      ptrestants:2538,
       statut:'terminé'
 
     }
   ])
   constructor(private dialog: MatDialog) { }
+  
+  user:any = null;
 
   ngOnInit(): void {
+    let u :any= localStorage.getItem('user');
+    this.user = JSON.parse(u);
+    this.displayedColumns = (this.user?.profil=='intervenant'||this.user?.profil=='admin')?['projet', 'date' ,'statut','porteur','ptrestants','ptutilises','action']:['projet', 'date' ,'statut','action'];
   }
   newCampagne(){
     const dialogRef = this.dialog.open(NewCampagneComponent,{
