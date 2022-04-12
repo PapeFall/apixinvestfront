@@ -13,7 +13,7 @@
           <mat-icon matBadge="2" matBadgeColor="warn">notifications</mat-icon>
         </span>
         <span class="icon" [matMenuTriggerFor]="menu">
-          <img src="assets/img/admin.png" alt="" class="admin-img">
+          <img src="assets/img/{{user?.profil}}.png" alt="" class="admin-img">
         </span>
         <mat-menu #menu="matMenu">
           <button mat-menu-item (click)="deconnexion()">
