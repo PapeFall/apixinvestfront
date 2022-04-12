@@ -1,0 +1,110 @@
+<app-toolbar></app-toolbar>
+<div class="main">
+    <div class="mt mb row">
+        <div class="container-fluid">
+            <h2>Les <span class="text-secondary">articles</span></h2>
+        </div>
+        <div class="container-fluid">
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Categorie</mat-label>
+                <mat-select>
+                    <mat-option value="porteur">Porteur de projets</mat-option>
+                <mat-option value="partenariat">Partenariat</mat-option>
+                <mat-option value="investisseur">Investisseur</mat-option>
+                </mat-select>
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Votre recherche</mat-label>
+               <input type="text" matInput>
+            </mat-form-field>
+            &nbsp;&nbsp;
+            <button mat-mini-fab color="primary" ><mat-icon>search</mat-icon></button>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12" *ngFor="let article of articles.porteur;">
+            <div class="latest-post">
+                <!-- Featured Image Starts -->
+                <a class="img-thumb" [routerLink]="['/article-detail','porteur',article?.id]"><img
+                        class="img-responsive" src="{{article?.img}}"
+                        style="width: max-content; max-height: 35vh; min-height: 35vh" alt="img"></a>
+                <!-- Featured Image Ends -->
+                <!-- Article Content Starts -->
+                <div class="post-body">
+                    <h4 class="post-title">
+                        <a [routerLink]="['/article-detail','porteur',article?.id]">{{article?.titre}}</a>
+                    </h4>
+                    <!-- <div class="post-text">
+                        <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                    </div> -->
+                </div>
+                <!-- Post Date Starts -->
+                <div class="post-date">
+                    <span>18</span>
+                    <span>AUG</span>
+                </div>
+                <!-- Post Date Ends -->
+                <a class="custom-button pb" [routerLink]="['/article-detail','porteur',article?.id]">Voir +</a>
+                <!-- Article Content Ends -->
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12" *ngFor="let article of articles.investisseur;">
+            <div class="latest-post">
+                <!-- Featured Image Starts -->
+                <a class="img-thumb" [routerLink]="['/article-detail','investisseur',article?.id]"><img
+                        class="img-responsive" src="{{article?.img}}"
+                        style="width: max-content; max-height: 35vh; min-height: 35vh" alt="img"></a>
+                <!-- Featured Image Ends -->
+                <!-- Article Content Starts -->
+                <div class="post-body">
+                    <h4 class="post-title">
+                        <a [routerLink]="['/article-detail','investisseur',article?.id]">{{article?.titre}}</a>
+                    </h4>
+                    <!-- <div class="post-text">
+                        <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                    </div> -->
+                </div>
+                <!-- Post Date Starts -->
+                <div class="post-date">
+                    <span>18</span>
+                    <span>AUG</span>
+                </div>
+                <!-- Post Date Ends -->
+                <a class="custom-button pb" [routerLink]="['/article-detail','partenaire',article?.id]">Voir +</a>
+                <!-- Article Content Ends -->
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12" *ngFor="let article of articles.partenariat;">
+            <div class="latest-post">
+                <!-- Featured Image Starts -->
+                <a class="img-thumb" [routerLink]="['/article-detail','partenariat',article?.id]"><img
+                        class="img-responsive" src="{{article?.img}}"
+                        style="width: max-content; max-height: 35vh; min-height: 35vh" alt="img"></a>
+                <!-- Featured Image Ends -->
+                <!-- Article Content Starts -->
+                <div class="post-body">
+                    <h4 class="post-title">
+                        <a [routerLink]="['/article-detail','partenariat',article?.id]">{{article?.titre}}</a>
+                    </h4>
+                    <!-- <div class="post-text">
+                        <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                    </div> -->
+                </div>
+                <!-- Post Date Starts -->
+                <div class="post-date">
+                    <span>18</span>
+                    <span>AUG</span>
+                </div>
+                <!-- Post Date Ends -->
+                <a class="custom-button pb" [routerLink]="['/article-detail','partenariat',article?.id]">Voir +</a>
+                <!-- Article Content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+<app-site-footer></app-site-footer>

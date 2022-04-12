@@ -15,6 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DetailArticleComponent } from './components/detail-article/detail-article.component';
 import { DetailProjetComponent } from './components/detail-projet/detail-projet.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { SearchArticlesComponent } from './components/search-articles/search-articles.component';
+import { SearchProjetComponent } from './components/search-projet/search-projet.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { BrowserModule } from '@angular/platform-browser';
     PagesBaseComponent,
     InscriptionComponent,
     DetailArticleComponent,
-    DetailProjetComponent
+    DetailProjetComponent,
+    SearchArticlesComponent,
+    SearchProjetComponent
   ],
   imports: [
     BrowserModule,

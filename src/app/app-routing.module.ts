@@ -9,6 +9,8 @@ import { InscriptionComponent } from './components/inscription/inscription.compo
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PagesBaseComponent } from './components/pages-base/pages-base.component';
+import { SearchArticlesComponent } from './components/search-articles/search-articles.component';
+import { SearchProjetComponent } from './components/search-projet/search-projet.component';
 import { ServerErrorComponent } from './components/server-error/server-error.component';
 
 const routes: Routes = [
@@ -19,6 +21,14 @@ const routes: Routes = [
   },{
     path: '503Error',
     component: ServerErrorComponent
+  },
+  {
+    path: 'search-articles',
+    component: SearchArticlesComponent
+  },
+  {
+    path: 'search-projet',
+    component: SearchProjetComponent
   },
   {
     path:'home',
