@@ -11,3 +11,28 @@ li a{
         }
     }
 }
+
+.icon-lang{
+    margin-right: 0;
+    .mat-icon{
+        font-size: 0.7em;
+       
+    }
+}
+ select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    font-size: 0.7em;
+    padding-right: 1em;
+    outline: 0;
+}
+
+.lang{
+    color: var(--orange);
+    select &:hover{
+        color: black;
+    }
+}

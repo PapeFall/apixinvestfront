@@ -87,3 +87,21 @@ p {
   }
   border-bottom: solid 1px lightgray;
 }
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: 0;
+  font-size: 0.7em;
+  padding-right: 1em;
+  outline: 0;
+}
+
+.lang{
+  color: var(--blue);
+  select &:hover{
+      color: black;
+  }
+}
