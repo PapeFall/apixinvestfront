@@ -1,1 +1,104 @@
-<p>search-projet works!</p>
+<app-toolbar></app-toolbar>
+<div class="main">
+    <div class="mt mb row">
+        <div class="container-fluid">
+            <h2>Les <span class="text-secondary">projets</span></h2>
+        </div>
+        <div class="container-fluid">
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Secteur</mat-label>
+                <mat-select multiple>
+                    <mat-option *ngFor="let secteur of secteurs" [value]="secteur">{{secteur}}</mat-option>
+                
+                </mat-select>
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Région</mat-label>
+                <mat-select multiple>
+                    <mat-option *ngFor="let region of regions" [value]="region">{{region}}</mat-option>
+                
+                </mat-select>
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Montant minimal</mat-label>
+               <input type="number" matInput>
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Montant maximal</mat-label>
+               <input type="number" matInput>
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Mot(s) clé(s)</mat-label>
+               <input type="text" matInput>
+            </mat-form-field>
+            &nbsp;&nbsp;
+            <button mat-mini-fab color="primary" ><mat-icon>search</mat-icon></button>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="services">
+            <div class="row container-fluid service-box">
+        <div class="col-lg-4 col-md-6 col-sm-12 services-box-item"
+        *ngFor="let projet of projets?.agriculture"
+        [routerLink]="['../detail-projet','agriculture',projet.id]">
+        <!-- Service Item Cover Starts -->
+        <span class="services-box-item-cover">
+            <img src="{{projet?.img}}" alt="">
+            <div class="apix-img-hover">
+                <div class="row title">
+                    <span class="">{{projet?.titre}}</span>
+                </div>
+                <div class="row infos ">
+                    <div class="col-sm-12">
+                        <span class="fa fa-money"></span>&nbsp;&nbsp;45 070 000 000 FCFA
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="fa fa-map-marker"></span>&nbsp;&nbsp;&nbsp;Dakar
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="fa fa-star" style="color: var(--blue);"></span><span
+                            class="fa fa-star" style="color: var(--blue);"></span><span
+                            class="fa fa-star" style="color: var(--blue);"></span><span
+                            class="fa fa-star" style="color: var(--blue);"></span><span
+                            class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+        </span>
+        <!-- Service Item Cover Ends -->
+        <!-- Service Item Content Starts -->
+        <div class="services-box-item-content fa fa-heart">
+            <h2>{{projet?.titre}}</h2>
+            <p style="overflow: hidden; word-break: break-all;" [innerHTML]="projet.content">
+
+            </p>
+            <div class="apix-img-hover-content">
+
+                <div class="row infos ">
+                    <div class="col-sm-12">
+                        <span class="fa fa-money"></span>&nbsp;&nbsp;&nbsp;45 070 000 000 FCFA
+                    </div>
+                    <div class="col-sm-12 ">
+                        <span class="fa fa-map-marker"></span>&nbsp;&nbsp;&nbsp;&nbsp;Dakar
+                    </div>
+                    <div class="col-sm-12 ">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span
+                            class="fa fa-star"></span><span class="fa fa-star"></span><span
+                            class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service Item Content Ends -->
+    
+    
+            </div></div></div>
+    </div>
+</div>
+<app-site-footer></app-site-footer>
