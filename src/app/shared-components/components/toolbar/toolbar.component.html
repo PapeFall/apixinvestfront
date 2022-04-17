@@ -1,72 +1,54 @@
-<header class="header header-fixed">
-    <div class="header-inner">
-        <!-- Navbar Starts -->
-        <nav class="navbar">
-            <!-- Logo Starts -->
-            <div class="logo">
-                <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand" href="https://investinsenegal.com/">
-                    <!-- Logo White Starts -->
-                    <img  src="assets/logo.png" style="width:4em; height:2em" alt="logo-light" />
-                    <!-- Logo White Ends -->
-                    <!-- Logo Black Starts -->
-                    <!-- <img id="logo-dark" class="logo-dark" src="http://via.placeholder.com/159x28" alt="logo-dark" /> -->
-                    <!-- Logo Black Ends -->
-                </a>
+<header class="header">
+    <div class="header-top bg-theme-colored sm-text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="widget no-border m-0">
+              <ul
+                class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm flip sm-pull-none sm-text-center mt-sm-15">
+                <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+              </ul>
             </div>
-            <!-- Logo Ends -->
-            <!-- Toggle Icon for Mobile Starts -->
-            <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span id="icon-toggler">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-            </button>
-            <!-- Toggle Icon for Mobile Ends -->
-            <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
-                <!-- Main Menu Starts -->
-                <ul class="nav navbar-nav" id="main-navigation">
-                    <li class="active"><a   (click)="routeTo('/home')" ><i class="fa fa-home"></i> Accueil</a></li>
-                    <li><a href="#about"><i class=""></i> A propos</a></li>
-                    
-                   
-                    <li><a  href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                    <li *ngIf="!user"><a  (click)="routeTo('/process/login')"> Connexion</a></li>
-                    <li *ngIf="!user"><a  (click)="routeTo('/process/signin')">Inscription</a></li>
-                    <li *ngIf="user" class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> {{user?.username}} <i class="fa fa-angle-down icon-angle"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a *ngIf="user?.profil=='admin' || user?.profil=='intervenant'" (click)="routeTo('/process/dashboard/profil-admin')">Profil</a></li>
-                            <li><a *ngIf="user?.profil!='admin' && user?.profil!='intervenant'" (click)="routeTo('/process/dashboard/profil')">Profil</a></li>
-
-                            <li><a (click)="deconnexion()">Déconnexion</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <div class="lang" >
-                            <!-- <mat-icon class="icon-lang">language</mat-icon> -->
-                            <span class="fa fa-language"></span>
-                            <select>
-                              <option checked>FR</option>
-                              <option>EN</option>
-                            </select>
-                          </div>
-                    </li>
-                  
-                </ul>
-                <!-- Main Menu Ends -->
+          </div>
+          <div class="col-md-8">
+            <div class="widget no-border m-0">
+              <ul class="list-inline pull-right sm-pull-none sm-text-center mt-5">
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a href="#"
+                    class="text-white">Tél: (+221) 33 849 05 55</a>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope text-white"></i> <a href="#"
+                    class="text-white">infos@apix.sn</a>
+                </li>
+               
+      
+              </ul>
             </div>
-            <!-- Search Input Starts -->
-            <div class="site-search hidden-xs">
-                <div class="search-container">
-                    <input id="search-input" type="text" placeholder="type your keyword and hit enter ...">
-                    <span class="close">×</span>
-                </div>
-            </div>
-            <!-- Search Input Ends -->
-            <!-- Navigation Menu Ends -->
-        </nav>
-        <!-- Navbar Ends -->
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
     </div>
-</header>
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-silver-light">
+        <div class="container-fluid">
+          <nav id="menuzord-right" class="menuzord default no-bg">
+            <a class="menuzord-brand pull-left flip" href="index.html"><img src="assets/apix2/images/Menu_Logo.png"
+                alt="logo apix"></a>
+            <ul class="menuzord-menu onepage-nav">
+              <li class="active"><a href="index.html">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="">Inscription</a></li>
+              <li><a href="">Connexion</a></li>
+              <li class="language"><a href=""><img class="lang-fr" src="assets/apix2/images/france.png" alt=""></a></li>
+              <li class="language"><a href=""><img class="lang-ang" src="assets/apix2/images/royaume-uni.png" alt=""></a></li>
+          
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>

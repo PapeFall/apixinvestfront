@@ -37,31 +37,17 @@
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/quill/dist/quill.core.css", 
-              "node_modules/quill/dist/quill.snow.css",
+              "node_modules/quill/dist/quill.snow.css"
               
                         ],
             "scripts": [
-              "src/assets/js/jquery-2.2.4.min.js",
-              "src/assets/js/plugins/jquery.easing.1.3.js",
-              "src/assets/js/plugins/bootstrap.min.js",
-              "src/assets/js/plugins/jquery.bxslider.min.js",
-              "src/assets/js/plugins/jquery.filterizr.js",
-              "src/assets/js/plugins/jquery.magnific-popup.min.js",
-          
-              "src/assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js",
-              "src/assets/js/plugins/revolution/js/jquery.themepunch.revolution.min.js",
-          
-          
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.actions.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.carousel.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.migration.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.navigation.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js",
-              "src/assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js",
-              "src/assets/js/custom.js",
+              "src/assets/apix2/js/jquery-2.2.4.min.js",
+              "src/assets/apix2/js/jquery-ui.min.js",
+              "src/assets/apix2/js/bootstrap.min.js",
+              "src/assets/apix2/js/jquery-plugin-collection.js",
+            
+              "src/assets/apix2/js/revolution-slider/js/jquery.themepunch.tools.min.js",
+              "src/assets/apix2/js/revolution-slider/js/jquery.themepunch.revolution.min.js",
 
               "node_modules/chart.js/dist/Chart.js",
               "node_modules/quill/dist/quill.js"
