@@ -10,6 +10,7 @@ import { ProjetsService } from 'src/app/services/projets.service';
 export class HomeComponent implements OnInit {
   articles:any = [];
   projets:any = [];
+  proTab="t1"
 
   constructor(private articleService: ArticlesService, private projetService: ProjetsService) { 
     new Promise(resolve =>{
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
     this.getProjets();
   }
   scripts = [
+    'assets/apix2/js/custom.js',
     "assets/apix2/js/revolution-slider/js/extensions/revolution.extension.actions.min.js",
   
     "assets/apix2/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js",
@@ -37,7 +39,7 @@ export class HomeComponent implements OnInit {
     "assets/apix2/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js",
   
     "assets/apix2/js/revolution-slider/js/extensions/revolution.extension.video.min.js",
-    'assets/apix2/js/custom.js',
+    
     'assets/apix2/js/custom2home.js'
   ]
   public loadScript(script:string){

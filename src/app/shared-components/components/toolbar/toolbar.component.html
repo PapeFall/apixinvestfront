@@ -38,11 +38,11 @@
             <a class="menuzord-brand pull-left flip" href="index.html"><img src="assets/apix2/images/Menu_Logo.png"
                 alt="logo apix"></a>
             <ul class="menuzord-menu onepage-nav">
-              <li class="active"><a href="index.html">Accueil</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="">Inscription</a></li>
-              <li><a href="">Connexion</a></li>
+              <li class="active"><a href="#" (click)="routeTo('/')">Accueil</a></li>
+              <li><a href="#about" (click)="routeTo('/#about')">À propos</a></li>
+              <li><a href="#contact" (click)="routeTo('/#contact')">{{'home.contact' | translate}}</a></li>
+              <li><a href="#" (click)="routeTo('/process/signin')">Inscription</a></li>
+              <li><a href="#" (click)="routeTo('/process/login')">Connexion</a></li>
               <li class="language"><a href=""><img class="lang-fr" src="assets/apix2/images/france.png" alt=""></a></li>
               <li class="language"><a href=""><img class="lang-ang" src="assets/apix2/images/royaume-uni.png" alt=""></a></li>
           

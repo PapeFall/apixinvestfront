@@ -17,7 +17,13 @@ import { DetailProjetComponent } from './components/detail-projet/detail-projet.
 import { BrowserModule } from '@angular/platform-browser';
 import { SearchArticlesComponent } from './components/search-articles/search-articles.component';
 import { SearchProjetComponent } from './components/search-projet/search-projet.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,9 +44,22 @@ import { SearchProjetComponent } from './components/search-projet/search-projet.
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
     SharedComponentsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    TranslateModule.forRoot(
+      {
+        defaultLanguage:'fr',
+        loader: {
+          provide: TranslateLoader,
+          useFactory: httpTranslateLoader,
+          // useClass: TraductionService,
+          deps: [HttpClient],
+        }
+  
+      }
+    )
   
   ],
   providers: [],
@@ -48,3 +67,7 @@ import { SearchProjetComponent } from './components/search-projet/search-projet.
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, "./assets/i18n/",".json");
+}

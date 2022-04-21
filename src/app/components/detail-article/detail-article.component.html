@@ -1,87 +1,152 @@
 <app-toolbar></app-toolbar>
-<div class="main">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                <img class="br" src="{{article?.img}}" style="width: 100%;" alt="">
+ <!-- Section: inner-header -->
+ <div class="main-content" style="background-color: white;">
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5"  data-bg-img="https://www.agera.asso.fr/app/uploads/2020/08/Projet.jpg" >
+        <div class="container pt-100 pb-50">
+          <!-- Section Content -->
+          <div class="section-content pt-100" >
+            <div class="row"> 
+              <div class="col-md-12">
+                <h3 class="title text-white">PARTENAIRE </h3>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h3 class=".h3">{{article?.titre}}</h3>
-            </div>
-            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" [innerHTML]="article?.content">
-            </div>
-            <div class="col-sm-12 container-fluid ">
-                <div class="col-sm-3">
-                    <button type="button" mat-raised-button color="primary"><mat-icon>favorite</mat-icon>Favoris</button>
-                </div>
-                <div class="col-sm-3">
-                    <span class="center-column">
-                        <span><strong> Noter</strong></span>
-                        <span>
-                            <span *ngFor="let i of stars;let indice=index;" (click)="noter(indice)" [ngStyle]="{'color':i?'var(--orange)':'gray'}" class="fa fa-star"></span>
-                        </span>
-                        
-                    </span>
-                </div>
-                <div class="col-sm-6">
-                    <div class="social-icons">
-                        <ul class="social">
-                            <li>
-                                <a class="twitter" href="#" title="twitter"></a>
-                            </li>
-                            <li>
-                                <a class="facebook" href="#" title="facebook"></a>
-                            </li>
-                            <li>
-                                <a class="google" href="#" title="google"></a>
-                            </li>
-                            <li>
-                                <a class="linkedin" href="#" title="linkedin"></a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- <button type="button" mat-raised-button color="primary"><mat-icon>share</mat-icon>Partager</button> -->
-                
-                
-            </div>
+          </div>
         </div>
-       
-        <div class="col-sx-12 col-sm-12 col-md-4 col-lg-4">
-            <h3>Articles recommandés</h3>
-            <div class="row latest-posts-content">
-                <!-- Article Starts -->
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" *ngFor="let article of articlesRecommandes;" >
-                    <div class="latest-post">
-                        <!-- Featured Image Starts -->
-                        <a class="img-thumb" [routerLink]="['/article-detail',categorie,article?.id]"><img class="img-responsive" src="{{article?.img}}" style="max-height: 100; width: 100;" alt="img"></a>
-                        <!-- Featured Image Ends -->
-                        <!-- Article Content Starts -->
-                        <div class="post-body">
-                            <h4 class="post-title">
-                                <a [routerLink]="['/article-detail',categorie,article?.id]">{{article?.titre}}</a>
-                            </h4>
-                            <!-- <div class="post-text">
-                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
-                            </div> -->
-                        </div>
-                        <!-- Post Date Starts -->
-                        <div class="post-date">
-                            <span>18</span>
-                            <span>AUG</span>
-                        </div>
-                        <!-- Post Date Ends -->
-                        <a class="custom-button pb" [routerLink]="['/article-detail',categorie,article?.id]">Read more</a>
-                        <!-- Article Content Ends -->
-                    </div>
+      </section>
+    
+      <!-- Section: Causes -->
+      <section>
+        <div class="container-fluid">
+          <div class="row mtli-row-clearfix">
+            <div class="col-sm-6 col-md-8 col-lg-8">
+              <div class="causes bg-white maxwidth500 mb-30">
+                <div class="thumb">
+                  <img src="assets/apix2/images/dgfonsii.jpg" alt="" class="img-fullwidth">
+                 
                 </div>
-                <!-- Article Ends -->
-                
+                <div class="causes-details clearfix  border-bottom-theme-color-1px p-15 pt-10 pb-10">
+                  <h5 class="font-weight-600 font-16"><a href="projetdaralbi-detail.html">PAPA DEMBA DIALLO</a></h5>
+                  <p>Gérant de la boulangerie/pâtisserie artisanale Milmais. 
+                  </p>
+                 
+                </div>
+              </div>
+              <div class="event-details">
+                <p class="mb-20 mt-20">
+                  1. Comment avez-vous apprécié votre participation au Sommet Entrepreneuriale de l'Afrique au Ghana?
+    
+    Pleine d’enseignements, de rencontres et d’émulation avec d’autres entrepreneurs.
+    
+    2. Quels ont été les points saillants de votre participation au Sommet?
+    
+    C’est particulièrement le forum sur « branding African food for a global market ». Un panel d’entrepreneurs certifiés qui revisitent la cuisine ghanéenne aux saveurs internationales. Ils ont partagé leurs réussites, leurs échecs, leurs parcours en général.
+    
+    Mais aussi l’opportunité qui m’a été donnée d’occuper un stand et de parler de mon projet.
+    
+    3. Quels projets ou quels individus ont laissés une impression sur vous au Sommet et pourquoi?
+    
+    Les entrepreneurs que j’ai rencontrés sont pratiquement tous dans le « local ». Certains m’ont marquée de par leur originalité et leur réussite. Pour exemple, le célèbre Fred Apaloo, jeune entrepreneur ghanéen avec son restaurant Villa Grace qui revisite la cuisine locale. Dans ses brunchs, il met un point d’honneur à ne jamais perdre le cœur, ghanéen, du plat qu’il présente tout en s’ouvrant aux saveurs, épices étrangères, pour proposer une expérience unique de cuisine fine et internationale.
+    
+    J’ai été particulièrement séduite par 3 très jeunes entrepreneurs (moins de 25ans) avec leurs projets de transformation locale du cacao. Ils commercialisent tous les 3 du chocolat, mais chaque projet est unique de par son offre et sa présentation. Des jeunes très dynamiques qui ont réussi, en plus ou moins 2 ans, à faire passer leurs projets de la phase d’idée à la commercialisation en grandes surfaces aux côtés de grandes marques occidentales.
+    
+    Mon coup de cœur reste cependant Mme Dedo Azu fondatrice du très célèbre Tea Baa. Un tout petit coin où toutes les couches de la société ghanéenne aiment se retrouver autour d’un thé rafraîchissant aux saveurs uniques et souvent servi dans un « mason jar » ! Un joyau caché mais connu de tous et reconnu par tous. Un exemple qui me parle particulièrement puisque me confortant dans l’idée que j’avais déjà de la boutique MILMAIS à savoir un endroit chaleureux où chaque client vit une expérience unique.
+    
+    4. Quels ont été vos plus grandes leçons à retenir de la saison 3 Entrepreneur grande compétition?
+    
+    J’ai appris à communiquer de manière plus efficace et qui plus est devant un public.
+    
+    5. Quelle est la chose que vous aimeriez avoir connue lorsque vous vous êtes embarqué dans votre vie d'entrepreneur?
+    
+    Je suis issue d’une famille d’entrepreneurs. J’ai donc très tôt baigné dans ce monde et je savais déjà à quoi m’en tenir.
+    
+    6. Quel conseil avez-vous pour les autres jeunes entrepreneurs au Sénégal?
+    
+    Si vous avez un projet, que vous êtes prêts à vous investir physiquement, émotionnellement et financièrement, lancez-vous. Ignorez les sceptiques, armez vous de patience et persévérez. Le chemin sera long et parsemé d'embûches mais le succès est au bout.
+                  </p>
+                <div class="pull-left flip mr-15">
+                </div>
+                <div class="">
+                </div>
+            
+              </div>
             </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="sidebar sidebar-right mt-sm-30">
+                <div class="widget">
+                  <h4 class="widget-title line-bottom">A voir aussi</h4>
+                  <ul class="list-divider list-border list check">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Inscription</a></li>
+                    <li><a href="#">Connexion</a></li>
+                  </ul>
+                </div>
+               
+                <div class="widget">
+                  <h4 class="widget-title line-bottom">Tags</h4>
+                  <div class="tags">
+                    <a href="#">Santé</a>
+                    <a href="#">Education</a>
+                    <a href="#">Technologie</a>
+                    <a href="#">Industrie et Commerce</a>
+                    <a href="#">Elevage</a>
+                    <a href="#">Agriculture</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Energie et Mine</a>
+                  </div>
+                </div>
+                <h4 class="widget-title line-bottom">Investiseur</h4>
+                <div class="causes bg-white maxwidth500 mb-30">
+                  <div class="thumb">
+                    <img src="assets/apix2/images/babacarngom.png" alt="" class="img-fullwidth">
+                   
+                  </div>
+                  <div class="causes-details clearfix  border-bottom-theme-color-1px p-15 pt-10 pb-10">
+                    <h5 class="font-weight-600 font-16"><a href="projetdaralbi-detail.html">Babacar Ngom</a></h5>
+                    <p>Gérant de la boulangerie/pâtisserie artisanale Milmais. 
+                    </p>
+                   
+                  </div>
+                </div>
+                <div class="causes bg-white maxwidth500 mb-30">
+                  <div class="thumb">
+                    <img src="assets/apix2/images/jeanjackinversiteur.jpg" alt="" class="img-fullwidth">
+                    
+                  </div>
+                  <div class="causes-details clearfix  border-bottom-theme-color-1px p-15 pt-10 pb-10">
+                    <h5 class="font-weight-600 font-16"><a href="projetdaralbi-detail.html">Jean Michel Etté</a></h5>
+                    <p>Gérant de la boulangerie/pâtisserie artisanale Milmais. 
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
+
+
+       <!-- Divider: Video Tour -->
+    <section class="divider parallax layer-overlay overlay-dark-9" data-bg-img="https://investinsenegal.com/wp-content/uploads/2018/07/APIX-Background.jpg" data-parallax-ratio="0.7">
+        <div class="display-table">
+          <div class="display-table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <a href="https://youtu.be/vTHttDem8NI" data-lightbox-gallery="youtube-video"><i class="fa fa-play-circle text-theme-colored font-72"></i></a>
+                  <h2 class="text-white text-uppercase font-48 font-weight-700 mb-0">Presentation<span class="text-theme-colored"> Du projet</span> </h2>
+                  <p class="font-16 text-white">Les jeunes ont compris que l’Etat ne peut pas tout faire. Il est impératif de sortir des sentiers battus pour créer, innover, tomber, se relever, échouer mais aussi et surtout réussir. 
+                    SeptAfrique est là pour accompagner et encourager ceux qui ont OSÉ entreprendre, ceux qui ont agis: Les Grands Faiseurs. 
+                    Le cinquième  numéro de votre émission ''ILS ONT OSÉ'' reçoit Mouhamed T. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+ </div>
 
 <app-site-footer></app-site-footer>

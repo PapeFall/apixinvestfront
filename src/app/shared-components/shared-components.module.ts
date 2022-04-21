@@ -10,6 +10,7 @@ import { ParticipationPopupComponent } from './components/participation-popup/pa
 import { ListeAlertesComponent } from './components/liste-alertes/liste-alertes.component';
 import { DetailAlerteComponent } from './components/liste-alertes/detail-alerte/detail-alerte.component';
 import { ProfilAdminComponent } from './components/profil-admin/profil-admin.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -28,7 +29,8 @@ import { ProfilAdminComponent } from './components/profil-admin/profil-admin.com
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    ChartModule
+    ChartModule,
+    TranslateModule
   ],
   exports:[
     ToolbarComponent,
@@ -37,7 +39,8 @@ import { ProfilAdminComponent } from './components/profil-admin/profil-admin.com
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    ChartModule
+    ChartModule,
+    TranslateModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
