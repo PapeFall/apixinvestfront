@@ -1,6 +1,10 @@
 {
     "home":{
-        "contact":"Contact"
+        "accueil":"Accueil",
+        "apropos":"A propos",
+        "contact":"Contact",
+        "inscription":"Inscription",
+        "connexion":"Connexion"
     }
 
 }

@@ -50,11 +50,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     TranslateModule.forRoot(
       {
-        defaultLanguage:'fr',
+        // defaultLanguage:'fr',
         loader: {
           provide: TranslateLoader,
           useFactory: httpTranslateLoader,
-          // useClass: TraductionService,
           deps: [HttpClient],
         }
   

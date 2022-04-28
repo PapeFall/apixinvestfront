@@ -4,7 +4,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {ChartModule} from 'primeng/chart';
+import { ChartModule } from 'primeng/chart';
 import { CommentsComponent } from './components/comments/comments.component';
 import { ParticipationPopupComponent } from './components/participation-popup/participation-popup.component';
 import { ListeAlertesComponent } from './components/liste-alertes/liste-alertes.component';

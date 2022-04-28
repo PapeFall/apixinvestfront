@@ -1,3 +1,9 @@
 {
-    "contact":"contacten"
+    "home":{
+        "accueil":"Home",
+        "apropos":"About",
+        "contact":"Contact",
+        "inscription":"Sign Up",
+        "connexion":"Sign In"
+    }
 }

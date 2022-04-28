@@ -43,8 +43,8 @@
               <li><a href="#contact" (click)="routeTo('/#contact')">{{'home.contact' | translate}}</a></li>
               <li><a href="#" (click)="routeTo('/process/signin')">Inscription</a></li>
               <li><a href="#" (click)="routeTo('/process/login')">Connexion</a></li>
-              <li class="language"><a href=""><img class="lang-fr" src="assets/apix2/images/france.png" alt=""></a></li>
-              <li class="language"><a href=""><img class="lang-ang" src="assets/apix2/images/royaume-uni.png" alt=""></a></li>
+              <li class="language"><a  style="cursor: pointer;" (click)="switchLang('fr')" ><img class="lang-fr" src="assets/apix2/images/france.png" alt=""></a></li>
+              <li class="language"><a  style="cursor: pointer;" (click)="switchLang('en')"><img class="lang-ang" src="assets/apix2/images/royaume-uni.png" alt=""></a></li>
           
             </ul>
           </nav>

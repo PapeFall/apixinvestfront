@@ -1,76 +1,76 @@
-
 mat-nav-list {
-    background-color: var(--blue);
-    min-height: 100vh;
-    height: 100%;
-  }
-  
-  .mat-list-base{
-    padding-top: 0;
-  }
-  #sidebar {
-    // padding: 26px 0 20px;
-    margin: 0;
-    background-color: var(--blue);
-  }
-  
-  .APIX-LOGO {
-    // margin: 0 0 20px;
-    padding: 0.6em;
-    margin-top: 0;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
-    background-color: white;
-  }
+  background-color: var(--blue);
+  min-height: 100vh;
+  height: 100%;
+}
 
-  .connected-user{
-    padding-left: 10px;
-     color: white; 
-     font-size: 14px;
-  }
+.mat-list-base {
+  padding-top: 0;
+}
 
-  .div-connected-user{
-    // margin-bottom: 25px;
-     margin-left: 5px;
-      display: flex;
-  }
-  
+#sidebar {
+  // padding: 26px 0 20px;
+  margin: 0;
+  background-color: var(--blue);
+}
 
-  .sidebar-menu {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #fff;
-    mat-icon {
-      margin-right: 10px;
-      padding: 0 20px 0 0;
-    }
+.APIX-LOGO {
+  // margin: 0 0 20px;
+  padding: 0.6em;
+  margin-top: 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+}
+
+.connected-user {
+  padding-left: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.div-connected-user {
+  // margin-bottom: 25px;
+  margin-left: 5px;
+  display: flex;
+}
+
+
+.sidebar-menu {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+
+  mat-icon {
+    margin-right: 10px;
+    padding: 0 20px 0 0;
   }
-  
-  .active {
-    background-image: linear-gradient(
-      to right,
+}
+
+.active {
+  background-image: linear-gradient(to right,
       rgba(1, 53, 77, 0.56) 1%,
       rgba(250, 247, 237, 0.06) 100%,
-      rgba(1, 77, 62, 0.06) 100%
-    );
-    border-left: 5px solid #fff;
-    border-radius: 6px 0px 0px 6px;
-  }
-  
-  .admin-img{
-    width: 7vh;
-    height: 7vh;
-    border-radius: 50%;
-  }
+      rgba(1, 77, 62, 0.06) 100%);
+  border-left: 5px solid #fff;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.admin-img {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+}
+

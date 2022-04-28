@@ -45,9 +45,6 @@
               "src/assets/apix2/js/jquery-ui.min.js",
               "src/assets/apix2/js/bootstrap.min.js",
               "src/assets/apix2/js/jquery-plugin-collection.js",
-            
-              "src/assets/apix2/js/revolution-slider/js/jquery.themepunch.tools.min.js",
-              "src/assets/apix2/js/revolution-slider/js/jquery.themepunch.revolution.min.js",
 
               "node_modules/chart.js/dist/Chart.js",
               "node_modules/quill/dist/quill.js"
